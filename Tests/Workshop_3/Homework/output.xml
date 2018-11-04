@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.0.4 (Python 3.6.6 on win32)" generated="20181103 16:39:39.763">
+<robot generator="Robot 3.0.4 (Python 3.6.6 on win32)" generated="20181104 01:01:06.224">
 <suite id="s1" name="Mahara Test" source="C:\Users\User\eclipse-workspace\hackerschool\Tests\Workshop_3\Homework\mahara_test.robot">
 <test id="s1-t1" name="Mahara Invalid Login">
 <kw name="Open Browser To Mahara" library="Mahara_Keywords" type="setup">
@@ -9,14 +9,14 @@
 <arg>https://demo.mahara.org/</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20181103 16:39:40.008" level="INFO">Opening browser 'chrome' to base url 'https://demo.mahara.org/'.</msg>
-<status status="PASS" starttime="20181103 16:39:40.008" endtime="20181103 16:39:47.769"></status>
+<msg timestamp="20181104 01:01:06.448" level="INFO">Opening browser 'chrome' to base url 'https://demo.mahara.org/'.</msg>
+<status status="PASS" starttime="20181104 01:01:06.448" endtime="20181104 01:01:17.050"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20181103 16:39:47.769" endtime="20181103 16:39:48.889"></status>
+<status status="PASS" starttime="20181104 01:01:17.050" endtime="20181104 01:01:18.172"></status>
 </kw>
-<status status="PASS" starttime="20181103 16:39:40.008" endtime="20181103 16:39:48.889"></status>
+<status status="PASS" starttime="20181104 01:01:06.447" endtime="20181104 01:01:18.172"></status>
 </kw>
 <kw name="Login To Mahara" library="Mahara_Keywords">
 <arguments>
@@ -29,8 +29,8 @@
 <arg>id=login_login_username</arg>
 <arg>${users}</arg>
 </arguments>
-<msg timestamp="20181103 16:39:48.891" level="INFO">Typing text ' Invalid' into text field 'id=login_login_username'.</msg>
-<status status="PASS" starttime="20181103 16:39:48.890" endtime="20181103 16:39:49.042"></status>
+<msg timestamp="20181104 01:01:18.174" level="INFO">Typing text ' Invalid' into text field 'id=login_login_username'.</msg>
+<status status="PASS" starttime="20181104 01:01:18.174" endtime="20181104 01:01:18.308"></status>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <doc>Types the given password into text field identified by ``locator``.</doc>
@@ -38,18 +38,18 @@
 <arg>name=login_password</arg>
 <arg>${passwords}</arg>
 </arguments>
-<msg timestamp="20181103 16:39:49.042" level="INFO">Typing password into text field 'name=login_password'.</msg>
-<status status="PASS" starttime="20181103 16:39:49.042" endtime="20181103 16:39:49.158"></status>
+<msg timestamp="20181104 01:01:18.308" level="INFO">Typing password into text field 'name=login_password'.</msg>
+<status status="PASS" starttime="20181104 01:01:18.308" endtime="20181104 01:01:18.421"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>id=login_submit</arg>
 </arguments>
-<msg timestamp="20181103 16:39:49.158" level="INFO">Clicking button 'id=login_submit'.</msg>
-<status status="PASS" starttime="20181103 16:39:49.158" endtime="20181103 16:39:51.471"></status>
+<msg timestamp="20181104 01:01:18.421" level="INFO">Clicking button 'id=login_submit'.</msg>
+<status status="PASS" starttime="20181104 01:01:18.421" endtime="20181104 01:01:20.398"></status>
 </kw>
-<status status="PASS" starttime="20181103 16:39:48.890" endtime="20181103 16:39:51.472"></status>
+<status status="PASS" starttime="20181104 01:01:18.173" endtime="20181104 01:01:20.398"></status>
 </kw>
 <kw name="Credentials And Form Alerts" library="Mahara_Keywords">
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
@@ -57,39 +57,39 @@
 <arguments>
 <arg>id=messages</arg>
 </arguments>
-<status status="PASS" starttime="20181103 16:39:51.472" endtime="20181103 16:39:51.497"></status>
+<status status="PASS" starttime="20181104 01:01:20.399" endtime="20181104 01:01:20.419"></status>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <doc>Verifies that current page contains ``text``.</doc>
 <arguments>
 <arg>You have not provided the correct credentials to log in. Please check your username and password are correct.</arg>
 </arguments>
-<msg timestamp="20181103 16:39:51.520" level="INFO">Current page contains text 'You have not provided the correct credentials to log in. Please check your username and password are correct.'.</msg>
-<status status="PASS" starttime="20181103 16:39:51.497" endtime="20181103 16:39:51.520"></status>
+<msg timestamp="20181104 01:01:20.443" level="INFO">Current page contains text 'You have not provided the correct credentials to log in. Please check your username and password are correct.'.</msg>
+<status status="PASS" starttime="20181104 01:01:20.420" endtime="20181104 01:01:20.443"></status>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <doc>Verifies that current page contains ``text``.</doc>
 <arguments>
 <arg>There was an error with submitting this form. Please check the marked fields and try again.</arg>
 </arguments>
-<msg timestamp="20181103 16:39:51.543" level="INFO">Current page contains text 'There was an error with submitting this form. Please check the marked fields and try again.'.</msg>
-<status status="PASS" starttime="20181103 16:39:51.520" endtime="20181103 16:39:51.543"></status>
+<msg timestamp="20181104 01:01:20.466" level="INFO">Current page contains text 'There was an error with submitting this form. Please check the marked fields and try again.'.</msg>
+<status status="PASS" starttime="20181104 01:01:20.443" endtime="20181104 01:01:20.467"></status>
 </kw>
-<status status="PASS" starttime="20181103 16:39:51.472" endtime="20181103 16:39:51.543"></status>
+<status status="PASS" starttime="20181104 01:01:20.399" endtime="20181104 01:01:20.467"></status>
 </kw>
 <kw name="Capture Screenshot And Close Browser" library="Mahara_Keywords" type="teardown">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181103 16:39:51.899" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-27.png"&gt;&lt;img src="selenium-screenshot-27.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20181103 16:39:51.544" endtime="20181103 16:39:51.900"></status>
+<msg timestamp="20181104 01:01:20.819" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20181104 01:01:20.468" endtime="20181104 01:01:20.819"></status>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20181103 16:39:51.900" endtime="20181103 16:39:54.034"></status>
+<status status="PASS" starttime="20181104 01:01:20.819" endtime="20181104 01:01:22.930"></status>
 </kw>
-<status status="PASS" starttime="20181103 16:39:51.544" endtime="20181103 16:39:54.034"></status>
+<status status="PASS" starttime="20181104 01:01:20.467" endtime="20181104 01:01:22.930"></status>
 </kw>
-<status status="PASS" starttime="20181103 16:39:40.007" endtime="20181103 16:39:54.035" critical="yes"></status>
+<status status="PASS" starttime="20181104 01:01:06.447" endtime="20181104 01:01:22.931" critical="yes"></status>
 </test>
 <test id="s1-t2" name="Mahara Admin Login">
 <kw name="Open Browser To Mahara" library="Mahara_Keywords" type="setup">
@@ -99,14 +99,14 @@
 <arg>https://demo.mahara.org/</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20181103 16:39:54.038" level="INFO">Opening browser 'chrome' to base url 'https://demo.mahara.org/'.</msg>
-<status status="PASS" starttime="20181103 16:39:54.038" endtime="20181103 16:40:01.883"></status>
+<msg timestamp="20181104 01:01:22.935" level="INFO">Opening browser 'chrome' to base url 'https://demo.mahara.org/'.</msg>
+<status status="PASS" starttime="20181104 01:01:22.934" endtime="20181104 01:01:32.942"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20181103 16:40:01.883" endtime="20181103 16:40:03.010"></status>
+<status status="PASS" starttime="20181104 01:01:32.942" endtime="20181104 01:01:34.062"></status>
 </kw>
-<status status="PASS" starttime="20181103 16:39:54.037" endtime="20181103 16:40:03.010"></status>
+<status status="PASS" starttime="20181104 01:01:22.934" endtime="20181104 01:01:34.062"></status>
 </kw>
 <kw name="Login To Mahara" library="Mahara_Keywords">
 <arguments>
@@ -119,8 +119,8 @@
 <arg>id=login_login_username</arg>
 <arg>${users}</arg>
 </arguments>
-<msg timestamp="20181103 16:40:03.012" level="INFO">Typing text 'Admin' into text field 'id=login_login_username'.</msg>
-<status status="PASS" starttime="20181103 16:40:03.012" endtime="20181103 16:40:03.150"></status>
+<msg timestamp="20181104 01:01:34.063" level="INFO">Typing text 'Admin' into text field 'id=login_login_username'.</msg>
+<status status="PASS" starttime="20181104 01:01:34.063" endtime="20181104 01:01:34.161"></status>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <doc>Types the given password into text field identified by ``locator``.</doc>
@@ -128,63 +128,1462 @@
 <arg>name=login_password</arg>
 <arg>${passwords}</arg>
 </arguments>
-<msg timestamp="20181103 16:40:03.150" level="INFO">Typing password into text field 'name=login_password'.</msg>
-<status status="PASS" starttime="20181103 16:40:03.150" endtime="20181103 16:40:03.283"></status>
+<msg timestamp="20181104 01:01:34.162" level="INFO">Typing password into text field 'name=login_password'.</msg>
+<status status="PASS" starttime="20181104 01:01:34.161" endtime="20181104 01:01:34.283"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>id=login_submit</arg>
 </arguments>
-<msg timestamp="20181103 16:40:03.283" level="INFO">Clicking button 'id=login_submit'.</msg>
-<status status="PASS" starttime="20181103 16:40:03.283" endtime="20181103 16:40:07.349"></status>
+<msg timestamp="20181104 01:01:34.284" level="INFO">Clicking button 'id=login_submit'.</msg>
+<status status="PASS" starttime="20181104 01:01:34.284" endtime="20181104 01:01:38.405"></status>
 </kw>
-<status status="PASS" starttime="20181103 16:40:03.011" endtime="20181103 16:40:07.349"></status>
+<status status="PASS" starttime="20181104 01:01:34.062" endtime="20181104 01:01:38.406"></status>
 </kw>
-<kw name="Admin Should Be Logged" library="Mahara_Keywords">
+<kw name="Person Should Be Logged" library="Mahara_Keywords">
+<arguments>
+<arg>&amp;{PERSON}[ADMIN]</arg>
+</arguments>
 <kw name="Page Should Contain Link" library="SeleniumLibrary">
 <doc>Verifies link identified by ``locator`` is found from current page.</doc>
 <arguments>
-<arg>xpath=//*[contains(@href, 'https://demo.mahara.org/user/james-jetts') and contains(@class, 'username')]</arg>
+<arg>xpath=//*[contains(@href, 'https://demo.mahara.org/user/${person}') and contains(@class, 'username')]</arg>
 </arguments>
-<msg timestamp="20181103 16:40:07.378" level="INFO">Current page contains link 'xpath=//*[contains(@href, 'https://demo.mahara.org/user/james-jetts') and contains(@class, 'username')]'.</msg>
-<status status="PASS" starttime="20181103 16:40:07.350" endtime="20181103 16:40:07.378"></status>
+<msg timestamp="20181104 01:01:38.433" level="INFO">Current page contains link 'xpath=//*[contains(@href, 'https://demo.mahara.org/user/james-jetts') and contains(@class, 'username')]'.</msg>
+<status status="PASS" starttime="20181104 01:01:38.407" endtime="20181104 01:01:38.434"></status>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
 <arguments>
 <arg>xpath=//a[@class="user-icon"]</arg>
 </arguments>
-<msg timestamp="20181103 16:40:07.399" level="INFO">Current page contains element 'xpath=//a[@class="user-icon"]'.</msg>
-<status status="PASS" starttime="20181103 16:40:07.378" endtime="20181103 16:40:07.399"></status>
+<msg timestamp="20181104 01:01:38.451" level="INFO">Current page contains element 'xpath=//a[@class="user-icon"]'.</msg>
+<status status="PASS" starttime="20181104 01:01:38.434" endtime="20181104 01:01:38.451"></status>
 </kw>
-<status status="PASS" starttime="20181103 16:40:07.350" endtime="20181103 16:40:07.399"></status>
+<status status="PASS" starttime="20181104 01:01:38.407" endtime="20181104 01:01:38.451"></status>
 </kw>
 <kw name="Capture Screenshot And Close Browser" library="Mahara_Keywords" type="teardown">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181103 16:40:07.766" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-28.png"&gt;&lt;img src="selenium-screenshot-28.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20181103 16:40:07.400" endtime="20181103 16:40:07.766"></status>
+<msg timestamp="20181104 01:01:38.849" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-17.png"&gt;&lt;img src="selenium-screenshot-17.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20181104 01:01:38.452" endtime="20181104 01:01:38.849"></status>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20181103 16:40:07.766" endtime="20181103 16:40:09.899"></status>
+<status status="PASS" starttime="20181104 01:01:38.849" endtime="20181104 01:01:41.228"></status>
 </kw>
-<status status="PASS" starttime="20181103 16:40:07.400" endtime="20181103 16:40:09.899"></status>
+<status status="PASS" starttime="20181104 01:01:38.452" endtime="20181104 01:01:41.228"></status>
 </kw>
-<status status="PASS" starttime="20181103 16:39:54.037" endtime="20181103 16:40:09.900" critical="yes"></status>
+<status status="PASS" starttime="20181104 01:01:22.933" endtime="20181104 01:01:41.229" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20181103 16:39:39.766" endtime="20181103 16:40:09.902"></status>
+<test id="s1-t3" name="Mahara Student Login">
+<kw name="Open Browser To Mahara" library="Mahara_Keywords" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://demo.mahara.org/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20181104 01:01:41.234" level="INFO">Opening browser 'chrome' to base url 'https://demo.mahara.org/'.</msg>
+<status status="PASS" starttime="20181104 01:01:41.234" endtime="20181104 01:01:50.182"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20181104 01:01:50.182" endtime="20181104 01:01:51.308"></status>
+</kw>
+<status status="PASS" starttime="20181104 01:01:41.233" endtime="20181104 01:01:51.308"></status>
+</kw>
+<kw name="Login To Mahara" library="Mahara_Keywords">
+<arguments>
+<arg>&amp;{USERS}[STUDENT]</arg>
+<arg>&amp;{PASSWORDS}[VALID]</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=login_login_username</arg>
+<arg>${users}</arg>
+</arguments>
+<msg timestamp="20181104 01:01:51.309" level="INFO">Typing text 'Student' into text field 'id=login_login_username'.</msg>
+<status status="PASS" starttime="20181104 01:01:51.309" endtime="20181104 01:01:51.427"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=login_password</arg>
+<arg>${passwords}</arg>
+</arguments>
+<msg timestamp="20181104 01:01:51.427" level="INFO">Typing password into text field 'name=login_password'.</msg>
+<status status="PASS" starttime="20181104 01:01:51.427" endtime="20181104 01:01:51.539"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>id=login_submit</arg>
+</arguments>
+<msg timestamp="20181104 01:01:51.540" level="INFO">Clicking button 'id=login_submit'.</msg>
+<status status="PASS" starttime="20181104 01:01:51.540" endtime="20181104 01:01:56.089"></status>
+</kw>
+<status status="PASS" starttime="20181104 01:01:51.308" endtime="20181104 01:01:56.089"></status>
+</kw>
+<kw name="Person Should Be Logged" library="Mahara_Keywords">
+<arguments>
+<arg>&amp;{PERSON}[STUDENT]</arg>
+</arguments>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>xpath=//*[contains(@href, 'https://demo.mahara.org/user/${person}') and contains(@class, 'username')]</arg>
+</arguments>
+<msg timestamp="20181104 01:01:56.130" level="INFO">Current page contains link 'xpath=//*[contains(@href, 'https://demo.mahara.org/user/paula-paulsen') and contains(@class, 'username')]'.</msg>
+<status status="PASS" starttime="20181104 01:01:56.090" endtime="20181104 01:01:56.130"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>xpath=//a[@class="user-icon"]</arg>
+</arguments>
+<msg timestamp="20181104 01:01:56.158" level="INFO">Current page contains element 'xpath=//a[@class="user-icon"]'.</msg>
+<status status="PASS" starttime="20181104 01:01:56.131" endtime="20181104 01:01:56.159"></status>
+</kw>
+<status status="PASS" starttime="20181104 01:01:56.090" endtime="20181104 01:01:56.159"></status>
+</kw>
+<kw name="Capture Screenshot And Close Browser" library="Mahara_Keywords" type="teardown">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181104 01:01:56.528" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-18.png"&gt;&lt;img src="selenium-screenshot-18.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20181104 01:01:56.160" endtime="20181104 01:01:56.528"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20181104 01:01:56.528" endtime="20181104 01:01:58.630"></status>
+</kw>
+<status status="PASS" starttime="20181104 01:01:56.160" endtime="20181104 01:01:58.630"></status>
+</kw>
+<status status="PASS" starttime="20181104 01:01:41.233" endtime="20181104 01:01:58.631" critical="yes"></status>
+</test>
+<test id="s1-t4" name="Mahara Learner Login">
+<kw name="Open Browser To Mahara" library="Mahara_Keywords" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://demo.mahara.org/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20181104 01:01:58.634" level="INFO">Opening browser 'chrome' to base url 'https://demo.mahara.org/'.</msg>
+<status status="PASS" starttime="20181104 01:01:58.634" endtime="20181104 01:02:07.680"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20181104 01:02:07.681" endtime="20181104 01:02:08.812"></status>
+</kw>
+<status status="PASS" starttime="20181104 01:01:58.634" endtime="20181104 01:02:08.813"></status>
+</kw>
+<kw name="Login To Mahara" library="Mahara_Keywords">
+<arguments>
+<arg>&amp;{USERS}[LEARNER]</arg>
+<arg>&amp;{PASSWORDS}[VALID]</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=login_login_username</arg>
+<arg>${users}</arg>
+</arguments>
+<msg timestamp="20181104 01:02:08.815" level="INFO">Typing text 'Learner' into text field 'id=login_login_username'.</msg>
+<status status="PASS" starttime="20181104 01:02:08.815" endtime="20181104 01:02:08.985"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=login_password</arg>
+<arg>${passwords}</arg>
+</arguments>
+<msg timestamp="20181104 01:02:08.986" level="INFO">Typing password into text field 'name=login_password'.</msg>
+<status status="PASS" starttime="20181104 01:02:08.985" endtime="20181104 01:02:09.099"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>id=login_submit</arg>
+</arguments>
+<msg timestamp="20181104 01:02:09.100" level="INFO">Clicking button 'id=login_submit'.</msg>
+<status status="PASS" starttime="20181104 01:02:09.099" endtime="20181104 01:02:12.679"></status>
+</kw>
+<status status="PASS" starttime="20181104 01:02:08.814" endtime="20181104 01:02:12.679"></status>
+</kw>
+<kw name="Person Should Be Logged" library="Mahara_Keywords">
+<arguments>
+<arg>&amp;{PERSON}[LEARNER]</arg>
+</arguments>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>xpath=//*[contains(@href, 'https://demo.mahara.org/user/${person}') and contains(@class, 'username')]</arg>
+</arguments>
+<msg timestamp="20181104 01:02:12.709" level="INFO">Current page contains link 'xpath=//*[contains(@href, 'https://demo.mahara.org/user/polly-potter') and contains(@class, 'username')]'.</msg>
+<status status="PASS" starttime="20181104 01:02:12.680" endtime="20181104 01:02:12.709"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>xpath=//a[@class="user-icon"]</arg>
+</arguments>
+<msg timestamp="20181104 01:02:12.726" level="INFO">Current page contains element 'xpath=//a[@class="user-icon"]'.</msg>
+<status status="PASS" starttime="20181104 01:02:12.710" endtime="20181104 01:02:12.726"></status>
+</kw>
+<status status="PASS" starttime="20181104 01:02:12.680" endtime="20181104 01:02:12.727"></status>
+</kw>
+<kw name="Capture Screenshot And Close Browser" library="Mahara_Keywords" type="teardown">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181104 01:02:13.082" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-19.png"&gt;&lt;img src="selenium-screenshot-19.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20181104 01:02:12.729" endtime="20181104 01:02:13.082"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20181104 01:02:13.082" endtime="20181104 01:02:15.202"></status>
+</kw>
+<status status="PASS" starttime="20181104 01:02:12.728" endtime="20181104 01:02:15.202"></status>
+</kw>
+<status status="PASS" starttime="20181104 01:01:58.633" endtime="20181104 01:02:15.203" critical="yes"></status>
+</test>
+<test id="s1-t5" name="Mahara Staff Login">
+<kw name="Open Browser To Mahara" library="Mahara_Keywords" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://demo.mahara.org/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20181104 01:02:15.207" level="INFO">Opening browser 'chrome' to base url 'https://demo.mahara.org/'.</msg>
+<status status="PASS" starttime="20181104 01:02:15.207" endtime="20181104 01:02:24.562"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20181104 01:02:24.562" endtime="20181104 01:02:25.683"></status>
+</kw>
+<status status="PASS" starttime="20181104 01:02:15.206" endtime="20181104 01:02:25.683"></status>
+</kw>
+<kw name="Login To Mahara" library="Mahara_Keywords">
+<arguments>
+<arg>&amp;{USERS}[STAFF]</arg>
+<arg>&amp;{PASSWORDS}[VALID]</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=login_login_username</arg>
+<arg>${users}</arg>
+</arguments>
+<msg timestamp="20181104 01:02:25.685" level="INFO">Typing text 'Staff' into text field 'id=login_login_username'.</msg>
+<status status="PASS" starttime="20181104 01:02:25.684" endtime="20181104 01:02:25.811"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=login_password</arg>
+<arg>${passwords}</arg>
+</arguments>
+<msg timestamp="20181104 01:02:25.811" level="INFO">Typing password into text field 'name=login_password'.</msg>
+<status status="PASS" starttime="20181104 01:02:25.811" endtime="20181104 01:02:25.933"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>id=login_submit</arg>
+</arguments>
+<msg timestamp="20181104 01:02:25.934" level="INFO">Clicking button 'id=login_submit'.</msg>
+<status status="PASS" starttime="20181104 01:02:25.934" endtime="20181104 01:02:30.279"></status>
+</kw>
+<status status="PASS" starttime="20181104 01:02:25.684" endtime="20181104 01:02:30.280"></status>
+</kw>
+<kw name="Person Should Be Logged" library="Mahara_Keywords">
+<arguments>
+<arg>&amp;{PERSON}[STAFF]</arg>
+</arguments>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>xpath=//*[contains(@href, 'https://demo.mahara.org/user/${person}') and contains(@class, 'username')]</arg>
+</arguments>
+<msg timestamp="20181104 01:02:30.312" level="INFO">Current page contains link 'xpath=//*[contains(@href, 'https://demo.mahara.org/user/percy-pearle') and contains(@class, 'username')]'.</msg>
+<status status="PASS" starttime="20181104 01:02:30.281" endtime="20181104 01:02:30.313"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>xpath=//a[@class="user-icon"]</arg>
+</arguments>
+<msg timestamp="20181104 01:02:30.335" level="INFO">Current page contains element 'xpath=//a[@class="user-icon"]'.</msg>
+<status status="PASS" starttime="20181104 01:02:30.313" endtime="20181104 01:02:30.335"></status>
+</kw>
+<status status="PASS" starttime="20181104 01:02:30.280" endtime="20181104 01:02:30.335"></status>
+</kw>
+<kw name="Capture Screenshot And Close Browser" library="Mahara_Keywords" type="teardown">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181104 01:02:30.697" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-20.png"&gt;&lt;img src="selenium-screenshot-20.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20181104 01:02:30.337" endtime="20181104 01:02:30.697"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20181104 01:02:30.697" endtime="20181104 01:02:32.874"></status>
+</kw>
+<status status="PASS" starttime="20181104 01:02:30.336" endtime="20181104 01:02:32.874"></status>
+</kw>
+<status status="PASS" starttime="20181104 01:02:15.205" endtime="20181104 01:02:32.875" critical="yes"></status>
+</test>
+<test id="s1-t6" name="Mahara Sitestaff Login">
+<kw name="Open Browser To Mahara" library="Mahara_Keywords" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://demo.mahara.org/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20181104 01:02:32.878" level="INFO">Opening browser 'chrome' to base url 'https://demo.mahara.org/'.</msg>
+<status status="PASS" starttime="20181104 01:02:32.878" endtime="20181104 01:02:41.878"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20181104 01:02:41.878" endtime="20181104 01:02:43.003"></status>
+</kw>
+<status status="PASS" starttime="20181104 01:02:32.878" endtime="20181104 01:02:43.003"></status>
+</kw>
+<kw name="Login To Mahara" library="Mahara_Keywords">
+<arguments>
+<arg>&amp;{USERS}[SITESTAFF]</arg>
+<arg>&amp;{PASSWORDS}[VALID]</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=login_login_username</arg>
+<arg>${users}</arg>
+</arguments>
+<msg timestamp="20181104 01:02:43.006" level="INFO">Typing text 'Sitestaff' into text field 'id=login_login_username'.</msg>
+<status status="PASS" starttime="20181104 01:02:43.005" endtime="20181104 01:02:43.143"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=login_password</arg>
+<arg>${passwords}</arg>
+</arguments>
+<msg timestamp="20181104 01:02:43.143" level="INFO">Typing password into text field 'name=login_password'.</msg>
+<status status="PASS" starttime="20181104 01:02:43.143" endtime="20181104 01:02:43.256"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>id=login_submit</arg>
+</arguments>
+<msg timestamp="20181104 01:02:43.257" level="INFO">Clicking button 'id=login_submit'.</msg>
+<status status="PASS" starttime="20181104 01:02:43.257" endtime="20181104 01:02:47.561"></status>
+</kw>
+<status status="PASS" starttime="20181104 01:02:43.005" endtime="20181104 01:02:47.561"></status>
+</kw>
+<kw name="Person Should Be Logged" library="Mahara_Keywords">
+<arguments>
+<arg>&amp;{PERSON}[STUDENT]</arg>
+</arguments>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>xpath=//*[contains(@href, 'https://demo.mahara.org/user/${person}') and contains(@class, 'username')]</arg>
+</arguments>
+<msg timestamp="20181104 01:02:47.601" level="INFO">&lt;!DOCTYPE html&gt;&lt;!--[if IE 8 ]&gt;&lt;html lang="en" class="ie ie8"&gt;&lt;![endif]--&gt;&lt;!--[if IE 9 ]&gt;&lt;html lang="en" class="ie ie9"&gt;&lt;![endif]--&gt;&lt;!--[if (gt IE 9)|!(IE)]&gt;&lt;!--&gt;&lt;html xmlns="http://www.w3.org/1999/xhtml" lang="en"&gt;&lt;!--&lt;![endif]--&gt;&lt;head data-basehref="https://demo.mahara.org/"&gt;
+    &lt;meta name="generator" content="Mahara 18.04 (https://mahara.org)" /&gt;
+    &lt;meta http-equiv="Content-type" content="text/html; charset=UTF-8" /&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge" /&gt;
+    &lt;meta property="og:title" content="Dashboard - Mahara Demo" /&gt;
+    &lt;meta property="og:description" content="Mahara is an open source ePortfolio and social networking web application.&amp;#10;It provides users with tools to create and maintain a digital portfolio of their learning and social networking features to allow users to interact with each other." /&gt;
+    &lt;meta property="og:image" content="https://demo.mahara.org/theme/raw/images/site-logo-facebook.png" /&gt;
+    &lt;meta property="og:image:width" content="1200" /&gt;
+    &lt;meta property="og:image:height" content="630" /&gt;
+    &lt;meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=10.0,initial-scale=1.0" /&gt;
+    
+    &lt;title&gt;Dashboard - Mahara Demo&lt;/title&gt;
+    &lt;script type="text/javascript" async="" defer="" src="//www.catalyst-analytics.nz/piwik.js"&gt;&lt;/script&gt;&lt;script type="application/javascript"&gt;
+    var config = {
+        'theme': [],
+        'sesskey' : 'hzoSwslxTdPQJRC7',
+        'wwwroot': 'https://demo.mahara.org/',
+        'loggedin': 1,
+        'userid': 5,
+        'mobile': 0,
+        'handheld_device': 0,
+        'cc_enabled': 0,
+        'mathjax': 0,
+        'select2_lang': ''
+    };
+    &lt;/script&gt;
+    &lt;script type="application/javascript"&gt;var strings = {"namedfieldempty":"The required field \"%s\" is empty","processing":"Processing","unknownerror":"An unknown error occurred (0x20f91a0)","loading":"Loading ...","showtags":"Show my tags","couldnotgethelp":"An error occurred trying to retrieve the help page.","password":"Password","deleteitem":"Delete","moveitemup":"Move up","moveitemdown":"Move down","username":"Username","login":"Login","sessiontimedout":"Your session has timed out. Please enter your login details to continue.","loginfailed":"You have not provided the correct credentials to log in. Please check your username and password are correct.","home":"Home","youhavenottaggedanythingyet":"You have not tagged anything yet","wanttoleavewithoutsaving?":"You have made changes - do you want to leave the page without saving them?","Help":"Help","Close":"Close","closehelp":"Close help","tabs":"Tabs","toggletoolbarson":"Toggle toolbars on. Show full list of buttons","toggletoolbarsoff":"Toggle toolbars off. Show basic buttons","imagexofy":"Image {x} of {y}","remove":"Remove","errorprocessingform":"There was an error with submitting this form. Please check the marked fields and try again.","element.calendar.opendatepicker":"Open date picker","rule.maxlength.maxlength":"This field must be at most %d characters long.","rule.required.required":"This field is required."};
+function plural(n) { return n != 1; }
+&lt;/script&gt;
+    &lt;script type="application/javascript" src="https://demo.mahara.org/js/jquery/jquery.js?v=3077"&gt;&lt;/script&gt;
+    &lt;script type="application/javascript" src="https://demo.mahara.org/js/keyboardNavigation.js?v=3077"&gt;&lt;/script&gt;
+    &lt;script type="application/javascript" src="https://demo.mahara.org/js/paginator.js?v=3077"&gt;&lt;/script&gt;
+    &lt;script type="application/javascript" src="https://demo.mahara.org/js/ajaxblocks.js?v=3077"&gt;&lt;/script&gt;
+    &lt;script type="application/javascript" src="https://demo.mahara.org/js/mahara.js?v=3077"&gt;&lt;/script&gt;
+    &lt;script type="application/javascript" src="https://demo.mahara.org/js/formchangechecker.js?v=3077"&gt;&lt;/script&gt;
+    &lt;script type="application/javascript" src="https://demo.mahara.org/js/textareamaxlengthchecker.js?v=3077"&gt;&lt;/script&gt;
+
+    &lt;script type="application/javascript" src="https://demo.mahara.org//js/select2/select2.full.js?v=3077"&gt;&lt;/script&gt;
+    &lt;script type="application/javascript"&gt;
+jQuery(function($) {
+    function hideinfo() {
+        var m = $('&amp;lt;span&amp;gt;');
+        m.html("You have hidden the information box. You can control its visibility in &amp;lt;a\nhref=\"https:\/\/demo.mahara.org\/account\"&amp;gt;Settings&amp;lt;\/a&amp;gt;.");
+        $('#home-info-container').slideUp('fast', function() { displayMessage(m, 'ok'); });
+    }
+
+    function nevershow() {
+        var data = {'showhomeinfo' : 0};
+        sendjsonrequest('homeinfo.json.php', data, 'POST', hideinfo);
+    }
+
+    if ($('#hideinfo').length) {
+        $('#hideinfo').on('click', nevershow);
+    }
+});jQuery( function() {
+
+});
+    &lt;/script&gt;
+
+    &lt;script type="application/javascript" src="https://demo.mahara.org/lib/slimbox2/js/slimbox2.js?v=3077"&gt;&lt;/script&gt;
+    &lt;link rel="stylesheet" type="text/css" href="https://demo.mahara.org/lib/slimbox2/css/slimbox2.css?v=3077" /&gt;
+    &lt;script type="application/javascript"&gt;pieformPath = "https://demo.mahara.org/lib/pieforms/static/core/";&lt;/script&gt;
+    &lt;script type="application/javascript" src="https://demo.mahara.org/lib/pieforms/static/core/pieforms.js?v=3077"&gt;&lt;/script&gt;
+    &lt;script type="application/javascript"&gt;
+    function pieform_select_other(el) {
+        var element = jQuery(el);
+        var other = jQuery('#' + element.prop('id') + '_other');
+        if (element.val() == 'other') {
+            other.removeClass('hidden');
+        }
+        else {
+            other.addClass('hidden');
+        }
+    }&lt;/script&gt;
+
+    &lt;script type="application/javascript"&gt;$j=jQuery;&lt;/script&gt;
+
+
+    &lt;link rel="stylesheet" type="text/css" href="https://demo.mahara.org/theme/primaryschool/style/style.css?v=3077" /&gt;
+    &lt;link rel="stylesheet" type="text/css" href="https://demo.mahara.org/theme/raw/style/views.css?v=3077" /&gt;
+
+    &lt;script type="application/javascript" src="https://demo.mahara.org//lib/bootstrap/assets/javascripts/bootstrap.js?v=3077"&gt;&lt;/script&gt;
+    &lt;script type="application/javascript" src="https://demo.mahara.org//js/javascript-templates/js/tmpl.min.js?v=3077"&gt;&lt;/script&gt;
+    &lt;script type="application/javascript" src="https://demo.mahara.org/theme/raw/js/masonry.min.js?v=3077"&gt;&lt;/script&gt;
+    &lt;script type="application/javascript" src="https://demo.mahara.org/theme/raw/js/pieform.js?v=3077"&gt;&lt;/script&gt;
+    &lt;script type="application/javascript" src="https://demo.mahara.org/theme/raw/js/formtabs.js?v=3077"&gt;&lt;/script&gt;
+    &lt;script type="application/javascript" src="https://demo.mahara.org/theme/raw/js/filebrowser.js?v=3077"&gt;&lt;/script&gt;
+    &lt;script type="application/javascript" src="https://demo.mahara.org/theme/raw/js/access.js?v=3077"&gt;&lt;/script&gt;
+    &lt;script type="application/javascript" src="https://demo.mahara.org/theme/raw/js/notification.js?v=3077"&gt;&lt;/script&gt;
+    &lt;script type="application/javascript" src="https://demo.mahara.org/theme/raw/js/dock.js?v=3077"&gt;&lt;/script&gt;
+    &lt;script type="application/javascript" src="https://demo.mahara.org/theme/raw/js/theme.js?v=3077"&gt;&lt;/script&gt;
+
+    &lt;link rel="shortcut icon" href="https://demo.mahara.org/favicon.ico?v=3077" type="image/vnd.microsoft.icon" /&gt;
+    &lt;link rel="image_src" href="https://demo.mahara.org/theme/primaryschool/images/site-logo.svg?v=3077" /&gt;
+
+
+
+&lt;script src="https://www.catalyst-analytics.nz/plugins/HeatmapSessionRecording/configs.php?idsite=3&amp;amp;trackerid=UrTJQj&amp;amp;url=https%3A%2F%2Fdemo.mahara.org%2Findex.php" async="" defer=""&gt;&lt;/script&gt;&lt;/head&gt;
+
+
+&lt;body data-usethemedjs="true" class="home js"&gt;
+    &lt;div class="skiplink btn-group btn-group-top"&gt;
+        &lt;a class="sr-only sr-only-focusable btn btn-default" href="#main"&gt;Skip to main content&lt;/a&gt;
+    &lt;/div&gt;
+
+    
+
+        
+        
+        
+        
+        
+
+    
+
+    &lt;header class="header navbar-fixed-top no-site-messages"&gt;
+        &lt;div class="navbar navbar-default navbar-main"&gt;
+            &lt;div class="container"&gt;
+                &lt;div id="logo-area" class="logo-area"&gt;
+                    &lt;a href="https://demo.mahara.org/" class="logo  "&gt;
+                        &lt;img src="https://demo.mahara.org/theme/primaryschool/images/site-logo.svg?v=3077" alt="Mahara Demo" data-customlogo="0" /&gt;
+                    &lt;/a&gt;
+                    
+                    
+                    &lt;div id="loading-box" class="loading-box hidden"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                    &lt;div class="nav-toggle-area"&gt;
+                                                    &lt;button class="main-nav-toggle navbar-toggle collapsed" role="button" data-toggle="collapse" data-target=".nav-main" aria-expanded="false" aria-controls="nav-main" title="Main menu"&gt;
+                                &lt;span class="sr-only"&gt;Show main menu&lt;/span&gt;
+                                &lt;span class="icon icon-bars icon-lg" role="presentation" aria-hidden="true"&gt;&lt;/span&gt;
+                            &lt;/button&gt;
+                        
+                                                    &lt;button class="admin-toggle navbar-toggle collapsed" role="button" data-toggle="collapse" data-target=".nav-main-admin" aria-expanded="false" aria-controls="nav-main-admin" title="Administration menu"&gt;
+                                &lt;span class="sr-only"&gt;Show administration menu&lt;/span&gt;
+                                &lt;span class="icon icon-wrench icon-large" role="presentation" aria-hidden="true"&gt;&lt;/span&gt;
+                            &lt;/button&gt;
+                        
+                                                    &lt;a href="https://demo.mahara.org/user/petra-petterson" class="user-icon" title="Profile page"&gt;
+                                &lt;img src="https://demo.mahara.org/thumb.php?type=profileiconbyid&amp;amp;maxwidth=25&amp;amp;maxheight=25&amp;amp;id=36" /&gt;
+                            &lt;/a&gt;
+                            &lt;button class="user-toggle navbar-toggle" role="button" data-toggle="collapse" data-target=".nav-main-user" aria-expanded="false" aria-controls="nav-main-user" title="User menu"&gt;
+                                &lt;span class="sr-only"&gt;Show user menu&lt;/span&gt;
+                                &lt;span class="icon icon-chevron-down collapsed"&gt;&lt;/span&gt;
+                            &lt;/button&gt;
+                        
+                        &lt;!-- HIDE WHEN ON DESKTOP --&gt;
+                                                &lt;button class="search-toggle navbar-toggle collapsed" role="button" data-toggle="collapse" data-target=".navbar-form" aria-expanded="false" aria-controls="navbar-form"&gt;
+                            &lt;span class="icon icon-search icon-lg" role="presentation" aria-hidden="true"&gt;&lt;/span&gt;
+                            &lt;span class="nav-title sr-only"&gt;Show search&lt;/span&gt;
+                        &lt;/button&gt;
+                        
+                    &lt;/div&gt;
+
+                    &lt;ul class="nav topright-menu"&gt;
+    
+    
+&lt;/ul&gt;
+
+                    
+&lt;nav id="main-nav" class=" nav collapse navbar-collapse nav-main" role="tabpanel"&gt;
+    &lt;ul id="nav" class="nav navbar-nav"&gt;
+        &lt;li class="home active"&gt;&lt;a href="https://demo.mahara.org/" accesskey="d" class="home"&gt;Dashboard&lt;/a&gt;&lt;/li&gt;&lt;li class="content"&gt;&lt;a href="https://demo.mahara.org/artefact/internal/index.php" accesskey="c" class="content"&gt;Content&lt;/a&gt;&lt;button type="button" class="navbar-showchildren navbar-toggle dropdown-toggle collapsed" data-toggle="collapse" data-parent="nav" data-target="#childmenu-1"&gt;&lt;span class="icon icon-chevron-down" role="presentation" aria-hidden="true"&gt;&lt;/span&gt;&lt;span class="nav-title sr-only"&gt;Show menu for Content&lt;/span&gt;&lt;/button&gt;&lt;ul id="childmenu-1" class=" collapse child-nav" role="menu"&gt;&lt;li class=""&gt;&lt;a href="https://demo.mahara.org/artefact/internal/index.php"&gt;Profile&lt;/a&gt;&lt;/li&gt;&lt;li class=""&gt;&lt;a href="https://demo.mahara.org/artefact/file/profileicons.php"&gt;Profile pictures&lt;/a&gt;&lt;/li&gt;&lt;li class=""&gt;&lt;a href="https://demo.mahara.org/artefact/file/index.php"&gt;Files&lt;/a&gt;&lt;/li&gt;&lt;li class=""&gt;&lt;a href="https://demo.mahara.org/artefact/blog/index.php"&gt;Journals&lt;/a&gt;&lt;/li&gt;&lt;li class=""&gt;&lt;a href="https://demo.mahara.org/artefact/resume/index.php"&gt;Résumé&lt;/a&gt;&lt;/li&gt;&lt;li class=""&gt;&lt;a href="https://demo.mahara.org/artefact/plans/index.php"&gt;Plans&lt;/a&gt;&lt;/li&gt;&lt;li class=""&gt;&lt;a href="https://demo.mahara.org/artefact/internal/notes.php"&gt;Notes&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li class="myportfolio"&gt;&lt;a href="https://demo.mahara.org/view/index.php" accesskey="p" class="myportfolio"&gt;Portfolio&lt;/a&gt;&lt;button type="button" class="navbar-showchildren navbar-toggle dropdown-toggle collapsed" data-toggle="collapse" data-parent="nav" data-target="#childmenu-2"&gt;&lt;span class="icon icon-chevron-down" role="presentation" aria-hidden="true"&gt;&lt;/span&gt;&lt;span class="nav-title sr-only"&gt;Show menu for Portfolio&lt;/span&gt;&lt;/button&gt;&lt;ul id="childmenu-2" class=" collapse child-nav" role="menu"&gt;&lt;li class=""&gt;&lt;a href="https://demo.mahara.org/view/index.php"&gt;Pages and collections&lt;/a&gt;&lt;/li&gt;&lt;li class=""&gt;&lt;a href="https://demo.mahara.org/view/share.php"&gt;Shared by me&lt;/a&gt;&lt;/li&gt;&lt;li class=""&gt;&lt;a href="https://demo.mahara.org/view/sharedviews.php"&gt;Shared with me&lt;/a&gt;&lt;/li&gt;&lt;li class=""&gt;&lt;a href="https://demo.mahara.org/skin/index.php"&gt;Skins&lt;/a&gt;&lt;/li&gt;&lt;li class=""&gt;&lt;a href="https://demo.mahara.org/export/index.php"&gt;Export&lt;/a&gt;&lt;/li&gt;&lt;li class=""&gt;&lt;a href="https://demo.mahara.org/import/index.php"&gt;Import&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li class="groups"&gt;&lt;a href="https://demo.mahara.org/group/mygroups.php" accesskey="g" class="groups"&gt;Groups&lt;/a&gt;&lt;button type="button" class="navbar-showchildren navbar-toggle dropdown-toggle collapsed" data-toggle="collapse" data-parent="nav" data-target="#childmenu-3"&gt;&lt;span class="icon icon-chevron-down" role="presentation" aria-hidden="true"&gt;&lt;/span&gt;&lt;span class="nav-title sr-only"&gt;Show menu for Groups&lt;/span&gt;&lt;/button&gt;&lt;ul id="childmenu-3" class=" collapse child-nav" role="menu"&gt;&lt;li class=""&gt;&lt;a href="https://demo.mahara.org/group/mygroups.php"&gt;My groups&lt;/a&gt;&lt;/li&gt;&lt;li class=""&gt;&lt;a href="https://demo.mahara.org/group/find.php"&gt;Find groups&lt;/a&gt;&lt;/li&gt;&lt;li class=""&gt;&lt;a href="https://demo.mahara.org/user/myfriends.php"&gt;My friends&lt;/a&gt;&lt;/li&gt;&lt;li class=""&gt;&lt;a href="https://demo.mahara.org/user/find.php"&gt;Find people&lt;/a&gt;&lt;/li&gt;&lt;li class=""&gt;&lt;a href="https://demo.mahara.org/account/institutions.php"&gt;Institution membership&lt;/a&gt;&lt;/li&gt;&lt;li class=""&gt;&lt;a href="https://demo.mahara.org/group/topics.php"&gt;Topics&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;nav id="main-nav-admin" class=" nav collapse navbar-collapse nav-main-admin" role="tabpanel"&gt;
+    &lt;ul id="navadmin" class="nav navbar-nav"&gt;
+    &lt;li class="usersearch"&gt;&lt;a href="https://demo.mahara.org/admin/users/search.php" accesskey="u" class="usersearch"&gt;User search&lt;/a&gt;&lt;/li&gt;&lt;li class="reports"&gt;&lt;a href="https://demo.mahara.org/admin/users/statistics.php" accesskey="i" class="reports"&gt;Reports&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+
+
+&lt;nav id="main-nav-user" class=" nav collapse navbar-collapse nav-main-user" role="tabpanel"&gt;
+    &lt;ul id="navuser" class="nav navbar-nav"&gt;
+        &lt;li class="identity has-icon"&gt;
+            &lt;a href="https://demo.mahara.org/user/petra-petterson"&gt;
+                &lt;span class="icon icon-user" role="presentation" aria-hidden="true"&gt;&lt;/span&gt;
+                &lt;span class="nav-title"&gt;Petra Petterson&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+                &lt;li class="settings  has-icon dropdown-item"&gt;
+            &lt;a href="https://demo.mahara.org/account/index.php"&gt;
+                                &lt;span class="icon icon-cogs" role="presentation" aria-hidden="true"&gt;&lt;/span&gt;
+                
+
+                                &lt;span class="nav-title"&gt;Settings&lt;/span&gt;
+                
+            &lt;/a&gt;
+                        &lt;button type="button" class="navbar-showchildren navbar-toggle dropdown-toggle collapsed" data-toggle="collapse" data-parent="navuser" data-target="#userchildmenu-2"&gt;
+                 &lt;span class="icon icon-chevron-down" role="presentation" aria-hidden="true"&gt;&lt;/span&gt;
+                 &lt;span class="nav-title sr-only"&gt;Show menu for Settings&lt;/span&gt;
+            &lt;/button&gt;
+            
+                        &lt;ul id="userchildmenu-2" class=" collapse child-nav" role="menu"&gt;
+            &lt;li class=""&gt;&lt;a href="https://demo.mahara.org/account/index.php"&gt;Settings&lt;/a&gt;&lt;/li&gt;&lt;li class=""&gt;&lt;a href="https://demo.mahara.org/account/userprivacy.php"&gt;Legal&lt;/a&gt;&lt;/li&gt;&lt;li class=""&gt;&lt;a href="https://demo.mahara.org/account/activity/preferences/index.php"&gt;Notifications&lt;/a&gt;&lt;/li&gt;&lt;li class=""&gt;&lt;a href="https://demo.mahara.org/module/mobileapi/apps.php"&gt;Apps&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+            
+        &lt;/li&gt;
+                &lt;li class="inbox  has-icon dropdown-item"&gt;
+            &lt;a id="mail" href="https://demo.mahara.org/module/multirecipientnotification/inbox.php"&gt;
+                                &lt;span class="icon icon-envelope" role="presentation" aria-hidden="true"&gt;&lt;/span&gt;
+                
+
+                                &lt;span class="navcount unreadmessagecount"&gt;
+                    &lt;span class="sr-only"&gt;Inbox: &lt;/span&gt; 3 unread 
+                &lt;/span&gt;
+                
+            &lt;/a&gt;
+            
+            
+        &lt;/li&gt;
+        
+        &lt;li class="btn-logout has-icon"&gt;
+            &lt;a href="https://demo.mahara.org/?logout" accesskey="l"&gt;
+                &lt;span class="icon icon-sign-out" role="presentation" aria-hidden="true"&gt;&lt;/span&gt;
+                &lt;span class="nav-title"&gt;Logout&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+        
+    &lt;/ul&gt;
+&lt;/nav&gt;
+
+
+&lt;div class="navbar-form collapse navbar-collapse"&gt;
+    &lt;form class="pieform header-search-form" name="usf" method="post" action="https://demo.mahara.org/search/elasticsearch/index.php" id="usf"&gt;
+&lt;div&gt;&lt;span id="usf_query_container" class="form-group-inline"&gt;&lt;label class="sr-only" for="usf_query"&gt;Search&lt;/label&gt;&lt;input type="text" class="form-control text" id="usf_query" name="query" placeholder="Search" tabindex="0" value="" /&gt;&lt;/span&gt;&lt;span id="usf_submit_container" class="form-group-inline"&gt;&lt;button type="submit" class="btn-default input-group-btn button btn" id="usf_submit" name="submit" tabindex="0"&gt;&lt;span class="icon icon-search icon-lg" role="presentation" aria-hidden="true"&gt;&lt;/span&gt;&lt;span class="sr-only"&gt;Go&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/div&gt;&lt;input type="hidden" class="hidden" id="usf_sesskey" name="sesskey" value="hzoSwslxTdPQJRC7" /&gt;
+&lt;input type="hidden" name="pieform_usf" value="" /&gt;
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/header&gt;
+
+    &lt;div class="container main-content"&gt;
+        &lt;div class="row"&gt;
+            &lt;main id="main" class="col-md-9  main"&gt;
+                &lt;div id="content" class="main-column"&gt;
+                    &lt;div id="main-column-container"&gt;
+
+                        
+
+                        &lt;div id="messages" role="alert" aria-live="assertive"&gt;&lt;/div&gt;
+                        
+
+                        
+
+                        
+
+&lt;h1&gt;About this demo site&lt;/h1&gt;
+&lt;p&gt;Mahara is a fully featured web application to build your electronic portfolio. You can create journals, upload files, embed third-party resources from the web and collaborate with other users in groups.&lt;br /&gt;&lt;br /&gt;This site runs Mahara 18.04, which was released on 6 April 2018. Please refer to the &lt;a href="http://manual.mahara.org"&gt;Mahara user manual&lt;/a&gt; to learn more about the Mahara features and how it works.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;This demo site will reset itself once a day at 8 p.m. (New Zealand). All content will be erased then and only the pre-configured content will be available.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If you want to keep the personal portfolios you created before the reset, please export them in Leap2A under My Portfolio -&amp;gt; Export to be able to import it into another Mahara later on. You cannot save institution or group settings and content.&lt;/p&gt;
+    &lt;div id="home-info-container" class="dashboard-widget-container"&gt;
+
+    &lt;div class="home-info-boxes loggedin fullwidth"&gt;
+
+                &lt;a href="https://demo.mahara.org/view/index.php" title="Create" class="logged-in thumbnail-widget first"&gt;
+        
+            &lt;div id="home-info-create" class="widget"&gt;
+            &lt;span class="puzzle"&gt;
+            &lt;/span&gt;
+                &lt;div class="widget-heading"&gt;
+                    &lt;h2 class="title"&gt;
+                        Create
+                    &lt;/h2&gt;
+                    &lt;div class="pict"&gt;&lt;img src="https://demo.mahara.org/theme/primaryschool/images/dash-create.png" alt="Engage" /&gt;&lt;/div&gt;
+                    &lt;p&gt;Develop your portfolio&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class="widget-detail"&gt;
+                    &lt;p&gt;Create your electronic portfolio in a flexible personal learning environment&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+                &lt;/a&gt;
+        
+
+                &lt;a href="https://demo.mahara.org/view/share.php" class="logged-in thumbnail-widget"&gt;
+        
+            &lt;div id="home-info-share" class="widget"&gt;
+            &lt;span class="puzzle"&gt;
+            &lt;/span&gt;
+                &lt;div class="widget-heading"&gt;
+                    &lt;h2 class="title"&gt;
+                        Share
+                    &lt;/h2&gt;
+                    &lt;div class="pict"&gt;&lt;img src="https://demo.mahara.org/theme/primaryschool/images/dash-share.png" alt="Engage" /&gt;&lt;/div&gt;
+                    &lt;p&gt;Control your privacy&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class="widget-detail"&gt;
+                    &lt;p&gt;Share your achievements and development in a space you control&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+                &lt;/a&gt;
+        
+
+                &lt;a href="https://demo.mahara.org/group/find.php" class="logged-in thumbnail-widget last"&gt;
+        
+            &lt;div id="home-info-engage" class="widget"&gt;
+            &lt;span class="puzzle"&gt;
+            &lt;/span&gt;
+                &lt;div class="widget-heading"&gt;
+                    &lt;h2 class="title"&gt;
+                        Engage
+                    &lt;/h2&gt;
+                    &lt;div class="pict"&gt;&lt;img src="https://demo.mahara.org/theme/primaryschool/images/dash-engage.png" alt="Engage" /&gt;&lt;/div&gt;
+                    &lt;p&gt;Find people and join groups&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class="widget-detail"&gt;
+                    &lt;p&gt;Engage with other people in discussion forums and collaborate with them in groups&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+                &lt;/a&gt;
+        
+        &lt;span class="penciltip"&gt;
+            &lt;div class="puzzlewrap"&gt;
+                &lt;span class="puzzle"&gt;
+                    &lt;span class="pencillead"&gt;&lt;/span&gt;
+                &lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/span&gt;
+
+                &lt;div id="hideinfo" class="nojs-hidden-block text-right hide-info"&gt;
+            &lt;a href="#" title="Hide information box" class="remove-widgets"&gt;
+                &lt;span class="icon icon-remove" role="presentation" aria-hidden="true"&gt;&lt;/span&gt;
+                &lt;span class=""&gt;Hide information box&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+        
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+    &lt;div class="dashboard-editable"&gt;
+        &lt;div class="btn-top-right btn-group btn-group-top" id="editdashboard"&gt;
+            &lt;a class="btn btn-default" href="https://demo.mahara.org/view/blocks.php?id=14"&gt;&lt;span class="btn-edit"&gt;&lt;span class="icon icon-pencil left" role="presentation" aria-hidden="true"&gt; &lt;/span&gt; Edit dashboard&lt;/span&gt;&lt;/a&gt;
+        &lt;/div&gt;
+
+        &lt;div id="view" class="dashboard view-container"&gt;
+    &lt;div id="bottom-pane"&gt;
+        &lt;div id="column-container"&gt;
+            &lt;div id="row_1" class="clearfix"&gt;
+    &lt;div class="row-content"&gt;
+    &lt;div id="row_1_column_1" class="column-layout columns2 first col-width-50" style="width:48%;"&gt;
+    &lt;div class="column-content"&gt;
+        &lt;div class="bt-newviews panel panel-secondary clearfix " id="blockinstance_60"&gt;
+            &lt;h3 class="title panel-heading js-heading"&gt;
+            
+
+            Latest changes I can view
+            
+
+
+            
+
+        &lt;/h3&gt;
+    
+
+    &lt;div class="block" id="blockinstance_60_target" data-blocktype-ajax="60"&gt;
+        
+
+        
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="bt-myviews panel panel-secondary clearfix " id="blockinstance_61"&gt;
+            &lt;h3 class="title panel-heading js-heading"&gt;
+            
+
+            My portfolios
+            
+
+
+            
+
+        &lt;/h3&gt;
+    
+
+    &lt;div class="block" id="blockinstance_61_target" data-blocktype-noajax="61"&gt;
+            &lt;div class="list-group"&gt;
+        &lt;div id="myviewlist" class="list-group"&gt;
+                &lt;div class="list-group-item"&gt;
+        &lt;a href="https://demo.mahara.org/user/petra-petterson/curriculum-design" class="outer-link"&gt;
+            &lt;span class="sr-only"&gt;Curriculum design&lt;/span&gt;
+        &lt;/a&gt;
+
+        &lt;h4 class="title list-group-item-heading text-inline"&gt;
+            &lt;a href="https://demo.mahara.org/user/petra-petterson/curriculum-design"&gt;Curriculum design&lt;/a&gt;
+        &lt;/h4&gt;
+
+        
+        
+        
+
+        
+    &lt;/div&gt;
+    &lt;div class="list-group-item"&gt;
+        &lt;a href="https://demo.mahara.org/user/petra-petterson/practicum-evaluation" class="outer-link"&gt;
+            &lt;span class="sr-only"&gt;Practicum evaluation&lt;/span&gt;
+        &lt;/a&gt;
+
+        &lt;h4 class="title list-group-item-heading text-inline"&gt;
+            &lt;a href="https://demo.mahara.org/user/petra-petterson/practicum-evaluation"&gt;Practicum evaluation&lt;/a&gt;
+        &lt;/h4&gt;
+
+        
+        
+        
+
+        
+    &lt;/div&gt;
+    &lt;div class="list-group-item"&gt;
+        &lt;a href="https://demo.mahara.org/user/petra-petterson/rtc-10" class="outer-link"&gt;
+            &lt;span class="sr-only"&gt;RTC 10&lt;/span&gt;
+        &lt;/a&gt;
+
+        &lt;h4 class="title list-group-item-heading text-inline"&gt;
+            &lt;a href="https://demo.mahara.org/user/petra-petterson/rtc-10"&gt;RTC 10&lt;/a&gt;
+        &lt;/h4&gt;
+
+        
+        
+        
+
+        
+    &lt;/div&gt;
+    &lt;div class="list-group-item"&gt;
+        &lt;a href="https://demo.mahara.org/user/petra-petterson/rtc-4" class="outer-link"&gt;
+            &lt;span class="sr-only"&gt;RTC 4&lt;/span&gt;
+        &lt;/a&gt;
+
+        &lt;h4 class="title list-group-item-heading text-inline"&gt;
+            &lt;a href="https://demo.mahara.org/user/petra-petterson/rtc-4"&gt;RTC 4&lt;/a&gt;
+        &lt;/h4&gt;
+
+        
+        
+        
+
+        
+    &lt;/div&gt;
+    &lt;div class="list-group-item"&gt;
+        &lt;a href="https://demo.mahara.org/user/petra-petterson/rtc-5" class="outer-link"&gt;
+            &lt;span class="sr-only"&gt;RTC 5&lt;/span&gt;
+        &lt;/a&gt;
+
+        &lt;h4 class="title list-group-item-heading text-inline"&gt;
+            &lt;a href="https://demo.mahara.org/user/petra-petterson/rtc-5"&gt;RTC 5&lt;/a&gt;
+        &lt;/h4&gt;
+
+        
+        
+        
+
+        
+    &lt;/div&gt;
+    &lt;div class="list-group-item"&gt;
+        &lt;a href="https://demo.mahara.org/user/petra-petterson/rtc-6" class="outer-link"&gt;
+            &lt;span class="sr-only"&gt;RTC 6&lt;/span&gt;
+        &lt;/a&gt;
+
+        &lt;h4 class="title list-group-item-heading text-inline"&gt;
+            &lt;a href="https://demo.mahara.org/user/petra-petterson/rtc-6"&gt;RTC 6&lt;/a&gt;
+        &lt;/h4&gt;
+
+        
+        
+        
+
+        
+    &lt;/div&gt;
+    &lt;div class="list-group-item"&gt;
+        &lt;a href="https://demo.mahara.org/user/petra-petterson/rtc-7" class="outer-link"&gt;
+            &lt;span class="sr-only"&gt;RTC 7&lt;/span&gt;
+        &lt;/a&gt;
+
+        &lt;h4 class="title list-group-item-heading text-inline"&gt;
+            &lt;a href="https://demo.mahara.org/user/petra-petterson/rtc-7"&gt;RTC 7&lt;/a&gt;
+        &lt;/h4&gt;
+
+        
+        
+        
+
+        
+    &lt;/div&gt;
+    &lt;div class="list-group-item"&gt;
+        &lt;a href="https://demo.mahara.org/user/petra-petterson/rtc-8" class="outer-link"&gt;
+            &lt;span class="sr-only"&gt;RTC 8&lt;/span&gt;
+        &lt;/a&gt;
+
+        &lt;h4 class="title list-group-item-heading text-inline"&gt;
+            &lt;a href="https://demo.mahara.org/user/petra-petterson/rtc-8"&gt;RTC 8&lt;/a&gt;
+        &lt;/h4&gt;
+
+        
+        
+        
+
+        
+    &lt;/div&gt;
+    &lt;div class="list-group-item"&gt;
+        &lt;a href="https://demo.mahara.org/user/petra-petterson/rtc-9" class="outer-link"&gt;
+            &lt;span class="sr-only"&gt;RTC 9&lt;/span&gt;
+        &lt;/a&gt;
+
+        &lt;h4 class="title list-group-item-heading text-inline"&gt;
+            &lt;a href="https://demo.mahara.org/user/petra-petterson/rtc-9"&gt;RTC 9&lt;/a&gt;
+        &lt;/h4&gt;
+
+        
+        
+        
+
+        
+    &lt;/div&gt;
+    &lt;div class="list-group-item"&gt;
+        &lt;a href="https://demo.mahara.org/user/petra-petterson/rtc-introduction" class="outer-link"&gt;
+            &lt;span class="sr-only"&gt;RTC first-year teacher&lt;/span&gt;
+        &lt;/a&gt;
+
+        &lt;h4 class="title list-group-item-heading text-inline"&gt;
+            &lt;a href="https://demo.mahara.org/user/petra-petterson/rtc-introduction"&gt;RTC first-year teacher&lt;/a&gt;
+        &lt;/h4&gt;
+
+                &lt;span class="text-small text-midtone"&gt;
+            (4 pages)
+        &lt;/span&gt;
+        
+        
+                &lt;div class="list-group-item-text text-small"&gt;
+            Reflecting on my teaching using the Registered Teacher Criteria
+        &lt;/div&gt;
+        
+
+        
+    &lt;/div&gt;
+
+
+        &lt;/div&gt;
+            &lt;div id="myviews_page_container" class=""&gt;&lt;div id="myviews_pagination" class="pagination-wrapper center"&gt;&lt;div class="lead text-small results pull-right"&gt;10 results&lt;/div&gt;&lt;ul class="pagination pagination-xs"&gt;&lt;input type="hidden" id="setlimitselect" name="limit" value="10" /&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;
+    
+        &lt;script type="application/javascript"&gt;
+        jQuery(function($) {
+            new Paginator("myviews_pagination", "myviewlist", null, "blocktype\/myviews\/myviews.json.php", null);
+            $('#myviews_page_container').removeClass('hidden');
+        });
+    &lt;/script&gt;
+    
+    &lt;/div&gt;
+
+
+
+        
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="row_1_column_2" class="column-layout columns2 last col-width-50" style="width:48%;"&gt;
+    &lt;div class="column-content"&gt;
+        &lt;div class="bt-inbox panel panel-secondary clearfix " id="blockinstance_62"&gt;
+            &lt;h3 class="title panel-heading js-heading"&gt;
+            
+
+            Inbox
+            
+
+
+            
+
+        &lt;/h3&gt;
+    
+
+    &lt;div class="block" id="blockinstance_62_target" data-blocktype-ajax="62"&gt;    &lt;div id="inboxblock" class="inboxblock list-group"&gt;
+                &lt;div class="has-attachment panel-default collapsible list-group-item js-panel-unread" data-requesturl="https://demo.mahara.org/module/multirecipientnotification/indexin.json.php"&gt;
+                            &lt;a class="collapsed link-block unread" data-toggle="collapse" href="#message_content_maharamessage_375" data-id="375" aria-expanded="false"&gt;
+                                            &lt;span class="icon icon-wrench text-default left" role="presentation" aria-hidden="true"&gt;&lt;/span&gt;
+                    
+                    &lt;span class="sr-only"&gt;&lt;/span&gt;
+                    Institution membership confirmation
+                    &lt;span class="icon icon-chevron-down collapse-indicator pull-right text-small" role="presentation" aria-hidden="true"&gt;&lt;/span&gt;
+                &lt;/a&gt;
+            
+            &lt;div class="collapse" id="message_content_maharamessage_375"&gt;
+                                    &lt;p class="content-text"&gt;You have been added as a member of School.&lt;/p&gt;
+                    
+                    
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+                &lt;div class="has-attachment panel-default collapsible list-group-item js-panel-unread" data-requesturl="https://demo.mahara.org/module/multirecipientnotification/indexin.json.php"&gt;
+                            &lt;a class="collapsed link-block unread" data-toggle="collapse" href="#message_content_maharamessage_373" data-id="373" aria-expanded="false"&gt;
+                                            &lt;span class="icon icon-wrench text-default left" role="presentation" aria-hidden="true"&gt;&lt;/span&gt;
+                    
+                    &lt;span class="sr-only"&gt;&lt;/span&gt;
+                    Institution membership confirmation
+                    &lt;span class="icon icon-chevron-down collapse-indicator pull-right text-small" role="presentation" aria-hidden="true"&gt;&lt;/span&gt;
+                &lt;/a&gt;
+            
+            &lt;div class="collapse" id="message_content_maharamessage_373"&gt;
+                                    &lt;p class="content-text"&gt;You have been added as a member of Career Service.&lt;/p&gt;
+                    
+                    
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+                &lt;div class="has-attachment panel-default collapsible list-group-item js-panel-unread" data-requesturl="https://demo.mahara.org/module/multirecipientnotification/indexin.json.php"&gt;
+                            &lt;a class="collapsed link-block unread" data-toggle="collapse" href="#message_content_viewaccess_370" data-id="370" aria-expanded="false"&gt;
+                                            &lt;span class="icon icon-wrench text-default left" role="presentation" aria-hidden="true"&gt;&lt;/span&gt;
+                    
+                    &lt;span class="sr-only"&gt;&lt;/span&gt;
+                    New access to page "Assessment"
+                    &lt;span class="icon icon-chevron-down collapse-indicator pull-right text-small" role="presentation" aria-hidden="true"&gt;&lt;/span&gt;
+                &lt;/a&gt;
+            
+            &lt;div class="collapse" id="message_content_viewaccess_370"&gt;
+                                    &lt;p class="content-text"&gt;You have been added to the access list for the page "Assessment" by Portfolio task force&lt;/p&gt;
+                                        &lt;a href="https://demo.mahara.org/group/portfolio-task-force/assessment" class="text-small"&gt;
+                        Page &lt;span class="icon icon-arrow-right mls icon-sm" role="presentation" aria-hidden="true"&gt;&lt;/span&gt;
+                    &lt;/a&gt;
+                    
+                    
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+                &lt;div class="has-attachment panel-default collapsible list-group-item" data-requesturl="https://demo.mahara.org/module/multirecipientnotification/indexin.json.php"&gt;
+                            &lt;a class="collapsed link-block" data-toggle="collapse" href="#message_content_maharamessage_267" data-id="267" aria-expanded="false"&gt;
+                                            &lt;span class="icon icon-wrench text-default left" role="presentation" aria-hidden="true"&gt;&lt;/span&gt;
+                    
+                    &lt;span class="sr-only"&gt;&lt;/span&gt;
+                    An administrator logged in as you
+                    &lt;span class="icon icon-chevron-down collapse-indicator pull-right text-small" role="presentation" aria-hidden="true"&gt;&lt;/span&gt;
+                &lt;/a&gt;
+            
+            &lt;div class="collapse" id="message_content_maharamessage_267"&gt;
+                                    &lt;p class="content-text"&gt;The administrator Anna Alphonso logged into your account on 14 February 2016,  3:44 PM. The reason was: Check group settings&lt;/p&gt;
+                                        &lt;a href="https://demo.mahara.org/user/anna-alphonso" class="text-small"&gt;
+                        Anna Alphonso &lt;span class="icon icon-arrow-right mls icon-sm" role="presentation" aria-hidden="true"&gt;&lt;/span&gt;
+                    &lt;/a&gt;
+                    
+                    
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+                &lt;div class="has-attachment panel-default collapsible list-group-item" data-requesturl="https://demo.mahara.org/module/multirecipientnotification/indexin.json.php"&gt;
+                            &lt;a class="collapsed link-block" data-toggle="collapse" href="#message_content_maharamessage_263" data-id="263" aria-expanded="false"&gt;
+                                            &lt;span class="icon icon-wrench text-default left" role="presentation" aria-hidden="true"&gt;&lt;/span&gt;
+                    
+                    &lt;span class="sr-only"&gt;&lt;/span&gt;
+                    An administrator logged in as you
+                    &lt;span class="icon icon-chevron-down collapse-indicator pull-right text-small" role="presentation" aria-hidden="true"&gt;&lt;/span&gt;
+                &lt;/a&gt;
+            
+            &lt;div class="collapse" id="message_content_maharamessage_263"&gt;
+                                    &lt;p class="content-text"&gt;The administrator Anna Alphonso logged into your account on 10 February 2016,  7:55 AM. The reason was: Submission test&lt;/p&gt;
+                                        &lt;a href="https://demo.mahara.org/user/anna-alphonso" class="text-small"&gt;
+                        Anna Alphonso &lt;span class="icon icon-arrow-right mls icon-sm" role="presentation" aria-hidden="true"&gt;&lt;/span&gt;
+                    &lt;/a&gt;
+                    
+                    
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+        
+    &lt;/div&gt;
+        &lt;div class="artefact-detail-link"&gt;
+        &lt;a class="link-blocktype last" href="https://demo.mahara.org/module/multirecipientnotification/inbox.php?type=feedback,groupmessage,institutionmessage,maharamessage,usermessage,viewaccess,watchlist,wallpost"&gt;
+        &lt;span class="icon icon-arrow-circle-right" role="presentation" aria-hidden="true"&gt;&lt;/span&gt;
+        More&lt;/a&gt;
+    &lt;/div&gt;
+    
+    &lt;script type="application/javascript"&gt;
+    jQuery(document).trigger('pageupdated');
+    &lt;/script&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="bt-inbox panel panel-secondary clearfix " id="blockinstance_63"&gt;
+            &lt;h3 class="title panel-heading js-heading"&gt;
+            
+
+            Topics I am following
+            
+
+
+            
+
+        &lt;/h3&gt;
+    
+
+    &lt;div class="block" id="blockinstance_63_target" data-blocktype-ajax="63"&gt;    &lt;div class="panel-body"&gt;
+        &lt;p class="lead text-small"&gt;No messages&lt;/p&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="bt-watchlist panel panel-secondary clearfix " id="blockinstance_64"&gt;
+            &lt;h3 class="title panel-heading js-heading"&gt;
+            
+
+            Watched pages
+            
+
+
+            
+
+        &lt;/h3&gt;
+    
+
+    &lt;div class="block" id="blockinstance_64_target" data-blocktype-noajax="64"&gt;
+            &lt;ul id="watchlistblock" class="viewlist list-group"&gt;
+                    &lt;li class="list-group-item"&gt;
+            &lt;a href="https://demo.mahara.org/user/paula-paulsen/123-go" class=" outer-link watchlist-showview"&gt;
+                &lt;span class="sr-only"&gt;123 Go!&lt;/span&gt;
+            &lt;/a&gt;
+            &lt;h4 class="title list-group-item-heading"&gt;
+                123 Go!
+            &lt;/h4&gt;
+                            &lt;div class="groupuserdate text-small"&gt;
+                                                            &lt;a class="inner-link" href="https://demo.mahara.org/user/paula-paulsen"&gt;Paula Paulsen (student)&lt;/a&gt;
+                    
+                
+                &lt;span class="postedon text-midtone"&gt;
+                - Updated
+                14 June 2016&lt;/span&gt;
+                &lt;/div&gt;
+            
+        &lt;/li&gt;
+            &lt;li class="list-group-item"&gt;
+            &lt;a href="https://demo.mahara.org/group/portfolio-discussions/portfolio-feedback-template" class=" outer-link watchlist-showview"&gt;
+                &lt;span class="sr-only"&gt;Portfolio feedback template&lt;/span&gt;
+            &lt;/a&gt;
+            &lt;h4 class="title list-group-item-heading"&gt;
+                Portfolio feedback template
+            &lt;/h4&gt;
+                            &lt;div class="groupuserdate text-small"&gt;
+                                &lt;a class="inner-link" href="https://demo.mahara.org/group/portfolio-discussions"&gt;Portfolio discussions&lt;/a&gt;
+                
+                &lt;span class="postedon text-midtone"&gt;
+                - Updated
+                28 December 2015&lt;/span&gt;
+                &lt;/div&gt;
+            
+        &lt;/li&gt;
+            &lt;li class="list-group-item"&gt;
+            &lt;a href="https://demo.mahara.org/user/paula-paulsen/portfolio-research" class=" outer-link watchlist-showview"&gt;
+                &lt;span class="sr-only"&gt;Portfolio research&lt;/span&gt;
+            &lt;/a&gt;
+            &lt;h4 class="title list-group-item-heading"&gt;
+                Portfolio research
+            &lt;/h4&gt;
+                            &lt;div class="groupuserdate text-small"&gt;
+                                                            &lt;a class="inner-link" href="https://demo.mahara.org/user/paula-paulsen"&gt;Paula Paulsen (student)&lt;/a&gt;
+                    
+                
+                &lt;span class="postedon text-midtone"&gt;
+                - Updated
+                 3 January 2016&lt;/span&gt;
+                &lt;/div&gt;
+            
+        &lt;/li&gt;
+    
+
+    &lt;/ul&gt;
+            &lt;div id="watchlist_page_container" class=""&gt;&lt;div id="watchlist_pagination" class="pagination-wrapper center"&gt;&lt;div class="lead text-small results pull-right"&gt;3 results&lt;/div&gt;&lt;ul class="pagination pagination-xs"&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;
+    
+        &lt;script type="application/javascript"&gt;
+        jQuery(function($) {
+            new Paginator("watchlist_pagination", "watchlistblock", null, "blocktype\/watchlist\/watchlist.json.php", null);
+            $('#watchlist_page_container').removeClass('hidden');
+        });
+    &lt;/script&gt;
+    
+
+
+
+        
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+    &lt;/div&gt;
+
+                    &lt;/div&gt;&lt;!-- end main-column --&gt;
+
+                &lt;/div&gt;&lt;!-- mainmiddle --&gt;
+
+            &lt;/main&gt;
+
+                        &lt;div class="col-md-3 sidebar"&gt;
+                    &lt;div id="sb-profile" class="sideblock-1 user-panel"&gt;
+&lt;div class="panel panel-default"&gt;
+        &lt;h3 class="panel-heading profile-block"&gt;
+            &lt;a href="https://demo.mahara.org/user/petra-petterson" class="username"&gt;Petra Petterson&lt;/a&gt;
+            &lt;a href="https://demo.mahara.org/artefact/file/profileicons.php" title="Edit profile picture" class="user-icon"&gt;
+                &lt;img src="https://demo.mahara.org/thumb.php?type=profileiconbyid&amp;amp;maxwidth=60&amp;amp;maxheight=60&amp;amp;id=36" alt="Edit profile picture" /&gt;
+            &lt;/a&gt;
+        &lt;/h3&gt;
+    &lt;div class="list-group"&gt;
+        
+        
+        
+                    &lt;div id="groups" class="list-group-item"&gt;
+                &lt;div class="list-group-item-heading sidebar-item-heading"&gt;&lt;a href="https://demo.mahara.org/group/mygroups.php"&gt;My groups:&lt;/a&gt;&lt;/div&gt;
+                &lt;ul class="list-nested list-group-item-text list-unstyled list-group-item-link"&gt;
+                            &lt;li&gt;&lt;a href="https://demo.mahara.org/group/graduation-party-preparation" class="bordered"&gt;Graduation party preparation &lt;small&gt;(Administrator)&lt;/small&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="https://demo.mahara.org/group/human-computer-interaction-101" class="bordered"&gt;Human Computer Interaction 101 &lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="https://demo.mahara.org/group/internship-preparation" class="bordered"&gt;Internship preparation &lt;small&gt;(Administrator)&lt;/small&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="https://demo.mahara.org/group/photography-club" class="bordered"&gt;Photography club &lt;small&gt;(Administrator)&lt;/small&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="https://demo.mahara.org/group/portfolio-discussions" class="bordered"&gt;Portfolio discussions &lt;small&gt;(Administrator)&lt;/small&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="https://demo.mahara.org/group/portfolio-task-force" class="bordered"&gt;Portfolio task force &lt;/a&gt;&lt;/li&gt;
+        
+               &lt;/ul&gt;
+                &lt;span class="text-small text-midtone"&gt;&lt;/span&gt;
+            &lt;/div&gt;
+        
+        
+        
+    &lt;/div&gt;
+    
+    
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+&lt;div id="sb-onlineusers" class="sideblock-2 "&gt;
+&lt;div class="panel panel-default"&gt;
+    &lt;h3 class="panel-heading"&gt;
+        Online users
+        &lt;br /&gt;
+        &lt;span id="lastminutes" class="text-small text-midtone"&gt;(Last 10 minutes)&lt;/span&gt;
+    &lt;/h3&gt;
+    &lt;ul class="list-group"&gt;
+                    &lt;li class="list-group-item list-unstyled list-group-item-link"&gt;
+                &lt;a href="https://demo.mahara.org/user/petra-petterson" class="online-user"&gt;
+                    &lt;span class="user-icon"&gt;
+                        &lt;img src="https://demo.mahara.org/thumb.php?type=profileiconbyid&amp;amp;maxwidth=20&amp;amp;maxheight=20&amp;amp;id=36" alt="Petra Petterson's profile picture" class="profile-icon-container" /&gt;
+                    &lt;/span&gt;
+                    &lt;span class="user-name"&gt;
+                        Petra Petterson
+                        
+                    &lt;/span&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+                    &lt;li class="list-group-item list-unstyled list-group-item-link"&gt;
+                &lt;a href="https://demo.mahara.org/user/percy-pearle" class="online-user"&gt;
+                    &lt;span class="user-icon"&gt;
+                        &lt;img src="https://demo.mahara.org/thumb.php?type=profileiconbyid&amp;amp;maxwidth=20&amp;amp;maxheight=20&amp;amp;id=34" alt="Percy Pearle's profile picture" class="profile-icon-container" /&gt;
+                    &lt;/span&gt;
+                    &lt;span class="user-name"&gt;
+                        Percy Pearle (Percy Douglas John Pearle - staff)
+                        
+                    &lt;/span&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+                    &lt;li class="list-group-item list-unstyled list-group-item-link"&gt;
+                &lt;a href="https://demo.mahara.org/user/polly-potter" class="online-user"&gt;
+                    &lt;span class="user-icon"&gt;
+                        &lt;img src="https://demo.mahara.org/thumb.php?type=profileiconbyid&amp;amp;maxwidth=20&amp;amp;maxheight=20&amp;amp;id=38" alt="Polly Potter's profile picture" class="profile-icon-container" /&gt;
+                    &lt;/span&gt;
+                    &lt;span class="user-name"&gt;
+                        Polly Potter (learner)
+                        
+                    &lt;/span&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+                    &lt;li class="list-group-item list-unstyled list-group-item-link"&gt;
+                &lt;a href="https://demo.mahara.org/user/paula-paulsen" class="online-user"&gt;
+                    &lt;span class="user-icon"&gt;
+                        &lt;img src="https://demo.mahara.org/thumb.php?type=profileiconbyid&amp;amp;maxwidth=20&amp;amp;maxheight=20&amp;amp;id=31" alt="Paula Paulsen's profile picture" class="profile-icon-container" /&gt;
+                    &lt;/span&gt;
+                    &lt;span class="user-name"&gt;
+                        Paula Paulsen (student)
+                        
+                    &lt;/span&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+                    &lt;li class="list-group-item list-unstyled list-group-item-link"&gt;
+                &lt;a href="https://demo.mahara.org/user/james-jetts" class="online-user"&gt;
+                    &lt;span class="user-icon"&gt;
+                        &lt;img src="https://demo.mahara.org/thumb.php?type=profileiconbyid&amp;amp;maxwidth=20&amp;amp;maxheight=20&amp;amp;id=29" alt="James Jetts's profile picture" class="profile-icon-container" /&gt;
+                    &lt;/span&gt;
+                    &lt;span class="user-name"&gt;
+                        James Jetts (admin)
+                        
+                    &lt;/span&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+        
+    &lt;/ul&gt;
+    &lt;a href="https://demo.mahara.org/user/online.php" class="online-users panel-footer text-small" id="allonline"&gt;
+        Show all online users
+        &lt;span class="icon icon-arrow-circle-right pull-right" role="presentation" aria-hidden="true"&gt;&lt;/span&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+&lt;div id="sb-progressbar" class="sideblock-3 progressbar"&gt;
+&lt;div class="panel panel-default"&gt;
+    &lt;h3 class="panel-heading"&gt;
+        Profile completion
+    &lt;/h3&gt;
+    &lt;div class="panel-body"&gt;
+        
+
+        &lt;div id="progressbarwrap" class="progress-container"&gt;
+                            &lt;div class="progress"&gt;
+                    &lt;div id="progress_bar_fill" class="progress-bar small-progress" role="progressbar" aria-valuemax="100" aria-valuemin="0" style="width: 0%;"&gt;
+                        &lt;span id="progress_bar_percentage"&gt;0%&lt;/span&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div id="profile_completeness_tips" class="list-group"&gt;
+                    &lt;span class="hidden" id="progress_counting_total"&gt;7&lt;/span&gt;
+                    &lt;span class="hidden" id="progress_completed_total"&gt;0&lt;/span&gt;
+                    &lt;div class="list-group-item-heading"&gt;Profile completion tips&lt;/div&gt;
+                    &lt;ul class="list-nested list-group-item-text list-unstyled list-group-item-link"&gt;
+                                                &lt;li&gt;
+                            &lt;span id="progress_counting_blogaddress" class="hidden"&gt;1&lt;/span&gt;
+                            &lt;span id="progress_completed_blogaddress" class="hidden"&gt;0&lt;/span&gt;
+                            &lt;a href="https://demo.mahara.org/artefact/internal/index.php?fs=contact"&gt;&lt;span id="progress_item_blogaddress"&gt;Add your blog address&lt;/span&gt;&lt;/a&gt;
+                        &lt;/li&gt;
+                                                &lt;li&gt;
+                            &lt;span id="progress_counting_educationhistory" class="hidden"&gt;1&lt;/span&gt;
+                            &lt;span id="progress_completed_educationhistory" class="hidden"&gt;0&lt;/span&gt;
+                            &lt;a href="https://demo.mahara.org/artefact/resume/employment.php"&gt;&lt;span id="progress_item_educationhistory"&gt;Add your education history&lt;/span&gt;&lt;/a&gt;
+                        &lt;/li&gt;
+                                                &lt;li&gt;
+                            &lt;span id="progress_counting_personalgoal" class="hidden"&gt;1&lt;/span&gt;
+                            &lt;span id="progress_completed_personalgoal" class="hidden"&gt;0&lt;/span&gt;
+                            &lt;a href="https://demo.mahara.org/artefact/resume/goalsandskills.php"&gt;&lt;span id="progress_item_personalgoal"&gt;Add your personal goals&lt;/span&gt;&lt;/a&gt;
+                        &lt;/li&gt;
+                                                &lt;li&gt;
+                            &lt;span id="progress_counting_academicgoal" class="hidden"&gt;1&lt;/span&gt;
+                            &lt;span id="progress_completed_academicgoal" class="hidden"&gt;0&lt;/span&gt;
+                            &lt;a href="https://demo.mahara.org/artefact/resume/goalsandskills.php"&gt;&lt;span id="progress_item_academicgoal"&gt;Add your academic goals&lt;/span&gt;&lt;/a&gt;
+                        &lt;/li&gt;
+                                                &lt;li&gt;
+                            &lt;span id="progress_counting_careergoal" class="hidden"&gt;1&lt;/span&gt;
+                            &lt;span id="progress_completed_careergoal" class="hidden"&gt;0&lt;/span&gt;
+                            &lt;a href="https://demo.mahara.org/artefact/resume/goalsandskills.php"&gt;&lt;span id="progress_item_careergoal"&gt;Add your career goals&lt;/span&gt;&lt;/a&gt;
+                        &lt;/li&gt;
+                                                &lt;li&gt;
+                            &lt;span id="progress_counting_personalskill" class="hidden"&gt;1&lt;/span&gt;
+                            &lt;span id="progress_completed_personalskill" class="hidden"&gt;0&lt;/span&gt;
+                            &lt;a href="https://demo.mahara.org/artefact/resume/goalsandskills.php"&gt;&lt;span id="progress_item_personalskill"&gt;Add your personal skills&lt;/span&gt;&lt;/a&gt;
+                        &lt;/li&gt;
+                                                &lt;li&gt;
+                            &lt;span id="progress_counting_academicskill" class="hidden"&gt;1&lt;/span&gt;
+                            &lt;span id="progress_completed_academicskill" class="hidden"&gt;0&lt;/span&gt;
+                            &lt;a href="https://demo.mahara.org/artefact/resume/goalsandskills.php"&gt;&lt;span id="progress_item_academicskill"&gt;Add your academic skills&lt;/span&gt;&lt;/a&gt;
+                        &lt;/li&gt;
+                        
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;/div&gt;
+&lt;div class="sideblock-4 "&gt;
+&lt;div class="panel panel-default"&gt;
+    &lt;h3 class="panel-heading"&gt;
+        Links and resources
+    &lt;/h3&gt;
+    &lt;ul class="list-group"&gt;
+            &lt;li class="list-group-item"&gt;
+            &lt;a href="https://mahara.org"&gt;Mahara community website&lt;/a&gt;
+        &lt;/li&gt;
+            &lt;li class="list-group-item"&gt;
+            &lt;a href="http://manual.mahara.org"&gt;Mahara user manual&lt;/a&gt;
+        &lt;/li&gt;
+            &lt;li class="list-group-item"&gt;
+            &lt;a href="https://wiki.mahara.org"&gt;Mahara wiki&lt;/a&gt;
+        &lt;/li&gt;
+            &lt;li class="list-group-item"&gt;
+            &lt;a href="https://youtu.be/FBXrJBx4bWk"&gt;New features in Mahara 18.04&lt;/a&gt;
+        &lt;/li&gt;
+    
+    &lt;/ul&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+
+
+
+            &lt;/div&gt;
+            
+
+            
+
+        &lt;/div&gt;&lt;!-- row --&gt;
+
+    &lt;/div&gt;&lt;!-- container --&gt;
+
+&lt;!-- middle-container-wrap --&gt;
+
+&lt;footer class=" footer"&gt;
+    &lt;div class="footer-inner container"&gt;
+        &lt;div id="powered-by" class="pull-left mahara-logo"&gt;
+            &lt;a href="https://mahara.org/"&gt;
+                &lt;img src="https://demo.mahara.org/theme/raw/images/powered_by_mahara.svg?v=3077" alt="Powered by Mahara" class="mahara-footer-logo" /&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;!-- This site is powered by Mahara, an Open Source
+        ePortfolio system. See https://mahara.org/ for more
+        details.
+        NOTE: this image and link are a way that you can
+        support the Mahara project. Please consider
+        displaying them on your site to spread the word! --&gt;
+        &lt;ul class="nav nav-pills footer-nav pull-left"&gt;
+                    &lt;li&gt;
+                                &lt;a href="https://demo.mahara.org/account/userprivacy.php"&gt;Legal&lt;/a&gt;
+                
+            &lt;/li&gt;
+                    &lt;li&gt;
+                                &lt;a href="https://demo.mahara.org/about.php"&gt;About&lt;/a&gt;
+                
+            &lt;/li&gt;
+                    &lt;li&gt;
+                                &lt;a id="footerhelp" href="http://manual.mahara.org/en/18.04/intro/dashboard.html#overview"&gt;Help&lt;/a&gt;
+                
+            &lt;/li&gt;
+        
+        &lt;/ul&gt;
+        &lt;div class="metadata pull-right mahara-version" id="version"&gt;
+            
+        &lt;/div&gt;
+
+        &lt;div class="metadata text-center fullwidth site-performace"&gt;
+            &lt;!-- there is a div id="performance-info" wrapping this --&gt;
+            
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/footer&gt;&lt;!-- footer-wrap --&gt;
+&lt;!-- Piwik --&gt;&lt;script type="text/javascript"&gt;var _paq = _paq || [];_paq.push(["trackPageView"]);_paq.push(["enableLinkTracking"]);(function() {var u="//www.catalyst-analytics.nz/";_paq.push(["setTrackerUrl", u+"piwik.php"]);_paq.push(["setSiteId", 3]);var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0];g.type="text/javascript"; g.async=true; g.defer=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);})();&lt;/script&gt;&lt;noscript&gt;&amp;lt;p&amp;gt;&amp;lt;img src="//www.catalyst-analytics.nz/piwik.php?idsite=3" style="border:0;" alt="" /&amp;gt;&amp;lt;/p&amp;gt;&lt;/noscript&gt;&lt;!-- End Piwik Code --&gt;
+
+
+
+&lt;div id="lbOverlay" style="display: none;"&gt;&lt;/div&gt;&lt;div id="lbCenter" style="display: none;"&gt;&lt;div id="lbImage"&gt;&lt;div style="position: relative;"&gt;&lt;a id="lbPrevLink" href="#"&gt;&lt;/a&gt;&lt;a id="lbNextLink" href="#"&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id="lbBottomContainer" style="display: none;"&gt;&lt;div id="lbBottom"&gt;&lt;a id="lbCloseLink" href="#"&gt;&lt;/a&gt;&lt;div id="lbCaption"&gt;&lt;/div&gt;&lt;div id="lbNumber"&gt;&lt;/div&gt;&lt;div style="clear: both;"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181104 01:02:47.984" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-21.png"&gt;&lt;img src="selenium-screenshot-21.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20181104 01:02:47.603" endtime="20181104 01:02:47.985"></status>
+</kw>
+<msg timestamp="20181104 01:02:47.987" level="FAIL">Page should have contained link 'xpath=//*[contains(@href, 'https://demo.mahara.org/user/paula-paulsen') and contains(@class, 'username')]' but did not.</msg>
+<status status="FAIL" starttime="20181104 01:02:47.562" endtime="20181104 01:02:47.987"></status>
+</kw>
+<status status="FAIL" starttime="20181104 01:02:47.562" endtime="20181104 01:02:47.987"></status>
+</kw>
+<kw name="Capture Screenshot And Close Browser" library="Mahara_Keywords" type="teardown">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181104 01:02:48.342" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-22.png"&gt;&lt;img src="selenium-screenshot-22.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20181104 01:02:47.988" endtime="20181104 01:02:48.342"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20181104 01:02:48.342" endtime="20181104 01:02:50.480"></status>
+</kw>
+<status status="PASS" starttime="20181104 01:02:47.988" endtime="20181104 01:02:50.480"></status>
+</kw>
+<status status="FAIL" starttime="20181104 01:02:32.877" endtime="20181104 01:02:50.481" critical="yes">Page should have contained link 'xpath=//*[contains(@href, 'https://demo.mahara.org/user/paula-paulsen') and contains(@class, 'username')]' but did not.</status>
+</test>
+<status status="FAIL" starttime="20181104 01:01:06.227" endtime="20181104 01:02:50.484"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0">Critical Tests</stat>
-<stat pass="2" fail="0">All Tests</stat>
+<stat pass="5" fail="1">Critical Tests</stat>
+<stat pass="5" fail="1">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="2" fail="0" id="s1" name="Mahara Test">Mahara Test</stat>
+<stat pass="5" fail="1" id="s1" name="Mahara Test">Mahara Test</stat>
 </suite>
 </statistics>
 <errors>
