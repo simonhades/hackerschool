@@ -1,0 +1,33 @@
+*** Settings ***
+Library    SeleniumLibrary
+
+*** Variables ***
+&{USERS}=    INVALID= Invalid    ADMIN=Admin    STUDENT=Student    LEARNER=Learner    STAFF=Staff    SITESTAFF=Sitestaff
+&{PASSWORDS}=    VALID=MaharaDemo  INVALID=Invalid
+&{PERSON}=    ADMIN=james-jetts  STUDENT=paula-paulsen    LEARNER=polly-potter    STAFF=percy-pearle    SITESTAFF=petra-petterson
+
+*** Keywords ***
+Open Browser To Mahara
+    Open Browser    https://demo.mahara.org/    chrome
+    Maximize Browser Window
+    
+Login To Mahara
+    [Arguments]    ${users}    ${passwords}
+    Input Text    id=login_login_username    ${users}
+    Input Password    name=login_password    ${passwords}
+    Click Button    id=login_submit  
+
+Capture Screenshot And Close Browser
+    Capture Page Screenshot
+    Close Browser
+
+Credentials And Form Alerts
+    Wait Until Page Contains Element        id=messages
+    Page Should Contain    You have not provided the correct credentials to log in. Please check your username and password are correct.
+    Page Should Contain    There was an error with submitting this form. Please check the marked fields and try again.
+    
+Person Should Be Logged
+    [Arguments]    ${person}
+    Page Should Contain Link    xpath=//*[contains(@href, 'https://demo.mahara.org/user/${person}') and contains(@class, 'username')]
+    Page Should Contain Element    xpath=//a[@class="user-icon"]
+    
