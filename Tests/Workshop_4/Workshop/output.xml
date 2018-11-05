@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.6.6 on win32)" generated="20181105 19:01:59.867">
+<suite id="s1" name="Sign Up Testing" source="C:\Users\User\eclipse-workspace\hackerschool\Tests\Workshop_4\Workshop\Sign_Up_Testing.robot">
+<test id="s1-t1" name="Register To Eshop">
+<kw name="Open Browser" library="SeleniumLibrary" type="setup">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20181105 19:02:00.086" level="INFO">Opening browser 'firefox' to base url 'http://automationpractice.com/index.php'.</msg>
+<status status="PASS" starttime="20181105 19:02:00.086" endtime="20181105 19:02:08.687"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${link_login}</arg>
+</arguments>
+<msg timestamp="20181105 19:02:08.688" level="INFO">Clicking link 'class=login'.</msg>
+<status status="PASS" starttime="20181105 19:02:08.688" endtime="20181105 19:02:10.060"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${auth_tbox_email}</arg>
+</arguments>
+<status status="PASS" starttime="20181105 19:02:10.060" endtime="20181105 19:02:10.075"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${auth_tbox_email}</arg>
+<arg>hello@trtrr.tr</arg>
+</arguments>
+<msg timestamp="20181105 19:02:10.076" level="INFO">Typing text 'hello@trtrr.tr' into text field 'id=email_create'.</msg>
+<status status="PASS" starttime="20181105 19:02:10.076" endtime="20181105 19:02:10.126"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_create_account}</arg>
+</arguments>
+<msg timestamp="20181105 19:02:10.128" level="INFO">Clicking button 'id=SubmitCreate'.</msg>
+<status status="PASS" starttime="20181105 19:02:10.128" endtime="20181105 19:02:10.398"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${sup_radio_mrs}</arg>
+</arguments>
+<status status="PASS" starttime="20181105 19:02:10.398" endtime="20181105 19:02:11.423"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${sup_radio_mrs}</arg>
+</arguments>
+<msg timestamp="20181105 19:02:11.424" level="INFO">Clicking element 'id=id_gender2'.</msg>
+<status status="PASS" starttime="20181105 19:02:11.424" endtime="20181105 19:02:11.648"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${sup_tbox_first_name}</arg>
+<arg>Hacker</arg>
+</arguments>
+<msg timestamp="20181105 19:02:11.649" level="INFO">Typing text 'Hacker' into text field 'id=customer_firstname'.</msg>
+<status status="PASS" starttime="20181105 19:02:11.648" endtime="20181105 19:02:11.677"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${sup_tbox_last_name}</arg>
+<arg>School</arg>
+</arguments>
+<msg timestamp="20181105 19:02:11.677" level="INFO">Typing text 'School' into text field 'id=customer_lastname'.</msg>
+<status status="PASS" starttime="20181105 19:02:11.677" endtime="20181105 19:02:11.707"></status>
+</kw>
+<kw name="Textfield Should Contain" library="SeleniumLibrary">
+<doc>Verifies text field ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>${sup_tbox_email}</arg>
+<arg>hello@trtrr.tr</arg>
+</arguments>
+<msg timestamp="20181105 19:02:11.744" level="INFO">Text field 'id=email' contains text 'hello@trtrr.tr'.</msg>
+<status status="PASS" starttime="20181105 19:02:11.707" endtime="20181105 19:02:11.744"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${sup_pwd_password}</arg>
+<arg>password</arg>
+</arguments>
+<msg timestamp="20181105 19:02:11.745" level="INFO">Typing password into text field 'id=passwd'.</msg>
+<status status="PASS" starttime="20181105 19:02:11.745" endtime="20181105 19:02:11.777"></status>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<arguments>
+<arg>${sup_dropdown_day}</arg>
+<arg>26</arg>
+</arguments>
+<msg timestamp="20181105 19:02:11.778" level="INFO">Selecting options from selection list 'id=days' by index 26.</msg>
+<status status="PASS" starttime="20181105 19:02:11.778" endtime="20181105 19:02:12.431"></status>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${sup_dropdown_month}</arg>
+<arg>March${SPACE}</arg>
+</arguments>
+<msg timestamp="20181105 19:02:12.431" level="INFO">Selecting options from selection list 'id=months' by label March .</msg>
+<status status="PASS" starttime="20181105 19:02:12.431" endtime="20181105 19:02:12.713"></status>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>${sup_dropdown_year}</arg>
+<arg>2010</arg>
+</arguments>
+<msg timestamp="20181105 19:02:12.713" level="INFO">Selecting options from selection list 'id=years' by value 2010.</msg>
+<status status="PASS" starttime="20181105 19:02:12.713" endtime="20181105 19:02:12.994"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${sup_chck_newsletter}</arg>
+</arguments>
+<msg timestamp="20181105 19:02:12.994" level="INFO">Clicking element 'id=newsletter'.</msg>
+<status status="PASS" starttime="20181105 19:02:12.994" endtime="20181105 19:02:13.228"></status>
+</kw>
+<kw name="Textfield Should Contain" library="SeleniumLibrary">
+<doc>Verifies text field ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>${addr_tbox_first_name}</arg>
+<arg>Hacker</arg>
+</arguments>
+<msg timestamp="20181105 19:02:13.244" level="INFO">Text field 'id=firstname' contains text 'Hacker'.</msg>
+<status status="PASS" starttime="20181105 19:02:13.228" endtime="20181105 19:02:13.244"></status>
+</kw>
+<kw name="Textfield Should Contain" library="SeleniumLibrary">
+<doc>Verifies text field ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>${addr_tbox_last_name}</arg>
+<arg>School</arg>
+</arguments>
+<msg timestamp="20181105 19:02:13.275" level="INFO">Text field 'id=lastname' contains text 'School'.</msg>
+<status status="PASS" starttime="20181105 19:02:13.244" endtime="20181105 19:02:13.275"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${addr_tbox_address1}</arg>
+<arg>Gorazdova, 4444</arg>
+</arguments>
+<msg timestamp="20181105 19:02:13.275" level="INFO">Typing text 'Gorazdova, 4444' into text field 'id=address1'.</msg>
+<status status="PASS" starttime="20181105 19:02:13.275" endtime="20181105 19:02:13.322"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${addr_tbox_city}</arg>
+<arg>Prague</arg>
+</arguments>
+<msg timestamp="20181105 19:02:13.322" level="INFO">Typing text 'Prague' into text field 'id=city'.</msg>
+<status status="PASS" starttime="20181105 19:02:13.322" endtime="20181105 19:02:13.353"></status>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${addr_dropdown_state}</arg>
+<arg>Arizona</arg>
+</arguments>
+<msg timestamp="20181105 19:02:13.353" level="INFO">Selecting options from selection list 'id=id_state' by label Arizona.</msg>
+<status status="PASS" starttime="20181105 19:02:13.353" endtime="20181105 19:02:13.619"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${addr_tbox_zip}</arg>
+<arg>12000</arg>
+</arguments>
+<msg timestamp="20181105 19:02:13.619" level="INFO">Typing text '12000' into text field 'id=postcode'.</msg>
+<status status="PASS" starttime="20181105 19:02:13.619" endtime="20181105 19:02:13.634"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${addr_tbox_cellphone}</arg>
+<arg>+420666999888</arg>
+</arguments>
+<msg timestamp="20181105 19:02:13.634" level="INFO">Typing text '+420666999888' into text field 'id=phone_mobile'.</msg>
+<status status="PASS" starttime="20181105 19:02:13.634" endtime="20181105 19:02:13.681"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${sup_btn_register}</arg>
+</arguments>
+<msg timestamp="20181105 19:02:13.681" level="INFO">Clicking button 'id=submitAccount'.</msg>
+<status status="PASS" starttime="20181105 19:02:13.681" endtime="20181105 19:02:15.009"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Welcome to your account. Here you can manage all of your personal information and orders.</arg>
+</arguments>
+<status status="PASS" starttime="20181105 19:02:15.009" endtime="20181105 19:02:15.040"></status>
+</kw>
+<status status="PASS" starttime="20181105 19:02:00.086" endtime="20181105 19:02:15.040" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20181105 19:01:59.867" endtime="20181105 19:02:15.040"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Sign Up Testing">Sign Up Testing</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
