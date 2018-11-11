@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.6.6 on win32)" generated="20181111 00:17:23.280">
+<suite id="s1" name="Homework" source="C:\Users\User\eclipse-workspace\hackerschool\Tests\Workshop_4\Homework\homework.robot">
+<test id="s1-t1" name="Filter showing 2 product">
+<kw name="Open Products" library="Products_Keywords" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20181111 00:17:23.527" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/index.php'.</msg>
+<status status="PASS" starttime="20181111 00:17:23.526" endtime="20181111 00:17:43.784"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20181111 00:17:43.784" endtime="20181111 00:17:44.910"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${Button_woman}</arg>
+</arguments>
+<msg timestamp="20181111 00:17:44.911" level="INFO">Clicking element 'class=sf-with-ul'.</msg>
+<status status="PASS" starttime="20181111 00:17:44.910" endtime="20181111 00:17:46.501"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${Sort_by_dropdown}</arg>
+</arguments>
+<status status="PASS" starttime="20181111 00:17:46.501" endtime="20181111 00:17:46.522"></status>
+</kw>
+<status status="PASS" starttime="20181111 00:17:23.526" endtime="20181111 00:17:46.522"></status>
+</kw>
+<kw name="${filter} IN [ @{show_2_products} ]" type="for">
+<kw name="${filter} = color_white" type="foritem">
+<kw name="Apply filters for 2 products">
+<arguments>
+<arg>${filter}</arg>
+</arguments>
+<kw name="Choose Option For Filtering" library="Products_Keywords">
+<arguments>
+<arg>${filter}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${filters['${filter_by}']}</arg>
+</arguments>
+<msg timestamp="20181111 00:17:46.525" level="INFO">Clicking element '//input[contains(@name, 'layered_id_attribute_group_8')]'.</msg>
+<status status="PASS" starttime="20181111 00:17:46.524" endtime="20181111 00:17:46.624"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${Loader_not_visible}</arg>
+</arguments>
+<status status="PASS" starttime="20181111 00:17:46.625" endtime="20181111 00:17:47.492"></status>
+</kw>
+<status status="PASS" starttime="20181111 00:17:46.524" endtime="20181111 00:17:47.492"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Showing 1 - 2 of 2 items</arg>
+</arguments>
+<msg timestamp="20181111 00:17:47.518" level="INFO">Current page contains text 'Showing 1 - 2 of 2 items'.</msg>
+<status status="PASS" starttime="20181111 00:17:47.492" endtime="20181111 00:17:47.518"></status>
+</kw>
+<kw name="Clear Filtering" library="Products_Keywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${Remove_filter}</arg>
+</arguments>
+<msg timestamp="20181111 00:17:47.518" level="INFO">Clicking element '//*[contains(@class, 'icon-remove')]'.</msg>
+<status status="PASS" starttime="20181111 00:17:47.518" endtime="20181111 00:17:47.610"></status>
+</kw>
+<kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` disappears from current page.</doc>
+<arguments>
+<arg>${Remove_filter}</arg>
+</arguments>
+<status status="PASS" starttime="20181111 00:17:47.610" endtime="20181111 00:17:48.682"></status>
+</kw>
+<status status="PASS" starttime="20181111 00:17:47.518" endtime="20181111 00:17:48.682"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Showing 1 - 7 of 7 items</arg>
+</arguments>
+<msg timestamp="20181111 00:17:48.708" level="INFO">Current page contains text 'Showing 1 - 7 of 7 items'.</msg>
+<status status="PASS" starttime="20181111 00:17:48.682" endtime="20181111 00:17:48.709"></status>
+</kw>
+<status status="PASS" starttime="20181111 00:17:46.524" endtime="20181111 00:17:48.709"></status>
+</kw>
+<status status="PASS" starttime="20181111 00:17:46.523" endtime="20181111 00:17:48.709"></status>
+</kw>
+<kw name="${filter} = compositions_viscose" type="foritem">
+<kw name="Apply filters for 2 products">
+<arguments>
+<arg>${filter}</arg>
+</arguments>
+<kw name="Choose Option For Filtering" library="Products_Keywords">
+<arguments>
+<arg>${filter}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${filters['${filter_by}']}</arg>
+</arguments>
+<msg timestamp="20181111 00:17:48.710" level="INFO">Clicking element '//input[contains(@name, 'layered_id_feature_3')]'.</msg>
+<status status="PASS" starttime="20181111 00:17:48.710" endtime="20181111 00:17:48.806"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${Loader_not_visible}</arg>
+</arguments>
+<status status="PASS" starttime="20181111 00:17:48.806" endtime="20181111 00:17:49.508"></status>
+</kw>
+<status status="PASS" starttime="20181111 00:17:48.709" endtime="20181111 00:17:49.508"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Showing 1 - 2 of 2 items</arg>
+</arguments>
+<msg timestamp="20181111 00:17:49.522" level="INFO">Current page contains text 'Showing 1 - 2 of 2 items'.</msg>
+<status status="PASS" starttime="20181111 00:17:49.508" endtime="20181111 00:17:49.522"></status>
+</kw>
+<kw name="Clear Filtering" library="Products_Keywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${Remove_filter}</arg>
+</arguments>
+<msg timestamp="20181111 00:17:49.523" level="INFO">Clicking element '//*[contains(@class, 'icon-remove')]'.</msg>
+<status status="PASS" starttime="20181111 00:17:49.523" endtime="20181111 00:17:49.607"></status>
+</kw>
+<kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` disappears from current page.</doc>
+<arguments>
+<arg>${Remove_filter}</arg>
+</arguments>
+<status status="PASS" starttime="20181111 00:17:49.607" endtime="20181111 00:17:51.734"></status>
+</kw>
+<status status="PASS" starttime="20181111 00:17:49.522" endtime="20181111 00:17:51.734"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Showing 1 - 7 of 7 items</arg>
+</arguments>
+<msg timestamp="20181111 00:17:51.749" level="INFO">Current page contains text 'Showing 1 - 7 of 7 items'.</msg>
+<status status="PASS" starttime="20181111 00:17:51.734" endtime="20181111 00:17:51.749"></status>
+</kw>
+<status status="PASS" starttime="20181111 00:17:48.709" endtime="20181111 00:17:51.749"></status>
+</kw>
+<status status="PASS" starttime="20181111 00:17:48.709" endtime="20181111 00:17:51.749"></status>
+</kw>
+<kw name="${filter} = color_black" type="foritem">
+<kw name="Apply filters for 2 products">
+<arguments>
+<arg>${filter}</arg>
+</arguments>
+<kw name="Choose Option For Filtering" library="Products_Keywords">
+<arguments>
+<arg>${filter}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${filters['${filter_by}']}</arg>
+</arguments>
+<msg timestamp="20181111 00:17:51.750" level="INFO">Clicking element '//input[contains(@name, 'layered_id_attribute_group_11')]'.</msg>
+<status status="PASS" starttime="20181111 00:17:51.750" endtime="20181111 00:17:51.838"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${Loader_not_visible}</arg>
+</arguments>
+<status status="PASS" starttime="20181111 00:17:51.838" endtime="20181111 00:17:52.692"></status>
+</kw>
+<status status="PASS" starttime="20181111 00:17:51.750" endtime="20181111 00:17:52.692"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Showing 1 - 2 of 2 items</arg>
+</arguments>
+<msg timestamp="20181111 00:17:52.707" level="INFO">Current page contains text 'Showing 1 - 2 of 2 items'.</msg>
+<status status="PASS" starttime="20181111 00:17:52.692" endtime="20181111 00:17:52.707"></status>
+</kw>
+<kw name="Clear Filtering" library="Products_Keywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${Remove_filter}</arg>
+</arguments>
+<msg timestamp="20181111 00:17:52.708" level="INFO">Clicking element '//*[contains(@class, 'icon-remove')]'.</msg>
+<status status="PASS" starttime="20181111 00:17:52.707" endtime="20181111 00:17:52.790"></status>
+</kw>
+<kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` disappears from current page.</doc>
+<arguments>
+<arg>${Remove_filter}</arg>
+</arguments>
+<status status="PASS" starttime="20181111 00:17:52.790" endtime="20181111 00:17:53.908"></status>
+</kw>
+<status status="PASS" starttime="20181111 00:17:52.707" endtime="20181111 00:17:53.909"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Showing 1 - 7 of 7 items</arg>
+</arguments>
+<msg timestamp="20181111 00:17:53.929" level="INFO">Current page contains text 'Showing 1 - 7 of 7 items'.</msg>
+<status status="PASS" starttime="20181111 00:17:53.909" endtime="20181111 00:17:53.929"></status>
+</kw>
+<status status="PASS" starttime="20181111 00:17:51.749" endtime="20181111 00:17:53.929"></status>
+</kw>
+<status status="PASS" starttime="20181111 00:17:51.749" endtime="20181111 00:17:53.929"></status>
+</kw>
+<kw name="${filter} = categories_tops" type="foritem">
+<kw name="Apply filters for 2 products">
+<arguments>
+<arg>${filter}</arg>
+</arguments>
+<kw name="Choose Option For Filtering" library="Products_Keywords">
+<arguments>
+<arg>${filter}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${filters['${filter_by}']}</arg>
+</arguments>
+<msg timestamp="20181111 00:17:53.930" level="INFO">Clicking element '//input[contains(@name, 'layered_category_4')]'.</msg>
+<status status="PASS" starttime="20181111 00:17:53.930" endtime="20181111 00:17:54.035"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${Loader_not_visible}</arg>
+</arguments>
+<status status="PASS" starttime="20181111 00:17:54.036" endtime="20181111 00:17:54.728"></status>
+</kw>
+<status status="PASS" starttime="20181111 00:17:53.930" endtime="20181111 00:17:54.728"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Showing 1 - 2 of 2 items</arg>
+</arguments>
+<msg timestamp="20181111 00:17:54.747" level="INFO">Current page contains text 'Showing 1 - 2 of 2 items'.</msg>
+<status status="PASS" starttime="20181111 00:17:54.728" endtime="20181111 00:17:54.747"></status>
+</kw>
+<kw name="Clear Filtering" library="Products_Keywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${Remove_filter}</arg>
+</arguments>
+<msg timestamp="20181111 00:17:54.747" level="INFO">Clicking element '//*[contains(@class, 'icon-remove')]'.</msg>
+<status status="PASS" starttime="20181111 00:17:54.747" endtime="20181111 00:17:54.831"></status>
+</kw>
+<kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` disappears from current page.</doc>
+<arguments>
+<arg>${Remove_filter}</arg>
+</arguments>
+<status status="PASS" starttime="20181111 00:17:54.831" endtime="20181111 00:17:55.746"></status>
+</kw>
+<status status="PASS" starttime="20181111 00:17:54.747" endtime="20181111 00:17:55.746"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Showing 1 - 7 of 7 items</arg>
+</arguments>
+<msg timestamp="20181111 00:17:55.765" level="INFO">Current page contains text 'Showing 1 - 7 of 7 items'.</msg>
+<status status="PASS" starttime="20181111 00:17:55.746" endtime="20181111 00:17:55.765"></status>
+</kw>
+<status status="PASS" starttime="20181111 00:17:53.929" endtime="20181111 00:17:55.765"></status>
+</kw>
+<status status="PASS" starttime="20181111 00:17:53.929" endtime="20181111 00:17:55.765"></status>
+</kw>
+<kw name="${filter} = color_blue" type="foritem">
+<kw name="Apply filters for 2 products">
+<arguments>
+<arg>${filter}</arg>
+</arguments>
+<kw name="Choose Option For Filtering" library="Products_Keywords">
+<arguments>
+<arg>${filter}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${filters['${filter_by}']}</arg>
+</arguments>
+<msg timestamp="20181111 00:17:55.766" level="INFO">Clicking element '//input[contains(@name, 'layered_id_attribute_group_14')]'.</msg>
+<status status="PASS" starttime="20181111 00:17:55.766" endtime="20181111 00:17:55.852"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${Loader_not_visible}</arg>
+</arguments>
+<status status="PASS" starttime="20181111 00:17:55.853" endtime="20181111 00:17:56.706"></status>
+</kw>
+<status status="PASS" starttime="20181111 00:17:55.765" endtime="20181111 00:17:56.706"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Showing 1 - 2 of 2 items</arg>
+</arguments>
+<msg timestamp="20181111 00:17:56.721" level="INFO">Current page contains text 'Showing 1 - 2 of 2 items'.</msg>
+<status status="PASS" starttime="20181111 00:17:56.706" endtime="20181111 00:17:56.721"></status>
+</kw>
+<kw name="Clear Filtering" library="Products_Keywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${Remove_filter}</arg>
+</arguments>
+<msg timestamp="20181111 00:17:56.722" level="INFO">Clicking element '//*[contains(@class, 'icon-remove')]'.</msg>
+<status status="PASS" starttime="20181111 00:17:56.722" endtime="20181111 00:17:56.805"></status>
+</kw>
+<kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` disappears from current page.</doc>
+<arguments>
+<arg>${Remove_filter}</arg>
+</arguments>
+<status status="PASS" starttime="20181111 00:17:56.806" endtime="20181111 00:17:57.705"></status>
+</kw>
+<status status="PASS" starttime="20181111 00:17:56.721" endtime="20181111 00:17:57.705"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Showing 1 - 7 of 7 items</arg>
+</arguments>
+<msg timestamp="20181111 00:17:57.720" level="INFO">Current page contains text 'Showing 1 - 7 of 7 items'.</msg>
+<status status="PASS" starttime="20181111 00:17:57.705" endtime="20181111 00:17:57.721"></status>
+</kw>
+<status status="PASS" starttime="20181111 00:17:55.765" endtime="20181111 00:17:57.721"></status>
+</kw>
+<status status="PASS" starttime="20181111 00:17:55.765" endtime="20181111 00:17:57.721"></status>
+</kw>
+<kw name="${filter} = compositions_polyester" type="foritem">
+<kw name="Apply filters for 2 products">
+<arguments>
+<arg>${filter}</arg>
+</arguments>
+<kw name="Choose Option For Filtering" library="Products_Keywords">
+<arguments>
+<arg>${filter}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${filters['${filter_by}']}</arg>
+</arguments>
+<msg timestamp="20181111 00:17:57.722" level="INFO">Clicking element '//input[contains(@name, 'layered_id_feature_1')]'.</msg>
+<status status="PASS" starttime="20181111 00:17:57.722" endtime="20181111 00:17:57.813"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${Loader_not_visible}</arg>
+</arguments>
+<status status="PASS" starttime="20181111 00:17:57.814" endtime="20181111 00:17:58.676"></status>
+</kw>
+<status status="PASS" starttime="20181111 00:17:57.721" endtime="20181111 00:17:58.676"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Showing 1 - 2 of 2 items</arg>
+</arguments>
+<msg timestamp="20181111 00:17:58.691" level="INFO">Current page contains text 'Showing 1 - 2 of 2 items'.</msg>
+<status status="PASS" starttime="20181111 00:17:58.676" endtime="20181111 00:17:58.691"></status>
+</kw>
+<kw name="Clear Filtering" library="Products_Keywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${Remove_filter}</arg>
+</arguments>
+<msg timestamp="20181111 00:17:58.692" level="INFO">Clicking element '//*[contains(@class, 'icon-remove')]'.</msg>
+<status status="PASS" starttime="20181111 00:17:58.692" endtime="20181111 00:17:58.773"></status>
+</kw>
+<kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` disappears from current page.</doc>
+<arguments>
+<arg>${Remove_filter}</arg>
+</arguments>
+<status status="PASS" starttime="20181111 00:17:58.773" endtime="20181111 00:17:59.852"></status>
+</kw>
+<status status="PASS" starttime="20181111 00:17:58.692" endtime="20181111 00:17:59.852"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Showing 1 - 7 of 7 items</arg>
+</arguments>
+<msg timestamp="20181111 00:17:59.869" level="INFO">Current page contains text 'Showing 1 - 7 of 7 items'.</msg>
+<status status="PASS" starttime="20181111 00:17:59.853" endtime="20181111 00:17:59.869"></status>
+</kw>
+<status status="PASS" starttime="20181111 00:17:57.721" endtime="20181111 00:17:59.869"></status>
+</kw>
+<status status="PASS" starttime="20181111 00:17:57.721" endtime="20181111 00:17:59.869"></status>
+</kw>
+<kw name="${filter} = properties_short_dress" type="foritem">
+<kw name="Apply filters for 2 products">
+<arguments>
+<arg>${filter}</arg>
+</arguments>
+<kw name="Choose Option For Filtering" library="Products_Keywords">
+<arguments>
+<arg>${filter}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${filters['${filter_by}']}</arg>
+</arguments>
+<msg timestamp="20181111 00:17:59.870" level="INFO">Clicking element '//input[contains(@name, 'layered_id_feature_19')]'.</msg>
+<status status="PASS" starttime="20181111 00:17:59.870" endtime="20181111 00:17:59.959"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${Loader_not_visible}</arg>
+</arguments>
+<status status="PASS" starttime="20181111 00:17:59.959" endtime="20181111 00:18:00.813"></status>
+</kw>
+<status status="PASS" starttime="20181111 00:17:59.869" endtime="20181111 00:18:00.813"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Showing 1 - 2 of 2 items</arg>
+</arguments>
+<msg timestamp="20181111 00:18:00.829" level="INFO">Current page contains text 'Showing 1 - 2 of 2 items'.</msg>
+<status status="PASS" starttime="20181111 00:18:00.813" endtime="20181111 00:18:00.829"></status>
+</kw>
+<kw name="Clear Filtering" library="Products_Keywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${Remove_filter}</arg>
+</arguments>
+<msg timestamp="20181111 00:18:00.830" level="INFO">Clicking element '//*[contains(@class, 'icon-remove')]'.</msg>
+<status status="PASS" starttime="20181111 00:18:00.829" endtime="20181111 00:18:00.914"></status>
+</kw>
+<kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` disappears from current page.</doc>
+<arguments>
+<arg>${Remove_filter}</arg>
+</arguments>
+<status status="PASS" starttime="20181111 00:18:00.914" endtime="20181111 00:18:01.819"></status>
+</kw>
+<status status="PASS" starttime="20181111 00:18:00.829" endtime="20181111 00:18:01.819"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Showing 1 - 7 of 7 items</arg>
+</arguments>
+<msg timestamp="20181111 00:18:01.835" level="INFO">Current page contains text 'Showing 1 - 7 of 7 items'.</msg>
+<status status="PASS" starttime="20181111 00:18:01.819" endtime="20181111 00:18:01.835"></status>
+</kw>
+<status status="PASS" starttime="20181111 00:17:59.869" endtime="20181111 00:18:01.835"></status>
+</kw>
+<status status="PASS" starttime="20181111 00:17:59.869" endtime="20181111 00:18:01.835"></status>
+</kw>
+<status status="PASS" starttime="20181111 00:17:46.523" endtime="20181111 00:18:01.835"></status>
+</kw>
+<kw name="Capture Screenshot And Close Browser" library="Products_Keywords" type="teardown">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181111 00:18:02.256" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-104.png"&gt;&lt;img src="selenium-screenshot-104.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20181111 00:18:01.837" endtime="20181111 00:18:02.256"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20181111 00:18:02.256" endtime="20181111 00:18:04.379"></status>
+</kw>
+<status status="PASS" starttime="20181111 00:18:01.837" endtime="20181111 00:18:04.379"></status>
+</kw>
+<status status="PASS" starttime="20181111 00:17:23.525" endtime="20181111 00:18:04.381" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20181111 00:17:23.281" endtime="20181111 00:18:04.384"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Homework">Homework</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

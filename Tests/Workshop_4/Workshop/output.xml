@@ -1,225 +1,744 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.0.4 (Python 3.6.6 on win32)" generated="20181105 19:01:59.867">
-<suite id="s1" name="Sign Up Testing" source="C:\Users\User\eclipse-workspace\hackerschool\Tests\Workshop_4\Workshop\Sign_Up_Testing.robot">
-<test id="s1-t1" name="Register To Eshop">
-<kw name="Open Browser" library="SeleniumLibrary" type="setup">
+<robot generator="Robot 3.0.4 (Python 3.6.6 on win32)" generated="20181105 20:43:35.771">
+<suite id="s1" name="Eshop Registration" source="C:\Users\User\eclipse-workspace\hackerschool\Tests\Workshop_4\Workshop\eshop_registration.robot">
+<test id="s1-t1" name="Invalid Zip Code">
+<kw name="Open Eshop Registration Form" library="Eshop_Keywords" type="setup">
+<arguments>
+<arg>${email}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the given ``url``.</doc>
 <arguments>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20181105 19:02:00.086" level="INFO">Opening browser 'firefox' to base url 'http://automationpractice.com/index.php'.</msg>
-<status status="PASS" starttime="20181105 19:02:00.086" endtime="20181105 19:02:08.687"></status>
+<msg timestamp="20181105 20:43:36.000" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation'.</msg>
+<status status="PASS" starttime="20181105 20:43:36.000" endtime="20181105 20:43:41.346"></status>
 </kw>
-<kw name="Click Link" library="SeleniumLibrary">
-<doc>Clicks a link identified by ``locator``.</doc>
-<arguments>
-<arg>${link_login}</arg>
-</arguments>
-<msg timestamp="20181105 19:02:08.688" level="INFO">Clicking link 'class=login'.</msg>
-<status status="PASS" starttime="20181105 19:02:08.688" endtime="20181105 19:02:10.060"></status>
-</kw>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<doc>Waits until element ``locator`` appears on current page.</doc>
-<arguments>
-<arg>${auth_tbox_email}</arg>
-</arguments>
-<status status="PASS" starttime="20181105 19:02:10.060" endtime="20181105 19:02:10.075"></status>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20181105 20:43:41.346" endtime="20181105 20:43:42.473"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
-<arg>${auth_tbox_email}</arg>
-<arg>hello@trtrr.tr</arg>
+<arg>${Input_email_create}</arg>
+<arg>${email}</arg>
 </arguments>
-<msg timestamp="20181105 19:02:10.076" level="INFO">Typing text 'hello@trtrr.tr' into text field 'id=email_create'.</msg>
-<status status="PASS" starttime="20181105 19:02:10.076" endtime="20181105 19:02:10.126"></status>
+<msg timestamp="20181105 20:43:42.473" level="INFO">Typing text 'test@hackershool.cz' into text field 'id=email_create'.</msg>
+<status status="PASS" starttime="20181105 20:43:42.473" endtime="20181105 20:43:42.649"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
-<arg>${btn_create_account}</arg>
+<arg>${Button_open_sign_in_form}</arg>
 </arguments>
-<msg timestamp="20181105 19:02:10.128" level="INFO">Clicking button 'id=SubmitCreate'.</msg>
-<status status="PASS" starttime="20181105 19:02:10.128" endtime="20181105 19:02:10.398"></status>
+<msg timestamp="20181105 20:43:42.650" level="INFO">Clicking button 'id=SubmitCreate'.</msg>
+<status status="PASS" starttime="20181105 20:43:42.649" endtime="20181105 20:43:42.785"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` appears on current page.</doc>
 <arguments>
-<arg>${sup_radio_mrs}</arg>
+<arg>${Button_register}</arg>
 </arguments>
-<status status="PASS" starttime="20181105 19:02:10.398" endtime="20181105 19:02:11.423"></status>
+<status status="PASS" starttime="20181105 20:43:42.785" endtime="20181105 20:43:44.069"></status>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
+<status status="PASS" starttime="20181105 20:43:35.999" endtime="20181105 20:43:44.069"></status>
+</kw>
+<kw name="${zip_code} IN [ @{invalid_zip_codes} ]" type="for">
+<kw name="${zip_code} = 123456" type="foritem">
+<kw name="Invalid Zip Code Should Fail">
 <arguments>
-<arg>${sup_radio_mrs}</arg>
+<arg>${zip_code}</arg>
+<arg>&amp;{valid_data}</arg>
 </arguments>
-<msg timestamp="20181105 19:02:11.424" level="INFO">Clicking element 'id=id_gender2'.</msg>
-<status status="PASS" starttime="20181105 19:02:11.424" endtime="20181105 19:02:11.648"></status>
+<kw name="Set To Dictionary" library="Collections">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${test_data}</arg>
+<arg>postcode=${zip_code}</arg>
+</arguments>
+<status status="PASS" starttime="20181105 20:43:44.071" endtime="20181105 20:43:44.071"></status>
+</kw>
+<kw name="Fill In Registration Form" library="Eshop_Keywords">
+<arguments>
+<arg>&amp;{test_data}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Input_firstname}</arg>
+<arg>${test_data['firstname']}</arg>
+</arguments>
+<msg timestamp="20181105 20:43:44.072" level="INFO">Typing text 'Alice' into text field 'id=customer_firstname'.</msg>
+<status status="PASS" starttime="20181105 20:43:44.072" endtime="20181105 20:43:44.212"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
-<arg>${sup_tbox_first_name}</arg>
-<arg>Hacker</arg>
+<arg>${Input_lastname}</arg>
+<arg>${test_data['lastname']}</arg>
 </arguments>
-<msg timestamp="20181105 19:02:11.649" level="INFO">Typing text 'Hacker' into text field 'id=customer_firstname'.</msg>
-<status status="PASS" starttime="20181105 19:02:11.648" endtime="20181105 19:02:11.677"></status>
+<msg timestamp="20181105 20:43:44.212" level="INFO">Typing text 'Black' into text field 'id=customer_lastname'.</msg>
+<status status="PASS" starttime="20181105 20:43:44.212" endtime="20181105 20:43:44.345"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
-<arg>${sup_tbox_last_name}</arg>
-<arg>School</arg>
+<arg>${Input_password}</arg>
+<arg>${test_data['password']}</arg>
 </arguments>
-<msg timestamp="20181105 19:02:11.677" level="INFO">Typing text 'School' into text field 'id=customer_lastname'.</msg>
-<status status="PASS" starttime="20181105 19:02:11.677" endtime="20181105 19:02:11.707"></status>
+<msg timestamp="20181105 20:43:44.346" level="INFO">Typing text 'Pass123' into text field 'id=passwd'.</msg>
+<status status="PASS" starttime="20181105 20:43:44.345" endtime="20181105 20:43:44.479"></status>
 </kw>
-<kw name="Textfield Should Contain" library="SeleniumLibrary">
-<doc>Verifies text field ``locator`` contains text ``expected``.</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
-<arg>${sup_tbox_email}</arg>
-<arg>hello@trtrr.tr</arg>
+<arg>${Input_address1}</arg>
+<arg>${test_data['address']}</arg>
 </arguments>
-<msg timestamp="20181105 19:02:11.744" level="INFO">Text field 'id=email' contains text 'hello@trtrr.tr'.</msg>
-<status status="PASS" starttime="20181105 19:02:11.707" endtime="20181105 19:02:11.744"></status>
+<msg timestamp="20181105 20:43:44.479" level="INFO">Typing text 'Valley Street' into text field 'id=address1'.</msg>
+<status status="PASS" starttime="20181105 20:43:44.479" endtime="20181105 20:43:44.731"></status>
 </kw>
-<kw name="Input Password" library="SeleniumLibrary">
-<doc>Types the given password into text field identified by ``locator``.</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
-<arg>${sup_pwd_password}</arg>
-<arg>password</arg>
+<arg>${Input_city}</arg>
+<arg>${test_data['city']}</arg>
 </arguments>
-<msg timestamp="20181105 19:02:11.745" level="INFO">Typing password into text field 'id=passwd'.</msg>
-<status status="PASS" starttime="20181105 19:02:11.745" endtime="20181105 19:02:11.777"></status>
-</kw>
-<kw name="Select From List By Index" library="SeleniumLibrary">
-<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
-<arguments>
-<arg>${sup_dropdown_day}</arg>
-<arg>26</arg>
-</arguments>
-<msg timestamp="20181105 19:02:11.778" level="INFO">Selecting options from selection list 'id=days' by index 26.</msg>
-<status status="PASS" starttime="20181105 19:02:11.778" endtime="20181105 19:02:12.431"></status>
+<msg timestamp="20181105 20:43:44.731" level="INFO">Typing text 'Seattle' into text field 'id=city'.</msg>
+<status status="PASS" starttime="20181105 20:43:44.731" endtime="20181105 20:43:44.877"></status>
 </kw>
 <kw name="Select From List By Label" library="SeleniumLibrary">
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
 <arguments>
-<arg>${sup_dropdown_month}</arg>
-<arg>March${SPACE}</arg>
+<arg>${Select_country}</arg>
+<arg>${test_data['country']}</arg>
 </arguments>
-<msg timestamp="20181105 19:02:12.431" level="INFO">Selecting options from selection list 'id=months' by label March .</msg>
-<status status="PASS" starttime="20181105 19:02:12.431" endtime="20181105 19:02:12.713"></status>
-</kw>
-<kw name="Select From List By Value" library="SeleniumLibrary">
-<doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<arguments>
-<arg>${sup_dropdown_year}</arg>
-<arg>2010</arg>
-</arguments>
-<msg timestamp="20181105 19:02:12.713" level="INFO">Selecting options from selection list 'id=years' by value 2010.</msg>
-<status status="PASS" starttime="20181105 19:02:12.713" endtime="20181105 19:02:12.994"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${sup_chck_newsletter}</arg>
-</arguments>
-<msg timestamp="20181105 19:02:12.994" level="INFO">Clicking element 'id=newsletter'.</msg>
-<status status="PASS" starttime="20181105 19:02:12.994" endtime="20181105 19:02:13.228"></status>
-</kw>
-<kw name="Textfield Should Contain" library="SeleniumLibrary">
-<doc>Verifies text field ``locator`` contains text ``expected``.</doc>
-<arguments>
-<arg>${addr_tbox_first_name}</arg>
-<arg>Hacker</arg>
-</arguments>
-<msg timestamp="20181105 19:02:13.244" level="INFO">Text field 'id=firstname' contains text 'Hacker'.</msg>
-<status status="PASS" starttime="20181105 19:02:13.228" endtime="20181105 19:02:13.244"></status>
-</kw>
-<kw name="Textfield Should Contain" library="SeleniumLibrary">
-<doc>Verifies text field ``locator`` contains text ``expected``.</doc>
-<arguments>
-<arg>${addr_tbox_last_name}</arg>
-<arg>School</arg>
-</arguments>
-<msg timestamp="20181105 19:02:13.275" level="INFO">Text field 'id=lastname' contains text 'School'.</msg>
-<status status="PASS" starttime="20181105 19:02:13.244" endtime="20181105 19:02:13.275"></status>
+<msg timestamp="20181105 20:43:44.878" level="INFO">Selecting options from selection list 'id=id_country' by label United States.</msg>
+<status status="PASS" starttime="20181105 20:43:44.877" endtime="20181105 20:43:44.959"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
-<arg>${addr_tbox_address1}</arg>
-<arg>Gorazdova, 4444</arg>
+<arg>${Input_postcode}</arg>
+<arg>${test_data['postcode']}</arg>
 </arguments>
-<msg timestamp="20181105 19:02:13.275" level="INFO">Typing text 'Gorazdova, 4444' into text field 'id=address1'.</msg>
-<status status="PASS" starttime="20181105 19:02:13.275" endtime="20181105 19:02:13.322"></status>
+<msg timestamp="20181105 20:43:44.959" level="INFO">Typing text '123456' into text field 'id=postcode'.</msg>
+<status status="PASS" starttime="20181105 20:43:44.959" endtime="20181105 20:43:45.106"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
-<arg>${addr_tbox_city}</arg>
-<arg>Prague</arg>
+<arg>${Input_phone}</arg>
+<arg>${test_data['phone']}</arg>
 </arguments>
-<msg timestamp="20181105 19:02:13.322" level="INFO">Typing text 'Prague' into text field 'id=city'.</msg>
-<status status="PASS" starttime="20181105 19:02:13.322" endtime="20181105 19:02:13.353"></status>
-</kw>
-<kw name="Select From List By Label" library="SeleniumLibrary">
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<arguments>
-<arg>${addr_dropdown_state}</arg>
-<arg>Arizona</arg>
-</arguments>
-<msg timestamp="20181105 19:02:13.353" level="INFO">Selecting options from selection list 'id=id_state' by label Arizona.</msg>
-<status status="PASS" starttime="20181105 19:02:13.353" endtime="20181105 19:02:13.619"></status>
+<msg timestamp="20181105 20:43:45.107" level="INFO">Typing text '11111111' into text field 'id=phone'.</msg>
+<status status="PASS" starttime="20181105 20:43:45.107" endtime="20181105 20:43:45.267"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
-<arg>${addr_tbox_zip}</arg>
-<arg>12000</arg>
+<arg>${Input_mobile_phone}</arg>
+<arg>${test_data['phone_mobile']}</arg>
 </arguments>
-<msg timestamp="20181105 19:02:13.619" level="INFO">Typing text '12000' into text field 'id=postcode'.</msg>
-<status status="PASS" starttime="20181105 19:02:13.619" endtime="20181105 19:02:13.634"></status>
+<msg timestamp="20181105 20:43:45.268" level="INFO">Typing text '55555555' into text field 'id=phone_mobile'.</msg>
+<status status="PASS" starttime="20181105 20:43:45.267" endtime="20181105 20:43:45.434"></status>
 </kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${addr_tbox_cellphone}</arg>
-<arg>+420666999888</arg>
-</arguments>
-<msg timestamp="20181105 19:02:13.634" level="INFO">Typing text '+420666999888' into text field 'id=phone_mobile'.</msg>
-<status status="PASS" starttime="20181105 19:02:13.634" endtime="20181105 19:02:13.681"></status>
+<status status="PASS" starttime="20181105 20:43:44.071" endtime="20181105 20:43:45.434"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
-<arg>${sup_btn_register}</arg>
+<arg>${Button_register}</arg>
 </arguments>
-<msg timestamp="20181105 19:02:13.681" level="INFO">Clicking button 'id=submitAccount'.</msg>
-<status status="PASS" starttime="20181105 19:02:13.681" endtime="20181105 19:02:15.009"></status>
+<msg timestamp="20181105 20:43:45.434" level="INFO">Clicking button 'id=submitAccount'.</msg>
+<status status="PASS" starttime="20181105 20:43:45.434" endtime="20181105 20:43:46.505"></status>
 </kw>
-<kw name="Wait Until Page Contains" library="SeleniumLibrary">
-<doc>Waits until ``text`` appears on current page.</doc>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
 <arguments>
-<arg>Welcome to your account. Here you can manage all of your personal information and orders.</arg>
+<arg>The Zip/Postal code you've entered is invalid. It must follow this format: 00000</arg>
 </arguments>
-<status status="PASS" starttime="20181105 19:02:15.009" endtime="20181105 19:02:15.040"></status>
+<msg timestamp="20181105 20:43:46.538" level="INFO">Current page contains text 'The Zip/Postal code you've entered is invalid. It must follow this format: 00000'.</msg>
+<status status="PASS" starttime="20181105 20:43:46.505" endtime="20181105 20:43:46.538"></status>
 </kw>
-<status status="PASS" starttime="20181105 19:02:00.086" endtime="20181105 19:02:15.040" critical="yes"></status>
+<status status="PASS" starttime="20181105 20:43:44.070" endtime="20181105 20:43:46.538"></status>
+</kw>
+<status status="PASS" starttime="20181105 20:43:44.070" endtime="20181105 20:43:46.538"></status>
+</kw>
+<kw name="${zip_code} = abcde" type="foritem">
+<kw name="Invalid Zip Code Should Fail">
+<arguments>
+<arg>${zip_code}</arg>
+<arg>&amp;{valid_data}</arg>
+</arguments>
+<kw name="Set To Dictionary" library="Collections">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${test_data}</arg>
+<arg>postcode=${zip_code}</arg>
+</arguments>
+<status status="PASS" starttime="20181105 20:43:46.539" endtime="20181105 20:43:46.539"></status>
+</kw>
+<kw name="Fill In Registration Form" library="Eshop_Keywords">
+<arguments>
+<arg>&amp;{test_data}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Input_firstname}</arg>
+<arg>${test_data['firstname']}</arg>
+</arguments>
+<msg timestamp="20181105 20:43:46.540" level="INFO">Typing text 'Alice' into text field 'id=customer_firstname'.</msg>
+<status status="PASS" starttime="20181105 20:43:46.540" endtime="20181105 20:43:46.663"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Input_lastname}</arg>
+<arg>${test_data['lastname']}</arg>
+</arguments>
+<msg timestamp="20181105 20:43:46.663" level="INFO">Typing text 'Black' into text field 'id=customer_lastname'.</msg>
+<status status="PASS" starttime="20181105 20:43:46.663" endtime="20181105 20:43:46.782"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Input_password}</arg>
+<arg>${test_data['password']}</arg>
+</arguments>
+<msg timestamp="20181105 20:43:46.783" level="INFO">Typing text 'Pass123' into text field 'id=passwd'.</msg>
+<status status="PASS" starttime="20181105 20:43:46.782" endtime="20181105 20:43:46.898"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Input_address1}</arg>
+<arg>${test_data['address']}</arg>
+</arguments>
+<msg timestamp="20181105 20:43:46.898" level="INFO">Typing text 'Valley Street' into text field 'id=address1'.</msg>
+<status status="PASS" starttime="20181105 20:43:46.898" endtime="20181105 20:43:47.070"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Input_city}</arg>
+<arg>${test_data['city']}</arg>
+</arguments>
+<msg timestamp="20181105 20:43:47.071" level="INFO">Typing text 'Seattle' into text field 'id=city'.</msg>
+<status status="PASS" starttime="20181105 20:43:47.070" endtime="20181105 20:43:47.187"></status>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${Select_country}</arg>
+<arg>${test_data['country']}</arg>
+</arguments>
+<msg timestamp="20181105 20:43:47.187" level="INFO">Selecting options from selection list 'id=id_country' by label United States.</msg>
+<status status="PASS" starttime="20181105 20:43:47.187" endtime="20181105 20:43:47.246"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Input_postcode}</arg>
+<arg>${test_data['postcode']}</arg>
+</arguments>
+<msg timestamp="20181105 20:43:47.247" level="INFO">Typing text 'abcde' into text field 'id=postcode'.</msg>
+<status status="PASS" starttime="20181105 20:43:47.246" endtime="20181105 20:43:47.354"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Input_phone}</arg>
+<arg>${test_data['phone']}</arg>
+</arguments>
+<msg timestamp="20181105 20:43:47.355" level="INFO">Typing text '11111111' into text field 'id=phone'.</msg>
+<status status="PASS" starttime="20181105 20:43:47.355" endtime="20181105 20:43:47.480"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Input_mobile_phone}</arg>
+<arg>${test_data['phone_mobile']}</arg>
+</arguments>
+<msg timestamp="20181105 20:43:47.480" level="INFO">Typing text '55555555' into text field 'id=phone_mobile'.</msg>
+<status status="PASS" starttime="20181105 20:43:47.480" endtime="20181105 20:43:47.597"></status>
+</kw>
+<status status="PASS" starttime="20181105 20:43:46.539" endtime="20181105 20:43:47.598"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${Button_register}</arg>
+</arguments>
+<msg timestamp="20181105 20:43:47.598" level="INFO">Clicking button 'id=submitAccount'.</msg>
+<status status="PASS" starttime="20181105 20:43:47.598" endtime="20181105 20:43:48.527"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>The Zip/Postal code you've entered is invalid. It must follow this format: 00000</arg>
+</arguments>
+<msg timestamp="20181105 20:43:48.545" level="INFO">Current page contains text 'The Zip/Postal code you've entered is invalid. It must follow this format: 00000'.</msg>
+<status status="PASS" starttime="20181105 20:43:48.528" endtime="20181105 20:43:48.545"></status>
+</kw>
+<status status="PASS" starttime="20181105 20:43:46.538" endtime="20181105 20:43:48.546"></status>
+</kw>
+<status status="PASS" starttime="20181105 20:43:46.538" endtime="20181105 20:43:48.546"></status>
+</kw>
+<kw name="${zip_code} = **aaa" type="foritem">
+<kw name="Invalid Zip Code Should Fail">
+<arguments>
+<arg>${zip_code}</arg>
+<arg>&amp;{valid_data}</arg>
+</arguments>
+<kw name="Set To Dictionary" library="Collections">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${test_data}</arg>
+<arg>postcode=${zip_code}</arg>
+</arguments>
+<status status="PASS" starttime="20181105 20:43:48.547" endtime="20181105 20:43:48.547"></status>
+</kw>
+<kw name="Fill In Registration Form" library="Eshop_Keywords">
+<arguments>
+<arg>&amp;{test_data}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Input_firstname}</arg>
+<arg>${test_data['firstname']}</arg>
+</arguments>
+<msg timestamp="20181105 20:43:48.548" level="INFO">Typing text 'Alice' into text field 'id=customer_firstname'.</msg>
+<status status="PASS" starttime="20181105 20:43:48.547" endtime="20181105 20:43:48.666"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Input_lastname}</arg>
+<arg>${test_data['lastname']}</arg>
+</arguments>
+<msg timestamp="20181105 20:43:48.667" level="INFO">Typing text 'Black' into text field 'id=customer_lastname'.</msg>
+<status status="PASS" starttime="20181105 20:43:48.666" endtime="20181105 20:43:48.779"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Input_password}</arg>
+<arg>${test_data['password']}</arg>
+</arguments>
+<msg timestamp="20181105 20:43:48.780" level="INFO">Typing text 'Pass123' into text field 'id=passwd'.</msg>
+<status status="PASS" starttime="20181105 20:43:48.780" endtime="20181105 20:43:48.894"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Input_address1}</arg>
+<arg>${test_data['address']}</arg>
+</arguments>
+<msg timestamp="20181105 20:43:48.895" level="INFO">Typing text 'Valley Street' into text field 'id=address1'.</msg>
+<status status="PASS" starttime="20181105 20:43:48.894" endtime="20181105 20:43:49.051"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Input_city}</arg>
+<arg>${test_data['city']}</arg>
+</arguments>
+<msg timestamp="20181105 20:43:49.052" level="INFO">Typing text 'Seattle' into text field 'id=city'.</msg>
+<status status="PASS" starttime="20181105 20:43:49.052" endtime="20181105 20:43:49.168"></status>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${Select_country}</arg>
+<arg>${test_data['country']}</arg>
+</arguments>
+<msg timestamp="20181105 20:43:49.169" level="INFO">Selecting options from selection list 'id=id_country' by label United States.</msg>
+<status status="PASS" starttime="20181105 20:43:49.168" endtime="20181105 20:43:49.231"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Input_postcode}</arg>
+<arg>${test_data['postcode']}</arg>
+</arguments>
+<msg timestamp="20181105 20:43:49.231" level="INFO">Typing text '**aaa' into text field 'id=postcode'.</msg>
+<status status="PASS" starttime="20181105 20:43:49.231" endtime="20181105 20:43:49.344"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Input_phone}</arg>
+<arg>${test_data['phone']}</arg>
+</arguments>
+<msg timestamp="20181105 20:43:49.345" level="INFO">Typing text '11111111' into text field 'id=phone'.</msg>
+<status status="PASS" starttime="20181105 20:43:49.345" endtime="20181105 20:43:49.469"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Input_mobile_phone}</arg>
+<arg>${test_data['phone_mobile']}</arg>
+</arguments>
+<msg timestamp="20181105 20:43:49.469" level="INFO">Typing text '55555555' into text field 'id=phone_mobile'.</msg>
+<status status="PASS" starttime="20181105 20:43:49.469" endtime="20181105 20:43:49.586"></status>
+</kw>
+<status status="PASS" starttime="20181105 20:43:48.547" endtime="20181105 20:43:49.586"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${Button_register}</arg>
+</arguments>
+<msg timestamp="20181105 20:43:49.587" level="INFO">Clicking button 'id=submitAccount'.</msg>
+<status status="PASS" starttime="20181105 20:43:49.586" endtime="20181105 20:43:50.459"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>The Zip/Postal code you've entered is invalid. It must follow this format: 00000</arg>
+</arguments>
+<msg timestamp="20181105 20:43:50.474" level="INFO">Current page contains text 'The Zip/Postal code you've entered is invalid. It must follow this format: 00000'.</msg>
+<status status="PASS" starttime="20181105 20:43:50.459" endtime="20181105 20:43:50.474"></status>
+</kw>
+<status status="PASS" starttime="20181105 20:43:48.546" endtime="20181105 20:43:50.474"></status>
+</kw>
+<status status="PASS" starttime="20181105 20:43:48.546" endtime="20181105 20:43:50.474"></status>
+</kw>
+<status status="PASS" starttime="20181105 20:43:44.070" endtime="20181105 20:43:50.474"></status>
+</kw>
+<kw name="Capture Screenshot And Close Browser" library="Eshop_Keywords" type="teardown">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181105 20:43:50.827" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-27.png"&gt;&lt;img src="selenium-screenshot-27.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20181105 20:43:50.475" endtime="20181105 20:43:50.827"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20181105 20:43:50.827" endtime="20181105 20:43:52.944"></status>
+</kw>
+<status status="PASS" starttime="20181105 20:43:50.475" endtime="20181105 20:43:52.944"></status>
+</kw>
+<status status="PASS" starttime="20181105 20:43:35.999" endtime="20181105 20:43:52.945" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20181105 19:01:59.867" endtime="20181105 19:02:15.040"></status>
+<test id="s1-t2" name="Invalid Password">
+<kw name="Open Eshop Registration Form" library="Eshop_Keywords" type="setup">
+<arguments>
+<arg>${email}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20181105 20:43:52.947" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/index.php?controller=authentication&amp;back=my-account#account-creation'.</msg>
+<status status="PASS" starttime="20181105 20:43:52.947" endtime="20181105 20:43:58.105"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20181105 20:43:58.105" endtime="20181105 20:43:59.236"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Input_email_create}</arg>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20181105 20:43:59.236" level="INFO">Typing text 'test@hackershool.cz' into text field 'id=email_create'.</msg>
+<status status="PASS" starttime="20181105 20:43:59.236" endtime="20181105 20:43:59.428"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${Button_open_sign_in_form}</arg>
+</arguments>
+<msg timestamp="20181105 20:43:59.428" level="INFO">Clicking button 'id=SubmitCreate'.</msg>
+<status status="PASS" starttime="20181105 20:43:59.428" endtime="20181105 20:43:59.549"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${Button_register}</arg>
+</arguments>
+<status status="PASS" starttime="20181105 20:43:59.549" endtime="20181105 20:44:00.826"></status>
+</kw>
+<status status="PASS" starttime="20181105 20:43:52.947" endtime="20181105 20:44:00.826"></status>
+</kw>
+<kw name="${pwd} IN [ @{invalid_passwords} ]" type="for">
+<kw name="${pwd} = A123" type="foritem">
+<kw name="Invalid Password Should Fail">
+<arguments>
+<arg>${pwd}</arg>
+<arg>&amp;{valid_data}</arg>
+</arguments>
+<kw name="Set To Dictionary" library="Collections">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${test_data}</arg>
+<arg>password=${pwd}</arg>
+</arguments>
+<status status="PASS" starttime="20181105 20:44:00.828" endtime="20181105 20:44:00.828"></status>
+</kw>
+<kw name="Fill In Registration Form" library="Eshop_Keywords">
+<arguments>
+<arg>&amp;{test_data}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Input_firstname}</arg>
+<arg>${test_data['firstname']}</arg>
+</arguments>
+<msg timestamp="20181105 20:44:00.829" level="INFO">Typing text 'Alice' into text field 'id=customer_firstname'.</msg>
+<status status="PASS" starttime="20181105 20:44:00.828" endtime="20181105 20:44:00.960"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Input_lastname}</arg>
+<arg>${test_data['lastname']}</arg>
+</arguments>
+<msg timestamp="20181105 20:44:00.961" level="INFO">Typing text 'Black' into text field 'id=customer_lastname'.</msg>
+<status status="PASS" starttime="20181105 20:44:00.961" endtime="20181105 20:44:01.090"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Input_password}</arg>
+<arg>${test_data['password']}</arg>
+</arguments>
+<msg timestamp="20181105 20:44:01.091" level="INFO">Typing text 'A123' into text field 'id=passwd'.</msg>
+<status status="PASS" starttime="20181105 20:44:01.091" endtime="20181105 20:44:01.215"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Input_address1}</arg>
+<arg>${test_data['address']}</arg>
+</arguments>
+<msg timestamp="20181105 20:44:01.216" level="INFO">Typing text 'Valley Street' into text field 'id=address1'.</msg>
+<status status="PASS" starttime="20181105 20:44:01.215" endtime="20181105 20:44:01.492"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Input_city}</arg>
+<arg>${test_data['city']}</arg>
+</arguments>
+<msg timestamp="20181105 20:44:01.492" level="INFO">Typing text 'Seattle' into text field 'id=city'.</msg>
+<status status="PASS" starttime="20181105 20:44:01.492" endtime="20181105 20:44:01.638"></status>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${Select_country}</arg>
+<arg>${test_data['country']}</arg>
+</arguments>
+<msg timestamp="20181105 20:44:01.638" level="INFO">Selecting options from selection list 'id=id_country' by label United States.</msg>
+<status status="PASS" starttime="20181105 20:44:01.638" endtime="20181105 20:44:01.718"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Input_postcode}</arg>
+<arg>${test_data['postcode']}</arg>
+</arguments>
+<msg timestamp="20181105 20:44:01.719" level="INFO">Typing text '12345' into text field 'id=postcode'.</msg>
+<status status="PASS" starttime="20181105 20:44:01.718" endtime="20181105 20:44:01.847"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Input_phone}</arg>
+<arg>${test_data['phone']}</arg>
+</arguments>
+<msg timestamp="20181105 20:44:01.848" level="INFO">Typing text '11111111' into text field 'id=phone'.</msg>
+<status status="PASS" starttime="20181105 20:44:01.848" endtime="20181105 20:44:01.999"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Input_mobile_phone}</arg>
+<arg>${test_data['phone_mobile']}</arg>
+</arguments>
+<msg timestamp="20181105 20:44:02.000" level="INFO">Typing text '55555555' into text field 'id=phone_mobile'.</msg>
+<status status="PASS" starttime="20181105 20:44:02.000" endtime="20181105 20:44:02.162"></status>
+</kw>
+<status status="PASS" starttime="20181105 20:44:00.828" endtime="20181105 20:44:02.162"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${Button_register}</arg>
+</arguments>
+<msg timestamp="20181105 20:44:02.163" level="INFO">Clicking button 'id=submitAccount'.</msg>
+<status status="PASS" starttime="20181105 20:44:02.162" endtime="20181105 20:44:03.125"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>passwd is invalid.</arg>
+</arguments>
+<msg timestamp="20181105 20:44:03.160" level="INFO">Current page contains text 'passwd is invalid.'.</msg>
+<status status="PASS" starttime="20181105 20:44:03.125" endtime="20181105 20:44:03.161"></status>
+</kw>
+<status status="PASS" starttime="20181105 20:44:00.827" endtime="20181105 20:44:03.161"></status>
+</kw>
+<status status="PASS" starttime="20181105 20:44:00.827" endtime="20181105 20:44:03.161"></status>
+</kw>
+<kw name="${pwd} = A444" type="foritem">
+<kw name="Invalid Password Should Fail">
+<arguments>
+<arg>${pwd}</arg>
+<arg>&amp;{valid_data}</arg>
+</arguments>
+<kw name="Set To Dictionary" library="Collections">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${test_data}</arg>
+<arg>password=${pwd}</arg>
+</arguments>
+<status status="PASS" starttime="20181105 20:44:03.161" endtime="20181105 20:44:03.162"></status>
+</kw>
+<kw name="Fill In Registration Form" library="Eshop_Keywords">
+<arguments>
+<arg>&amp;{test_data}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Input_firstname}</arg>
+<arg>${test_data['firstname']}</arg>
+</arguments>
+<msg timestamp="20181105 20:44:03.163" level="INFO">Typing text 'Alice' into text field 'id=customer_firstname'.</msg>
+<status status="PASS" starttime="20181105 20:44:03.162" endtime="20181105 20:44:03.293"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Input_lastname}</arg>
+<arg>${test_data['lastname']}</arg>
+</arguments>
+<msg timestamp="20181105 20:44:03.294" level="INFO">Typing text 'Black' into text field 'id=customer_lastname'.</msg>
+<status status="PASS" starttime="20181105 20:44:03.293" endtime="20181105 20:44:03.425"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Input_password}</arg>
+<arg>${test_data['password']}</arg>
+</arguments>
+<msg timestamp="20181105 20:44:03.425" level="INFO">Typing text 'A444' into text field 'id=passwd'.</msg>
+<status status="PASS" starttime="20181105 20:44:03.425" endtime="20181105 20:44:03.525"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Input_address1}</arg>
+<arg>${test_data['address']}</arg>
+</arguments>
+<msg timestamp="20181105 20:44:03.526" level="INFO">Typing text 'Valley Street' into text field 'id=address1'.</msg>
+<status status="PASS" starttime="20181105 20:44:03.526" endtime="20181105 20:44:03.714"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Input_city}</arg>
+<arg>${test_data['city']}</arg>
+</arguments>
+<msg timestamp="20181105 20:44:03.714" level="INFO">Typing text 'Seattle' into text field 'id=city'.</msg>
+<status status="PASS" starttime="20181105 20:44:03.714" endtime="20181105 20:44:03.829"></status>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${Select_country}</arg>
+<arg>${test_data['country']}</arg>
+</arguments>
+<msg timestamp="20181105 20:44:03.829" level="INFO">Selecting options from selection list 'id=id_country' by label United States.</msg>
+<status status="PASS" starttime="20181105 20:44:03.829" endtime="20181105 20:44:03.891"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Input_postcode}</arg>
+<arg>${test_data['postcode']}</arg>
+</arguments>
+<msg timestamp="20181105 20:44:03.892" level="INFO">Typing text '12345' into text field 'id=postcode'.</msg>
+<status status="PASS" starttime="20181105 20:44:03.891" endtime="20181105 20:44:04.001"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Input_phone}</arg>
+<arg>${test_data['phone']}</arg>
+</arguments>
+<msg timestamp="20181105 20:44:04.002" level="INFO">Typing text '11111111' into text field 'id=phone'.</msg>
+<status status="PASS" starttime="20181105 20:44:04.001" endtime="20181105 20:44:04.127"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Input_mobile_phone}</arg>
+<arg>${test_data['phone_mobile']}</arg>
+</arguments>
+<msg timestamp="20181105 20:44:04.128" level="INFO">Typing text '55555555' into text field 'id=phone_mobile'.</msg>
+<status status="PASS" starttime="20181105 20:44:04.127" endtime="20181105 20:44:04.248"></status>
+</kw>
+<status status="PASS" starttime="20181105 20:44:03.162" endtime="20181105 20:44:04.248"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${Button_register}</arg>
+</arguments>
+<msg timestamp="20181105 20:44:04.249" level="INFO">Clicking button 'id=submitAccount'.</msg>
+<status status="PASS" starttime="20181105 20:44:04.248" endtime="20181105 20:44:05.083"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>passwd is invalid.</arg>
+</arguments>
+<msg timestamp="20181105 20:44:05.100" level="INFO">Current page contains text 'passwd is invalid.'.</msg>
+<status status="PASS" starttime="20181105 20:44:05.083" endtime="20181105 20:44:05.100"></status>
+</kw>
+<status status="PASS" starttime="20181105 20:44:03.161" endtime="20181105 20:44:05.100"></status>
+</kw>
+<status status="PASS" starttime="20181105 20:44:03.161" endtime="20181105 20:44:05.100"></status>
+</kw>
+<status status="PASS" starttime="20181105 20:44:00.827" endtime="20181105 20:44:05.100"></status>
+</kw>
+<kw name="Capture Screenshot And Close Browser" library="Eshop_Keywords" type="teardown">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181105 20:44:05.453" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-28.png"&gt;&lt;img src="selenium-screenshot-28.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20181105 20:44:05.101" endtime="20181105 20:44:05.453"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20181105 20:44:05.453" endtime="20181105 20:44:07.570"></status>
+</kw>
+<status status="PASS" starttime="20181105 20:44:05.101" endtime="20181105 20:44:07.570"></status>
+</kw>
+<status status="PASS" starttime="20181105 20:43:52.946" endtime="20181105 20:44:07.571" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20181105 20:43:35.773" endtime="20181105 20:44:07.573"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0">Critical Tests</stat>
-<stat pass="1" fail="0">All Tests</stat>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" id="s1" name="Sign Up Testing">Sign Up Testing</stat>
+<stat pass="2" fail="0" id="s1" name="Eshop Registration">Eshop Registration</stat>
 </suite>
 </statistics>
 <errors>

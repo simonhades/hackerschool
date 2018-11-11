@@ -1,0 +1,2 @@
+[1109/232732.168:ERROR:process_reader_win.cc(123)] NtOpenThread: {Pøístup byl odepøen} Proces požadoval pøístup k objektu, ale nebyla mu udìlena odpovídající pøístupová práva. (0xc0000022)
+[1109/232732.170:ERROR:exception_snapshot_win.cc(88)] thread ID 13484 not found in process

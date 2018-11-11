@@ -31,7 +31,7 @@ Register To Eshop
     Select From List By Label    ${addr_dropdown_state}    Arizona
     Input Text    ${addr_tbox_zip}    12000
     Input Text    ${addr_tbox_cellphone}    +420666999888
-#    Clear Element Text    addr_tbox_alias
+#    Clear Element Text    ${addr_tbox_alias}
 #    Input Text    ${addr_tbox_alias}    XYZ
     Click Button    ${sup_btn_register}
     Wait Until Page Contains    Welcome to your account. Here you can manage all of your personal information and orders.    
