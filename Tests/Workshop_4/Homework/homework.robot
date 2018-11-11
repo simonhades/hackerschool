@@ -7,11 +7,13 @@ Variables    ../../../Objects/Homework04/Products_Objects.py
 Test Setup    Open Products    
 Test Teardown    Capture Screenshot And Close Browser
 
+*** Variables ***
+${number_of_products}    number_of_products
 
 *** Test Cases ***
-Filter Showing 2 Products
-    [Template]    Apply Filters For 2 Products
-    :FOR    ${filter}    IN    @{show_2_products}
+Correct Number Of Products Is Shown After Filtering
+    [Template]    Apply Filters For Products
+    :FOR    ${filter}    IN    @{show_${number_of_products}_products}
     \    ${filter}  
    
 Sort By
@@ -20,12 +22,12 @@ Sort By
     \    ${sort_by}    
 
 *** Keywords ***
-Apply Filters For 2 Products
+Apply Filters For Products
     [Arguments]    ${filter}
     Choose Option For Filtering    ${filter}
-    Page Should Contain    Showing 1 - 2 of 2 items 
+    Number Of Products    ${number_of_products}       
     Clear Filtering
-    Page Should Contain    Showing 1 - 7 of 7 items
+    All Products Are Shown
      
 Sorting All Options
     [Arguments]    ${sort_by}

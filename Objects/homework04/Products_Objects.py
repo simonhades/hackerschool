@@ -1,8 +1,9 @@
 Button_woman = "class=sf-with-ul"
 Loader_not_visible = "//ul[@class='product_list grid row' and contains(@style,'opacity: 1')]"
 Sort_by_dropdown = "id=selectProductSort"
-Remove_filter = "//*[contains(@class, 'icon-remove')]"
-           
+Remove_filter = "//*[contains(@class, 'icon-remove')]"       
+Product = "//*[contains(@class, 'product-container')]"
+       
 filters = {
 		   'categories_tops': "//input[contains(@name, 'layered_category_4')]",
 		   'categories_dresses': "//input[contains(@name, 'layered_category_8')]",

@@ -8,6 +8,15 @@ ${browser}	chrome
 
 *** Keywords ***
 
+Number Of Products
+    [Arguments]    ${number_of_products}
+    Wait Until Page Contains    Showing 1 - ${number_of_products} of ${number_of_products} items    
+    Page Should Contain    Showing 1 - ${number_of_products} of ${number_of_products} items
+    Locator Should Match X Times    ${Product}    ${number_of_products}
+
+All Products Are Shown
+    Page Should Contain    Showing 1 - 7 of 7 item
+    Locator Should Match X Times    ${Product}    7
     
 Choose Option For Sorting
     [Arguments]    ${sort_by}
