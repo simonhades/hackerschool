@@ -9,25 +9,25 @@ Test Teardown    Capture Screenshot And Close Browser
 
 
 *** Test Cases ***
-Filter showing 2 product
-    [Template]    Apply filters for 2 products
+Filter Showing 2 Products
+    [Template]    Apply Filters For 2 Products
     :FOR    ${filter}    IN    @{show_2_products}
     \    ${filter}  
    
 Sort By
-    [Template]    Sorting shows all choices
+    [Template]    Sorting All Options
     :FOR    ${sort_by}    IN    @{sort_by_options}
     \    ${sort_by}    
 
 *** Keywords ***
-Apply filters for 2 products
+Apply Filters For 2 Products
     [Arguments]    ${filter}
     Choose Option For Filtering    ${filter}
     Page Should Contain    Showing 1 - 2 of 2 items 
     Clear Filtering
     Page Should Contain    Showing 1 - 7 of 7 items
      
-Sorting shows all choices
+Sorting All Options
     [Arguments]    ${sort_by}
     Choose Option For Sorting    ${sort_by}
     Page Should Contain    Showing 1 - 7 of 7 items

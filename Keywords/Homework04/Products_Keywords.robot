@@ -8,7 +8,6 @@ ${browser}	chrome
 
 *** Keywords ***
 
- 
     
 Choose Option For Sorting
     [Arguments]    ${sort_by}
