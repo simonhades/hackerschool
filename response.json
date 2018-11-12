@@ -1,0 +1,29 @@
+{
+    "seconds": 0.430226,
+    "status": 201,
+    "body": {
+        "id": 51,
+        "name": "Theodor Bolton"
+    },
+    "headers": {
+        "Date": "Mon, 12 Nov 2018 18:44:05 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "42",
+        "Connection": "keep-alive",
+        "Set-Cookie": "__cfduid=d9a8e9c06f4155d1985bbec61907a72a71542048245; expires=Tue, 12-Nov-19 18:44:05 GMT; path=/; domain=.typicode.com; HttpOnly",
+        "X-Powered-By": "Express",
+        "Vary": "Origin, X-HTTP-Method-Override, Accept-Encoding",
+        "Access-Control-Allow-Credentials": "true",
+        "Cache-Control": "no-cache",
+        "Pragma": "no-cache",
+        "Expires": "-1",
+        "Access-Control-Expose-Headers": "Location",
+        "Location": "http://jsonplaceholder.typicode.com/users/51",
+        "X-Content-Type-Options": "nosniff",
+        "Etag": "W/\"2a-TM8kiCNN9StIyzc7I+8+QJkmPnI\"",
+        "Via": "1.1 vegur",
+        "Expect-CT": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+        "Server": "cloudflare",
+        "CF-RAY": "478b25dbfab4bf1b-FRA"
+    }
+}
