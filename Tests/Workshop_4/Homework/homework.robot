@@ -26,7 +26,7 @@ Correct Number Of Products Is Shown After Filtering
 Sorting All Options
     [Arguments]    ${sort_by}
     Choose Option For Sorting    ${sort_by}
-    Compare Values    ${sort_by}
+    Compare Values   ${sort_by}
     Page Should Contain    Showing 1 - 7 of 7 items     
     
 Apply Filters For Products
@@ -35,8 +35,6 @@ Apply Filters For Products
     Number Of Products    ${number_of_products}       
     Clear Filtering
     All Products Are Shown
-     
-
-
+         
     
     

@@ -1,5 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
+Library    Collections
 Variables	../../Objects/homework04/Products_Objects.py
 Variables   ../../Resources/Homework04/Woman_Section_Data.py
 
@@ -8,11 +9,17 @@ ${url}	http://automationpractice.com/index.php
 ${browser}	chrome
 
 *** Keywords ***
-# Compare first value after sorting with the correct value from dictionary in Woman_Section_Data.py
-Compare Values
+Compare Values       
     [Arguments]    ${sort_by}
-    ${list}=    Get Text     ${Product_price}
-    Should Be Equal    ${list}    ${correct_prices['${sort_by}']}
+    ${price}=    Get Text    ${Product_price}
+    ${price2}=    Get Text     ${Product_price_2}
+    ${price3}=    Get Text     ${Product_price_3}
+    ${price4}=    Get Text     ${Product_price_4}
+    ${price5}=    Get Text     ${Product_price_5}
+    ${price6}=    Get Text     ${Product_price_6}
+    ${price7}=    Get Text     ${Product_price_7}
+    @{list}=    Create List    ${price}    ${price2}    ${price3}    ${price4}    ${price5}    ${price6}    ${price7}
+    Lists Should Be Equal    ${list}    ${correct_prices['${sort_by}']}
 
 # Check whether the number of shown products is correct
 Number Of Products
