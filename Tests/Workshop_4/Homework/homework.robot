@@ -11,17 +11,24 @@ Test Teardown    Capture Screenshot And Close Browser
 ${number_of_products}    number_of_products
 
 *** Test Cases ***
+Sort By
+    [Template]    Sorting All Options
+    :FOR    ${sort_by}    IN    @{sort_by_options}
+    \    ${sort_by}
+
+
 Correct Number Of Products Is Shown After Filtering
     [Template]    Apply Filters For Products
     :FOR    ${filter}    IN    @{show_${number_of_products}_products}
     \    ${filter}  
-   
-Sort By
-    [Template]    Sorting All Options
-    :FOR    ${sort_by}    IN    @{sort_by_options}
-    \    ${sort_by}    
-
+        
 *** Keywords ***
+Sorting All Options
+    [Arguments]    ${sort_by}
+    Choose Option For Sorting    ${sort_by}
+    Compare Values    ${sort_by}
+    Page Should Contain    Showing 1 - 7 of 7 items     
+    
 Apply Filters For Products
     [Arguments]    ${filter}
     Choose Option For Filtering    ${filter}
@@ -29,10 +36,7 @@ Apply Filters For Products
     Clear Filtering
     All Products Are Shown
      
-Sorting All Options
-    [Arguments]    ${sort_by}
-    Choose Option For Sorting    ${sort_by}
-    Page Should Contain    Showing 1 - 7 of 7 items
 
 
-
+    
+    
