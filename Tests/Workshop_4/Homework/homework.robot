@@ -8,6 +8,7 @@ Test Setup    Open Products
 Test Teardown    Capture Screenshot And Close Browser
 
 *** Variables ***
+# test parametrization - check correct number of product shown after filtering
 ${number_of_products}    number_of_products
 
 *** Test Cases ***
@@ -15,7 +16,6 @@ Sort By
     [Template]    Sorting All Options
     :FOR    ${sort_by}    IN    @{sort_by_options}
     \    ${sort_by}
-
 
 Correct Number Of Products Is Shown After Filtering
     [Template]    Apply Filters For Products
