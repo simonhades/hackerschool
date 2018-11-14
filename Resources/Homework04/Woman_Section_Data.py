@@ -1,4 +1,6 @@
 sort_by_options = ['Price: Lowest first', 'Price: Highest first', 'Product Name: A to Z', 'Product Name: Z to A', 'In stock', 'Reference: Lowest first', 'Reference: Highest first']
+sort_by_price = ['Price: Lowest first', 'Price: Highest first']
+sort_by_name = ['Product Name: A to Z', 'Product Name: Z to A']
 show_2_products = ['color_white', 'compositions_viscose', 'color_black', 'categories_tops', 'color_blue', 'compositions_polyester', 'properties_short_dress']
 show_3_products = ['color_orange', 'compositions_cotton', 'color_yellow', 'styles_casual', 'styles_girly']
 

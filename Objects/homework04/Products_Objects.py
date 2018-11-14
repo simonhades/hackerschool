@@ -3,13 +3,23 @@ Loader_not_visible = "//ul[@class='product_list grid row' and contains(@style,'o
 Sort_by_dropdown = "id=selectProductSort"
 Remove_filter = "//*[contains(@class, 'icon-remove')]"       
 Product = "//*[contains(@class, 'product-container')]"
+
 Product_price = "(//div[@class='right-block']//span[@itemprop='price'])[1]"      
 Product_price_2 = "(//div[@class='right-block']//span[@itemprop='price'])[2]"
 Product_price_3 = "(//div[@class='right-block']//span[@itemprop='price'])[3]"  
 Product_price_4 = "(//div[@class='right-block']//span[@itemprop='price'])[4]"  
 Product_price_5 = "(//div[@class='right-block']//span[@itemprop='price'])[5]"  
 Product_price_6 = "(//div[@class='right-block']//span[@itemprop='price'])[6]"  
-Product_price_7 = "(//div[@class='right-block']//span[@itemprop='price'])[7]"    
+Product_price_7 = "(//div[@class='right-block']//span[@itemprop='price'])[7]"
+ 
+Product_name = "(//*[(@class='right-block')]//a[(@class='product-name')])[1]"
+Product_name_2 = "(//*[(@class='right-block')]//a[(@class='product-name')])[2]"
+Product_name_3 = "(//*[(@class='right-block')]//a[(@class='product-name')])[3]"
+Product_name_4 = "(//*[(@class='right-block')]//a[(@class='product-name')])[4]"
+Product_name_5 = "(//*[(@class='right-block')]//a[(@class='product-name')])[5]"
+Product_name_6 = "(//*[(@class='right-block')]//a[(@class='product-name')])[6]"
+Product_name_7 = "(//*[(@class='right-block')]//a[(@class='product-name')])[7]"
+    
 filters = {
 		   'categories_tops': "//input[contains(@name, 'layered_category_4')]",
 		   'categories_dresses': "//input[contains(@name, 'layered_category_8')]",

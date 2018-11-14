@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.0.4 (Python 3.6.6 on win32)" generated="20181113 21:32:40.256">
+<robot generator="Robot 3.0.4 (Python 3.6.6 on win32)" generated="20181114 23:13:39.666">
 <suite id="s1" name="Homework" source="C:\Users\User\eclipse-workspace\hackerschool\Tests\Workshop_4\Homework\homework.robot">
 <test id="s1-t1" name="Sort By">
 <kw name="Open Products" library="Products_Keywords" type="setup">
@@ -9,29 +9,29 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20181113 21:32:40.519" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/index.php'.</msg>
-<status status="PASS" starttime="20181113 21:32:40.519" endtime="20181113 21:32:50.307"></status>
+<msg timestamp="20181114 23:13:39.949" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/index.php'.</msg>
+<status status="PASS" starttime="20181114 23:13:39.948" endtime="20181114 23:14:09.298"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20181113 21:32:50.307" endtime="20181113 21:32:51.433"></status>
+<status status="PASS" starttime="20181114 23:14:09.298" endtime="20181114 23:14:10.420"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${Button_woman}</arg>
 </arguments>
-<msg timestamp="20181113 21:32:51.433" level="INFO">Clicking element 'class=sf-with-ul'.</msg>
-<status status="PASS" starttime="20181113 21:32:51.433" endtime="20181113 21:32:52.985"></status>
+<msg timestamp="20181114 23:14:10.420" level="INFO">Clicking element 'class=sf-with-ul'.</msg>
+<status status="PASS" starttime="20181114 23:14:10.420" endtime="20181114 23:14:13.799"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` appears on current page.</doc>
 <arguments>
 <arg>${Sort_by_dropdown}</arg>
 </arguments>
-<status status="PASS" starttime="20181113 21:32:52.985" endtime="20181113 21:32:53.009"></status>
+<status status="PASS" starttime="20181114 23:14:13.799" endtime="20181114 23:14:13.822"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:32:40.519" endtime="20181113 21:32:53.009"></status>
+<status status="PASS" starttime="20181114 23:13:39.948" endtime="20181114 23:14:13.822"></status>
 </kw>
 <kw name="${sort_by} IN [ @{sort_by_options} ]" type="for">
 <kw name="${sort_by} = Price: Lowest first" type="foritem">
@@ -49,17 +49,17 @@
 <arg>${Sort_by_dropdown}</arg>
 <arg>${sort_by}</arg>
 </arguments>
-<msg timestamp="20181113 21:32:53.011" level="INFO">Selecting options from selection list 'id=selectProductSort' by label Price: Lowest first.</msg>
-<status status="PASS" starttime="20181113 21:32:53.011" endtime="20181113 21:32:53.139"></status>
+<msg timestamp="20181114 23:14:13.825" level="INFO">Selecting options from selection list 'id=selectProductSort' by label Price: Lowest first.</msg>
+<status status="PASS" starttime="20181114 23:14:13.823" endtime="20181114 23:14:13.950"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` appears on current page.</doc>
 <arguments>
 <arg>${Loader_not_visible}</arg>
 </arguments>
-<status status="PASS" starttime="20181113 21:32:53.139" endtime="20181113 21:32:54.219"></status>
+<status status="PASS" starttime="20181114 23:14:13.950" endtime="20181114 23:14:15.255"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:32:53.010" endtime="20181113 21:32:54.219"></status>
+<status status="PASS" starttime="20181114 23:14:13.823" endtime="20181114 23:14:15.255"></status>
 </kw>
 <kw name="Compare Values" library="Products_Keywords">
 <arguments>
@@ -73,8 +73,8 @@
 <assign>
 <var>${price}</var>
 </assign>
-<msg timestamp="20181113 21:32:54.262" level="INFO">${price} = $16.40</msg>
-<status status="PASS" starttime="20181113 21:32:54.220" endtime="20181113 21:32:54.262"></status>
+<msg timestamp="20181114 23:14:15.304" level="INFO">${price} = $16.40</msg>
+<status status="PASS" starttime="20181114 23:14:15.256" endtime="20181114 23:14:15.304"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -84,8 +84,8 @@
 <assign>
 <var>${price2}</var>
 </assign>
-<msg timestamp="20181113 21:32:54.308" level="INFO">${price2} = $16.51</msg>
-<status status="PASS" starttime="20181113 21:32:54.262" endtime="20181113 21:32:54.308"></status>
+<msg timestamp="20181114 23:14:15.348" level="INFO">${price2} = $16.51</msg>
+<status status="PASS" starttime="20181114 23:14:15.304" endtime="20181114 23:14:15.348"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -95,8 +95,8 @@
 <assign>
 <var>${price3}</var>
 </assign>
-<msg timestamp="20181113 21:32:54.351" level="INFO">${price3} = $26.00</msg>
-<status status="PASS" starttime="20181113 21:32:54.308" endtime="20181113 21:32:54.351"></status>
+<msg timestamp="20181114 23:14:15.396" level="INFO">${price3} = $26.00</msg>
+<status status="PASS" starttime="20181114 23:14:15.348" endtime="20181114 23:14:15.396"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -106,8 +106,8 @@
 <assign>
 <var>${price4}</var>
 </assign>
-<msg timestamp="20181113 21:32:54.393" level="INFO">${price4} = $27.00</msg>
-<status status="PASS" starttime="20181113 21:32:54.351" endtime="20181113 21:32:54.393"></status>
+<msg timestamp="20181114 23:14:15.442" level="INFO">${price4} = $27.00</msg>
+<status status="PASS" starttime="20181114 23:14:15.396" endtime="20181114 23:14:15.442"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -117,8 +117,8 @@
 <assign>
 <var>${price5}</var>
 </assign>
-<msg timestamp="20181113 21:32:54.437" level="INFO">${price5} = $28.98</msg>
-<status status="PASS" starttime="20181113 21:32:54.393" endtime="20181113 21:32:54.437"></status>
+<msg timestamp="20181114 23:14:15.487" level="INFO">${price5} = $28.98</msg>
+<status status="PASS" starttime="20181114 23:14:15.442" endtime="20181114 23:14:15.487"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -128,8 +128,8 @@
 <assign>
 <var>${price6}</var>
 </assign>
-<msg timestamp="20181113 21:32:54.478" level="INFO">${price6} = $30.50</msg>
-<status status="PASS" starttime="20181113 21:32:54.437" endtime="20181113 21:32:54.478"></status>
+<msg timestamp="20181114 23:14:15.533" level="INFO">${price6} = $30.50</msg>
+<status status="PASS" starttime="20181114 23:14:15.487" endtime="20181114 23:14:15.533"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -139,8 +139,8 @@
 <assign>
 <var>${price7}</var>
 </assign>
-<msg timestamp="20181113 21:32:54.521" level="INFO">${price7} = $50.99</msg>
-<status status="PASS" starttime="20181113 21:32:54.479" endtime="20181113 21:32:54.521"></status>
+<msg timestamp="20181114 23:14:15.580" level="INFO">${price7} = $50.99</msg>
+<status status="PASS" starttime="20181114 23:14:15.533" endtime="20181114 23:14:15.580"></status>
 </kw>
 <kw name="Create List" library="BuiltIn">
 <doc>Returns a list containing given items.</doc>
@@ -156,8 +156,8 @@
 <assign>
 <var>@{list}</var>
 </assign>
-<msg timestamp="20181113 21:32:54.522" level="INFO">@{list} = [ $16.40 | $16.51 | $26.00 | $27.00 | $28.98 | $30.50 | $50.99 ]</msg>
-<status status="PASS" starttime="20181113 21:32:54.521" endtime="20181113 21:32:54.522"></status>
+<msg timestamp="20181114 23:14:15.581" level="INFO">@{list} = [ $16.40 | $16.51 | $26.00 | $27.00 | $28.98 | $30.50 | $50.99 ]</msg>
+<status status="PASS" starttime="20181114 23:14:15.580" endtime="20181114 23:14:15.581"></status>
 </kw>
 <kw name="Lists Should Be Equal" library="Collections">
 <doc>Fails if given lists are unequal.</doc>
@@ -165,21 +165,21 @@
 <arg>${list}</arg>
 <arg>${correct_prices['${sort_by}']}</arg>
 </arguments>
-<status status="PASS" starttime="20181113 21:32:54.522" endtime="20181113 21:32:54.522"></status>
+<status status="PASS" starttime="20181114 23:14:15.581" endtime="20181114 23:14:15.581"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:32:54.220" endtime="20181113 21:32:54.523"></status>
+<status status="PASS" starttime="20181114 23:14:15.255" endtime="20181114 23:14:15.581"></status>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <doc>Verifies that current page contains ``text``.</doc>
 <arguments>
 <arg>Showing 1 - 7 of 7 items</arg>
 </arguments>
-<msg timestamp="20181113 21:32:54.549" level="INFO">Current page contains text 'Showing 1 - 7 of 7 items'.</msg>
-<status status="PASS" starttime="20181113 21:32:54.523" endtime="20181113 21:32:54.549"></status>
+<msg timestamp="20181114 23:14:15.608" level="INFO">Current page contains text 'Showing 1 - 7 of 7 items'.</msg>
+<status status="PASS" starttime="20181114 23:14:15.581" endtime="20181114 23:14:15.608"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:32:53.010" endtime="20181113 21:32:54.549"></status>
+<status status="PASS" starttime="20181114 23:14:13.823" endtime="20181114 23:14:15.608"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:32:53.010" endtime="20181113 21:32:54.549"></status>
+<status status="PASS" starttime="20181114 23:14:13.822" endtime="20181114 23:14:15.608"></status>
 </kw>
 <kw name="${sort_by} = Price: Highest first" type="foritem">
 <kw name="Sorting All Options">
@@ -196,17 +196,17 @@
 <arg>${Sort_by_dropdown}</arg>
 <arg>${sort_by}</arg>
 </arguments>
-<msg timestamp="20181113 21:32:54.550" level="INFO">Selecting options from selection list 'id=selectProductSort' by label Price: Highest first.</msg>
-<status status="PASS" starttime="20181113 21:32:54.550" endtime="20181113 21:32:54.660"></status>
+<msg timestamp="20181114 23:14:15.610" level="INFO">Selecting options from selection list 'id=selectProductSort' by label Price: Highest first.</msg>
+<status status="PASS" starttime="20181114 23:14:15.610" endtime="20181114 23:14:15.731"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` appears on current page.</doc>
 <arguments>
 <arg>${Loader_not_visible}</arg>
 </arguments>
-<status status="PASS" starttime="20181113 21:32:54.660" endtime="20181113 21:32:55.782"></status>
+<status status="PASS" starttime="20181114 23:14:15.732" endtime="20181114 23:14:17.650"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:32:54.550" endtime="20181113 21:32:55.782"></status>
+<status status="PASS" starttime="20181114 23:14:15.609" endtime="20181114 23:14:17.651"></status>
 </kw>
 <kw name="Compare Values" library="Products_Keywords">
 <arguments>
@@ -220,8 +220,8 @@
 <assign>
 <var>${price}</var>
 </assign>
-<msg timestamp="20181113 21:32:55.816" level="INFO">${price} = $16.40</msg>
-<status status="PASS" starttime="20181113 21:32:55.782" endtime="20181113 21:32:55.816"></status>
+<msg timestamp="20181114 23:14:17.688" level="INFO">${price} = $16.40</msg>
+<status status="PASS" starttime="20181114 23:14:17.651" endtime="20181114 23:14:17.688"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -231,8 +231,8 @@
 <assign>
 <var>${price2}</var>
 </assign>
-<msg timestamp="20181113 21:32:55.849" level="INFO">${price2} = $16.51</msg>
-<status status="PASS" starttime="20181113 21:32:55.816" endtime="20181113 21:32:55.849"></status>
+<msg timestamp="20181114 23:14:17.721" level="INFO">${price2} = $16.51</msg>
+<status status="PASS" starttime="20181114 23:14:17.688" endtime="20181114 23:14:17.721"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -242,8 +242,8 @@
 <assign>
 <var>${price3}</var>
 </assign>
-<msg timestamp="20181113 21:32:55.882" level="INFO">${price3} = $26.00</msg>
-<status status="PASS" starttime="20181113 21:32:55.849" endtime="20181113 21:32:55.882"></status>
+<msg timestamp="20181114 23:14:17.765" level="INFO">${price3} = $26.00</msg>
+<status status="PASS" starttime="20181114 23:14:17.722" endtime="20181114 23:14:17.765"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -253,8 +253,8 @@
 <assign>
 <var>${price4}</var>
 </assign>
-<msg timestamp="20181113 21:32:55.914" level="INFO">${price4} = $27.00</msg>
-<status status="PASS" starttime="20181113 21:32:55.882" endtime="20181113 21:32:55.914"></status>
+<msg timestamp="20181114 23:14:17.800" level="INFO">${price4} = $27.00</msg>
+<status status="PASS" starttime="20181114 23:14:17.765" endtime="20181114 23:14:17.800"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -264,8 +264,8 @@
 <assign>
 <var>${price5}</var>
 </assign>
-<msg timestamp="20181113 21:32:55.949" level="INFO">${price5} = $28.98</msg>
-<status status="PASS" starttime="20181113 21:32:55.914" endtime="20181113 21:32:55.949"></status>
+<msg timestamp="20181114 23:14:17.833" level="INFO">${price5} = $28.98</msg>
+<status status="PASS" starttime="20181114 23:14:17.800" endtime="20181114 23:14:17.833"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -275,8 +275,8 @@
 <assign>
 <var>${price6}</var>
 </assign>
-<msg timestamp="20181113 21:32:55.982" level="INFO">${price6} = $30.50</msg>
-<status status="PASS" starttime="20181113 21:32:55.950" endtime="20181113 21:32:55.982"></status>
+<msg timestamp="20181114 23:14:17.869" level="INFO">${price6} = $30.50</msg>
+<status status="PASS" starttime="20181114 23:14:17.833" endtime="20181114 23:14:17.869"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -286,8 +286,8 @@
 <assign>
 <var>${price7}</var>
 </assign>
-<msg timestamp="20181113 21:32:56.016" level="INFO">${price7} = $50.99</msg>
-<status status="PASS" starttime="20181113 21:32:55.982" endtime="20181113 21:32:56.016"></status>
+<msg timestamp="20181114 23:14:17.905" level="INFO">${price7} = $50.99</msg>
+<status status="PASS" starttime="20181114 23:14:17.869" endtime="20181114 23:14:17.906"></status>
 </kw>
 <kw name="Create List" library="BuiltIn">
 <doc>Returns a list containing given items.</doc>
@@ -303,8 +303,8 @@
 <assign>
 <var>@{list}</var>
 </assign>
-<msg timestamp="20181113 21:32:56.016" level="INFO">@{list} = [ $16.40 | $16.51 | $26.00 | $27.00 | $28.98 | $30.50 | $50.99 ]</msg>
-<status status="PASS" starttime="20181113 21:32:56.016" endtime="20181113 21:32:56.016"></status>
+<msg timestamp="20181114 23:14:17.906" level="INFO">@{list} = [ $16.40 | $16.51 | $26.00 | $27.00 | $28.98 | $30.50 | $50.99 ]</msg>
+<status status="PASS" starttime="20181114 23:14:17.906" endtime="20181114 23:14:17.906"></status>
 </kw>
 <kw name="Lists Should Be Equal" library="Collections">
 <doc>Fails if given lists are unequal.</doc>
@@ -312,20 +312,20 @@
 <arg>${list}</arg>
 <arg>${correct_prices['${sort_by}']}</arg>
 </arguments>
-<msg timestamp="20181113 21:32:56.017" level="FAIL">Lists are different:
+<msg timestamp="20181114 23:14:17.907" level="FAIL">Lists are different:
 Index 0: $16.40 != $50.99
 Index 1: $16.51 != $30.50
 Index 2: $26.00 != $28.98
 Index 4: $28.98 != $26.00
 Index 5: $30.50 != $16.51
 Index 6: $50.99 != $16.40</msg>
-<status status="FAIL" starttime="20181113 21:32:56.017" endtime="20181113 21:32:56.017"></status>
+<status status="FAIL" starttime="20181114 23:14:17.906" endtime="20181114 23:14:17.907"></status>
 </kw>
-<status status="FAIL" starttime="20181113 21:32:55.782" endtime="20181113 21:32:56.017"></status>
+<status status="FAIL" starttime="20181114 23:14:17.651" endtime="20181114 23:14:17.907"></status>
 </kw>
-<status status="FAIL" starttime="20181113 21:32:54.549" endtime="20181113 21:32:56.017"></status>
+<status status="FAIL" starttime="20181114 23:14:15.609" endtime="20181114 23:14:17.907"></status>
 </kw>
-<status status="FAIL" starttime="20181113 21:32:54.549" endtime="20181113 21:32:56.017"></status>
+<status status="FAIL" starttime="20181114 23:14:15.608" endtime="20181114 23:14:17.907"></status>
 </kw>
 <kw name="${sort_by} = Product Name: A to Z" type="foritem">
 <kw name="Sorting All Options">
@@ -342,17 +342,17 @@ Index 6: $50.99 != $16.40</msg>
 <arg>${Sort_by_dropdown}</arg>
 <arg>${sort_by}</arg>
 </arguments>
-<msg timestamp="20181113 21:32:56.018" level="INFO">Selecting options from selection list 'id=selectProductSort' by label Product Name: A to Z.</msg>
-<status status="PASS" starttime="20181113 21:32:56.018" endtime="20181113 21:32:56.130"></status>
+<msg timestamp="20181114 23:14:17.908" level="INFO">Selecting options from selection list 'id=selectProductSort' by label Product Name: A to Z.</msg>
+<status status="PASS" starttime="20181114 23:14:17.908" endtime="20181114 23:14:18.026"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` appears on current page.</doc>
 <arguments>
 <arg>${Loader_not_visible}</arg>
 </arguments>
-<status status="PASS" starttime="20181113 21:32:56.130" endtime="20181113 21:32:57.233"></status>
+<status status="PASS" starttime="20181114 23:14:18.026" endtime="20181114 23:14:19.103"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:32:56.018" endtime="20181113 21:32:57.233"></status>
+<status status="PASS" starttime="20181114 23:14:17.907" endtime="20181114 23:14:19.103"></status>
 </kw>
 <kw name="Compare Values" library="Products_Keywords">
 <arguments>
@@ -366,8 +366,8 @@ Index 6: $50.99 != $16.40</msg>
 <assign>
 <var>${price}</var>
 </assign>
-<msg timestamp="20181113 21:32:57.265" level="INFO">${price} = $27.00</msg>
-<status status="PASS" starttime="20181113 21:32:57.233" endtime="20181113 21:32:57.265"></status>
+<msg timestamp="20181114 23:14:19.136" level="INFO">${price} = $27.00</msg>
+<status status="PASS" starttime="20181114 23:14:19.103" endtime="20181114 23:14:19.136"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -377,8 +377,8 @@ Index 6: $50.99 != $16.40</msg>
 <assign>
 <var>${price2}</var>
 </assign>
-<msg timestamp="20181113 21:32:57.295" level="INFO">${price2} = $16.51</msg>
-<status status="PASS" starttime="20181113 21:32:57.265" endtime="20181113 21:32:57.295"></status>
+<msg timestamp="20181114 23:14:19.171" level="INFO">${price2} = $16.51</msg>
+<status status="PASS" starttime="20181114 23:14:19.137" endtime="20181114 23:14:19.171"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -388,8 +388,8 @@ Index 6: $50.99 != $16.40</msg>
 <assign>
 <var>${price3}</var>
 </assign>
-<msg timestamp="20181113 21:32:57.324" level="INFO">${price3} = $16.40</msg>
-<status status="PASS" starttime="20181113 21:32:57.295" endtime="20181113 21:32:57.324"></status>
+<msg timestamp="20181114 23:14:19.204" level="INFO">${price3} = $16.40</msg>
+<status status="PASS" starttime="20181114 23:14:19.171" endtime="20181114 23:14:19.204"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -399,8 +399,8 @@ Index 6: $50.99 != $16.40</msg>
 <assign>
 <var>${price4}</var>
 </assign>
-<msg timestamp="20181113 21:32:57.354" level="INFO">${price4} = $26.00</msg>
-<status status="PASS" starttime="20181113 21:32:57.324" endtime="20181113 21:32:57.354"></status>
+<msg timestamp="20181114 23:14:19.237" level="INFO">${price4} = $26.00</msg>
+<status status="PASS" starttime="20181114 23:14:19.205" endtime="20181114 23:14:19.237"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -410,8 +410,8 @@ Index 6: $50.99 != $16.40</msg>
 <assign>
 <var>${price5}</var>
 </assign>
-<msg timestamp="20181113 21:32:57.386" level="INFO">${price5} = $50.99</msg>
-<status status="PASS" starttime="20181113 21:32:57.354" endtime="20181113 21:32:57.386"></status>
+<msg timestamp="20181114 23:14:19.269" level="INFO">${price5} = $50.99</msg>
+<status status="PASS" starttime="20181114 23:14:19.237" endtime="20181114 23:14:19.269"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -421,8 +421,8 @@ Index 6: $50.99 != $16.40</msg>
 <assign>
 <var>${price6}</var>
 </assign>
-<msg timestamp="20181113 21:32:57.415" level="INFO">${price6} = $28.98</msg>
-<status status="PASS" starttime="20181113 21:32:57.386" endtime="20181113 21:32:57.415"></status>
+<msg timestamp="20181114 23:14:19.301" level="INFO">${price6} = $28.98</msg>
+<status status="PASS" starttime="20181114 23:14:19.269" endtime="20181114 23:14:19.301"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -432,8 +432,8 @@ Index 6: $50.99 != $16.40</msg>
 <assign>
 <var>${price7}</var>
 </assign>
-<msg timestamp="20181113 21:32:57.447" level="INFO">${price7} = $30.50</msg>
-<status status="PASS" starttime="20181113 21:32:57.415" endtime="20181113 21:32:57.447"></status>
+<msg timestamp="20181114 23:14:19.331" level="INFO">${price7} = $30.50</msg>
+<status status="PASS" starttime="20181114 23:14:19.301" endtime="20181114 23:14:19.331"></status>
 </kw>
 <kw name="Create List" library="BuiltIn">
 <doc>Returns a list containing given items.</doc>
@@ -449,8 +449,8 @@ Index 6: $50.99 != $16.40</msg>
 <assign>
 <var>@{list}</var>
 </assign>
-<msg timestamp="20181113 21:32:57.447" level="INFO">@{list} = [ $27.00 | $16.51 | $16.40 | $26.00 | $50.99 | $28.98 | $30.50 ]</msg>
-<status status="PASS" starttime="20181113 21:32:57.447" endtime="20181113 21:32:57.448"></status>
+<msg timestamp="20181114 23:14:19.332" level="INFO">@{list} = [ $27.00 | $16.51 | $16.40 | $26.00 | $50.99 | $28.98 | $30.50 ]</msg>
+<status status="PASS" starttime="20181114 23:14:19.331" endtime="20181114 23:14:19.332"></status>
 </kw>
 <kw name="Lists Should Be Equal" library="Collections">
 <doc>Fails if given lists are unequal.</doc>
@@ -458,21 +458,21 @@ Index 6: $50.99 != $16.40</msg>
 <arg>${list}</arg>
 <arg>${correct_prices['${sort_by}']}</arg>
 </arguments>
-<status status="PASS" starttime="20181113 21:32:57.448" endtime="20181113 21:32:57.448"></status>
+<status status="PASS" starttime="20181114 23:14:19.332" endtime="20181114 23:14:19.332"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:32:57.233" endtime="20181113 21:32:57.448"></status>
+<status status="PASS" starttime="20181114 23:14:19.103" endtime="20181114 23:14:19.332"></status>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <doc>Verifies that current page contains ``text``.</doc>
 <arguments>
 <arg>Showing 1 - 7 of 7 items</arg>
 </arguments>
-<msg timestamp="20181113 21:32:57.465" level="INFO">Current page contains text 'Showing 1 - 7 of 7 items'.</msg>
-<status status="PASS" starttime="20181113 21:32:57.448" endtime="20181113 21:32:57.465"></status>
+<msg timestamp="20181114 23:14:19.349" level="INFO">Current page contains text 'Showing 1 - 7 of 7 items'.</msg>
+<status status="PASS" starttime="20181114 23:14:19.332" endtime="20181114 23:14:19.349"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:32:56.018" endtime="20181113 21:32:57.465"></status>
+<status status="PASS" starttime="20181114 23:14:17.907" endtime="20181114 23:14:19.349"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:32:56.017" endtime="20181113 21:32:57.465"></status>
+<status status="PASS" starttime="20181114 23:14:17.907" endtime="20181114 23:14:19.349"></status>
 </kw>
 <kw name="${sort_by} = Product Name: Z to A" type="foritem">
 <kw name="Sorting All Options">
@@ -489,17 +489,17 @@ Index 6: $50.99 != $16.40</msg>
 <arg>${Sort_by_dropdown}</arg>
 <arg>${sort_by}</arg>
 </arguments>
-<msg timestamp="20181113 21:32:57.466" level="INFO">Selecting options from selection list 'id=selectProductSort' by label Product Name: Z to A.</msg>
-<status status="PASS" starttime="20181113 21:32:57.466" endtime="20181113 21:32:57.569"></status>
+<msg timestamp="20181114 23:14:19.350" level="INFO">Selecting options from selection list 'id=selectProductSort' by label Product Name: Z to A.</msg>
+<status status="PASS" starttime="20181114 23:14:19.350" endtime="20181114 23:14:19.465"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` appears on current page.</doc>
 <arguments>
 <arg>${Loader_not_visible}</arg>
 </arguments>
-<status status="PASS" starttime="20181113 21:32:57.569" endtime="20181113 21:32:58.688"></status>
+<status status="PASS" starttime="20181114 23:14:19.465" endtime="20181114 23:14:20.620"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:32:57.466" endtime="20181113 21:32:58.688"></status>
+<status status="PASS" starttime="20181114 23:14:19.350" endtime="20181114 23:14:20.620"></status>
 </kw>
 <kw name="Compare Values" library="Products_Keywords">
 <arguments>
@@ -513,8 +513,8 @@ Index 6: $50.99 != $16.40</msg>
 <assign>
 <var>${price}</var>
 </assign>
-<msg timestamp="20181113 21:32:58.728" level="INFO">${price} = $27.00</msg>
-<status status="PASS" starttime="20181113 21:32:58.689" endtime="20181113 21:32:58.728"></status>
+<msg timestamp="20181114 23:14:20.655" level="INFO">${price} = $27.00</msg>
+<status status="PASS" starttime="20181114 23:14:20.622" endtime="20181114 23:14:20.655"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -524,8 +524,8 @@ Index 6: $50.99 != $16.40</msg>
 <assign>
 <var>${price2}</var>
 </assign>
-<msg timestamp="20181113 21:32:58.760" level="INFO">${price2} = $16.51</msg>
-<status status="PASS" starttime="20181113 21:32:58.728" endtime="20181113 21:32:58.760"></status>
+<msg timestamp="20181114 23:14:20.693" level="INFO">${price2} = $16.51</msg>
+<status status="PASS" starttime="20181114 23:14:20.655" endtime="20181114 23:14:20.693"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -535,8 +535,8 @@ Index 6: $50.99 != $16.40</msg>
 <assign>
 <var>${price3}</var>
 </assign>
-<msg timestamp="20181113 21:32:58.796" level="INFO">${price3} = $16.40</msg>
-<status status="PASS" starttime="20181113 21:32:58.760" endtime="20181113 21:32:58.796"></status>
+<msg timestamp="20181114 23:14:20.727" level="INFO">${price3} = $16.40</msg>
+<status status="PASS" starttime="20181114 23:14:20.693" endtime="20181114 23:14:20.727"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -546,8 +546,8 @@ Index 6: $50.99 != $16.40</msg>
 <assign>
 <var>${price4}</var>
 </assign>
-<msg timestamp="20181113 21:32:58.830" level="INFO">${price4} = $26.00</msg>
-<status status="PASS" starttime="20181113 21:32:58.796" endtime="20181113 21:32:58.830"></status>
+<msg timestamp="20181114 23:14:20.766" level="INFO">${price4} = $26.00</msg>
+<status status="PASS" starttime="20181114 23:14:20.727" endtime="20181114 23:14:20.766"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -557,8 +557,8 @@ Index 6: $50.99 != $16.40</msg>
 <assign>
 <var>${price5}</var>
 </assign>
-<msg timestamp="20181113 21:32:58.860" level="INFO">${price5} = $50.99</msg>
-<status status="PASS" starttime="20181113 21:32:58.830" endtime="20181113 21:32:58.860"></status>
+<msg timestamp="20181114 23:14:20.800" level="INFO">${price5} = $50.99</msg>
+<status status="PASS" starttime="20181114 23:14:20.766" endtime="20181114 23:14:20.800"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -568,8 +568,8 @@ Index 6: $50.99 != $16.40</msg>
 <assign>
 <var>${price6}</var>
 </assign>
-<msg timestamp="20181113 21:32:58.894" level="INFO">${price6} = $28.98</msg>
-<status status="PASS" starttime="20181113 21:32:58.860" endtime="20181113 21:32:58.894"></status>
+<msg timestamp="20181114 23:14:20.835" level="INFO">${price6} = $28.98</msg>
+<status status="PASS" starttime="20181114 23:14:20.800" endtime="20181114 23:14:20.835"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -579,8 +579,8 @@ Index 6: $50.99 != $16.40</msg>
 <assign>
 <var>${price7}</var>
 </assign>
-<msg timestamp="20181113 21:32:58.927" level="INFO">${price7} = $30.50</msg>
-<status status="PASS" starttime="20181113 21:32:58.894" endtime="20181113 21:32:58.927"></status>
+<msg timestamp="20181114 23:14:20.869" level="INFO">${price7} = $30.50</msg>
+<status status="PASS" starttime="20181114 23:14:20.835" endtime="20181114 23:14:20.869"></status>
 </kw>
 <kw name="Create List" library="BuiltIn">
 <doc>Returns a list containing given items.</doc>
@@ -596,8 +596,8 @@ Index 6: $50.99 != $16.40</msg>
 <assign>
 <var>@{list}</var>
 </assign>
-<msg timestamp="20181113 21:32:58.927" level="INFO">@{list} = [ $27.00 | $16.51 | $16.40 | $26.00 | $50.99 | $28.98 | $30.50 ]</msg>
-<status status="PASS" starttime="20181113 21:32:58.927" endtime="20181113 21:32:58.927"></status>
+<msg timestamp="20181114 23:14:20.870" level="INFO">@{list} = [ $27.00 | $16.51 | $16.40 | $26.00 | $50.99 | $28.98 | $30.50 ]</msg>
+<status status="PASS" starttime="20181114 23:14:20.869" endtime="20181114 23:14:20.870"></status>
 </kw>
 <kw name="Lists Should Be Equal" library="Collections">
 <doc>Fails if given lists are unequal.</doc>
@@ -605,20 +605,20 @@ Index 6: $50.99 != $16.40</msg>
 <arg>${list}</arg>
 <arg>${correct_prices['${sort_by}']}</arg>
 </arguments>
-<msg timestamp="20181113 21:32:58.929" level="FAIL">Lists are different:
+<msg timestamp="20181114 23:14:20.871" level="FAIL">Lists are different:
 Index 0: $27.00 != $30.50
 Index 1: $16.51 != $28.98
 Index 2: $16.40 != $50.99
 Index 4: $50.99 != $16.40
 Index 5: $28.98 != $16.51
 Index 6: $30.50 != $27.00</msg>
-<status status="FAIL" starttime="20181113 21:32:58.927" endtime="20181113 21:32:58.929"></status>
+<status status="FAIL" starttime="20181114 23:14:20.871" endtime="20181114 23:14:20.872"></status>
 </kw>
-<status status="FAIL" starttime="20181113 21:32:58.688" endtime="20181113 21:32:58.929"></status>
+<status status="FAIL" starttime="20181114 23:14:20.620" endtime="20181114 23:14:20.872"></status>
 </kw>
-<status status="FAIL" starttime="20181113 21:32:57.466" endtime="20181113 21:32:58.929"></status>
+<status status="FAIL" starttime="20181114 23:14:19.349" endtime="20181114 23:14:20.872"></status>
 </kw>
-<status status="FAIL" starttime="20181113 21:32:57.465" endtime="20181113 21:32:58.929"></status>
+<status status="FAIL" starttime="20181114 23:14:19.349" endtime="20181114 23:14:20.872"></status>
 </kw>
 <kw name="${sort_by} = In stock" type="foritem">
 <kw name="Sorting All Options">
@@ -635,17 +635,17 @@ Index 6: $30.50 != $27.00</msg>
 <arg>${Sort_by_dropdown}</arg>
 <arg>${sort_by}</arg>
 </arguments>
-<msg timestamp="20181113 21:32:58.930" level="INFO">Selecting options from selection list 'id=selectProductSort' by label In stock.</msg>
-<status status="PASS" starttime="20181113 21:32:58.930" endtime="20181113 21:32:59.038"></status>
+<msg timestamp="20181114 23:14:20.873" level="INFO">Selecting options from selection list 'id=selectProductSort' by label In stock.</msg>
+<status status="PASS" starttime="20181114 23:14:20.873" endtime="20181114 23:14:20.985"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` appears on current page.</doc>
 <arguments>
 <arg>${Loader_not_visible}</arg>
 </arguments>
-<status status="PASS" starttime="20181113 21:32:59.038" endtime="20181113 21:32:59.956"></status>
+<status status="PASS" starttime="20181114 23:14:20.985" endtime="20181114 23:14:22.053"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:32:58.930" endtime="20181113 21:32:59.956"></status>
+<status status="PASS" starttime="20181114 23:14:20.873" endtime="20181114 23:14:22.053"></status>
 </kw>
 <kw name="Compare Values" library="Products_Keywords">
 <arguments>
@@ -659,8 +659,8 @@ Index 6: $30.50 != $27.00</msg>
 <assign>
 <var>${price}</var>
 </assign>
-<msg timestamp="20181113 21:32:59.989" level="INFO">${price} = $16.51</msg>
-<status status="PASS" starttime="20181113 21:32:59.957" endtime="20181113 21:32:59.989"></status>
+<msg timestamp="20181114 23:14:22.091" level="INFO">${price} = $16.51</msg>
+<status status="PASS" starttime="20181114 23:14:22.055" endtime="20181114 23:14:22.091"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -670,8 +670,8 @@ Index 6: $30.50 != $27.00</msg>
 <assign>
 <var>${price2}</var>
 </assign>
-<msg timestamp="20181113 21:33:00.021" level="INFO">${price2} = $27.00</msg>
-<status status="PASS" starttime="20181113 21:32:59.989" endtime="20181113 21:33:00.021"></status>
+<msg timestamp="20181114 23:14:22.122" level="INFO">${price2} = $27.00</msg>
+<status status="PASS" starttime="20181114 23:14:22.091" endtime="20181114 23:14:22.122"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -681,8 +681,8 @@ Index 6: $30.50 != $27.00</msg>
 <assign>
 <var>${price3}</var>
 </assign>
-<msg timestamp="20181113 21:33:00.052" level="INFO">${price3} = $50.99</msg>
-<status status="PASS" starttime="20181113 21:33:00.021" endtime="20181113 21:33:00.052"></status>
+<msg timestamp="20181114 23:14:22.155" level="INFO">${price3} = $50.99</msg>
+<status status="PASS" starttime="20181114 23:14:22.122" endtime="20181114 23:14:22.155"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -692,8 +692,8 @@ Index 6: $30.50 != $27.00</msg>
 <assign>
 <var>${price4}</var>
 </assign>
-<msg timestamp="20181113 21:33:00.087" level="INFO">${price4} = $26.00</msg>
-<status status="PASS" starttime="20181113 21:33:00.052" endtime="20181113 21:33:00.087"></status>
+<msg timestamp="20181114 23:14:22.188" level="INFO">${price4} = $26.00</msg>
+<status status="PASS" starttime="20181114 23:14:22.155" endtime="20181114 23:14:22.188"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -703,8 +703,8 @@ Index 6: $30.50 != $27.00</msg>
 <assign>
 <var>${price5}</var>
 </assign>
-<msg timestamp="20181113 21:33:00.122" level="INFO">${price5} = $16.40</msg>
-<status status="PASS" starttime="20181113 21:33:00.087" endtime="20181113 21:33:00.122"></status>
+<msg timestamp="20181114 23:14:22.218" level="INFO">${price5} = $16.40</msg>
+<status status="PASS" starttime="20181114 23:14:22.188" endtime="20181114 23:14:22.218"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -714,8 +714,8 @@ Index 6: $30.50 != $27.00</msg>
 <assign>
 <var>${price6}</var>
 </assign>
-<msg timestamp="20181113 21:33:00.154" level="INFO">${price6} = $30.50</msg>
-<status status="PASS" starttime="20181113 21:33:00.122" endtime="20181113 21:33:00.154"></status>
+<msg timestamp="20181114 23:14:22.258" level="INFO">${price6} = $30.50</msg>
+<status status="PASS" starttime="20181114 23:14:22.218" endtime="20181114 23:14:22.258"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -725,8 +725,8 @@ Index 6: $30.50 != $27.00</msg>
 <assign>
 <var>${price7}</var>
 </assign>
-<msg timestamp="20181113 21:33:00.188" level="INFO">${price7} = $28.98</msg>
-<status status="PASS" starttime="20181113 21:33:00.155" endtime="20181113 21:33:00.188"></status>
+<msg timestamp="20181114 23:14:22.294" level="INFO">${price7} = $28.98</msg>
+<status status="PASS" starttime="20181114 23:14:22.258" endtime="20181114 23:14:22.294"></status>
 </kw>
 <kw name="Create List" library="BuiltIn">
 <doc>Returns a list containing given items.</doc>
@@ -742,8 +742,8 @@ Index 6: $30.50 != $27.00</msg>
 <assign>
 <var>@{list}</var>
 </assign>
-<msg timestamp="20181113 21:33:00.189" level="INFO">@{list} = [ $16.51 | $27.00 | $50.99 | $26.00 | $16.40 | $30.50 | $28.98 ]</msg>
-<status status="PASS" starttime="20181113 21:33:00.188" endtime="20181113 21:33:00.189"></status>
+<msg timestamp="20181114 23:14:22.294" level="INFO">@{list} = [ $16.51 | $27.00 | $50.99 | $26.00 | $16.40 | $30.50 | $28.98 ]</msg>
+<status status="PASS" starttime="20181114 23:14:22.294" endtime="20181114 23:14:22.294"></status>
 </kw>
 <kw name="Lists Should Be Equal" library="Collections">
 <doc>Fails if given lists are unequal.</doc>
@@ -751,21 +751,21 @@ Index 6: $30.50 != $27.00</msg>
 <arg>${list}</arg>
 <arg>${correct_prices['${sort_by}']}</arg>
 </arguments>
-<status status="PASS" starttime="20181113 21:33:00.189" endtime="20181113 21:33:00.190"></status>
+<status status="PASS" starttime="20181114 23:14:22.294" endtime="20181114 23:14:22.295"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:32:59.956" endtime="20181113 21:33:00.190"></status>
+<status status="PASS" starttime="20181114 23:14:22.053" endtime="20181114 23:14:22.295"></status>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <doc>Verifies that current page contains ``text``.</doc>
 <arguments>
 <arg>Showing 1 - 7 of 7 items</arg>
 </arguments>
-<msg timestamp="20181113 21:33:00.204" level="INFO">Current page contains text 'Showing 1 - 7 of 7 items'.</msg>
-<status status="PASS" starttime="20181113 21:33:00.190" endtime="20181113 21:33:00.204"></status>
+<msg timestamp="20181114 23:14:22.310" level="INFO">Current page contains text 'Showing 1 - 7 of 7 items'.</msg>
+<status status="PASS" starttime="20181114 23:14:22.295" endtime="20181114 23:14:22.310"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:32:58.929" endtime="20181113 21:33:00.204"></status>
+<status status="PASS" starttime="20181114 23:14:20.872" endtime="20181114 23:14:22.310"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:32:58.929" endtime="20181113 21:33:00.205"></status>
+<status status="PASS" starttime="20181114 23:14:20.872" endtime="20181114 23:14:22.310"></status>
 </kw>
 <kw name="${sort_by} = Reference: Lowest first" type="foritem">
 <kw name="Sorting All Options">
@@ -782,17 +782,17 @@ Index 6: $30.50 != $27.00</msg>
 <arg>${Sort_by_dropdown}</arg>
 <arg>${sort_by}</arg>
 </arguments>
-<msg timestamp="20181113 21:33:00.206" level="INFO">Selecting options from selection list 'id=selectProductSort' by label Reference: Lowest first.</msg>
-<status status="PASS" starttime="20181113 21:33:00.205" endtime="20181113 21:33:00.307"></status>
+<msg timestamp="20181114 23:14:22.311" level="INFO">Selecting options from selection list 'id=selectProductSort' by label Reference: Lowest first.</msg>
+<status status="PASS" starttime="20181114 23:14:22.311" endtime="20181114 23:14:22.462"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` appears on current page.</doc>
 <arguments>
 <arg>${Loader_not_visible}</arg>
 </arguments>
-<status status="PASS" starttime="20181113 21:33:00.307" endtime="20181113 21:33:01.213"></status>
+<status status="PASS" starttime="20181114 23:14:22.462" endtime="20181114 23:14:23.383"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:00.205" endtime="20181113 21:33:01.213"></status>
+<status status="PASS" starttime="20181114 23:14:22.311" endtime="20181114 23:14:23.383"></status>
 </kw>
 <kw name="Compare Values" library="Products_Keywords">
 <arguments>
@@ -806,8 +806,8 @@ Index 6: $30.50 != $27.00</msg>
 <assign>
 <var>${price}</var>
 </assign>
-<msg timestamp="20181113 21:33:01.245" level="INFO">${price} = $16.51</msg>
-<status status="PASS" starttime="20181113 21:33:01.214" endtime="20181113 21:33:01.245"></status>
+<msg timestamp="20181114 23:14:23.418" level="INFO">${price} = $16.51</msg>
+<status status="PASS" starttime="20181114 23:14:23.383" endtime="20181114 23:14:23.418"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -817,8 +817,8 @@ Index 6: $30.50 != $27.00</msg>
 <assign>
 <var>${price2}</var>
 </assign>
-<msg timestamp="20181113 21:33:01.282" level="INFO">${price2} = $27.00</msg>
-<status status="PASS" starttime="20181113 21:33:01.246" endtime="20181113 21:33:01.282"></status>
+<msg timestamp="20181114 23:14:23.452" level="INFO">${price2} = $27.00</msg>
+<status status="PASS" starttime="20181114 23:14:23.418" endtime="20181114 23:14:23.452"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -828,8 +828,8 @@ Index 6: $30.50 != $27.00</msg>
 <assign>
 <var>${price3}</var>
 </assign>
-<msg timestamp="20181113 21:33:01.317" level="INFO">${price3} = $26.00</msg>
-<status status="PASS" starttime="20181113 21:33:01.282" endtime="20181113 21:33:01.317"></status>
+<msg timestamp="20181114 23:14:23.487" level="INFO">${price3} = $26.00</msg>
+<status status="PASS" starttime="20181114 23:14:23.452" endtime="20181114 23:14:23.488"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -839,8 +839,8 @@ Index 6: $30.50 != $27.00</msg>
 <assign>
 <var>${price4}</var>
 </assign>
-<msg timestamp="20181113 21:33:01.350" level="INFO">${price4} = $50.99</msg>
-<status status="PASS" starttime="20181113 21:33:01.317" endtime="20181113 21:33:01.350"></status>
+<msg timestamp="20181114 23:14:23.523" level="INFO">${price4} = $50.99</msg>
+<status status="PASS" starttime="20181114 23:14:23.488" endtime="20181114 23:14:23.523"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -850,8 +850,8 @@ Index 6: $30.50 != $27.00</msg>
 <assign>
 <var>${price5}</var>
 </assign>
-<msg timestamp="20181113 21:33:01.383" level="INFO">${price5} = $28.98</msg>
-<status status="PASS" starttime="20181113 21:33:01.351" endtime="20181113 21:33:01.383"></status>
+<msg timestamp="20181114 23:14:23.557" level="INFO">${price5} = $28.98</msg>
+<status status="PASS" starttime="20181114 23:14:23.523" endtime="20181114 23:14:23.557"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -861,8 +861,8 @@ Index 6: $30.50 != $27.00</msg>
 <assign>
 <var>${price6}</var>
 </assign>
-<msg timestamp="20181113 21:33:01.414" level="INFO">${price6} = $30.50</msg>
-<status status="PASS" starttime="20181113 21:33:01.383" endtime="20181113 21:33:01.414"></status>
+<msg timestamp="20181114 23:14:23.599" level="INFO">${price6} = $30.50</msg>
+<status status="PASS" starttime="20181114 23:14:23.557" endtime="20181114 23:14:23.599"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -872,8 +872,8 @@ Index 6: $30.50 != $27.00</msg>
 <assign>
 <var>${price7}</var>
 </assign>
-<msg timestamp="20181113 21:33:01.449" level="INFO">${price7} = $16.40</msg>
-<status status="PASS" starttime="20181113 21:33:01.414" endtime="20181113 21:33:01.449"></status>
+<msg timestamp="20181114 23:14:23.634" level="INFO">${price7} = $16.40</msg>
+<status status="PASS" starttime="20181114 23:14:23.600" endtime="20181114 23:14:23.634"></status>
 </kw>
 <kw name="Create List" library="BuiltIn">
 <doc>Returns a list containing given items.</doc>
@@ -889,8 +889,8 @@ Index 6: $30.50 != $27.00</msg>
 <assign>
 <var>@{list}</var>
 </assign>
-<msg timestamp="20181113 21:33:01.450" level="INFO">@{list} = [ $16.51 | $27.00 | $26.00 | $50.99 | $28.98 | $30.50 | $16.40 ]</msg>
-<status status="PASS" starttime="20181113 21:33:01.449" endtime="20181113 21:33:01.450"></status>
+<msg timestamp="20181114 23:14:23.634" level="INFO">@{list} = [ $16.51 | $27.00 | $26.00 | $50.99 | $28.98 | $30.50 | $16.40 ]</msg>
+<status status="PASS" starttime="20181114 23:14:23.634" endtime="20181114 23:14:23.634"></status>
 </kw>
 <kw name="Lists Should Be Equal" library="Collections">
 <doc>Fails if given lists are unequal.</doc>
@@ -898,21 +898,21 @@ Index 6: $30.50 != $27.00</msg>
 <arg>${list}</arg>
 <arg>${correct_prices['${sort_by}']}</arg>
 </arguments>
-<status status="PASS" starttime="20181113 21:33:01.450" endtime="20181113 21:33:01.450"></status>
+<status status="PASS" starttime="20181114 23:14:23.634" endtime="20181114 23:14:23.635"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:01.213" endtime="20181113 21:33:01.450"></status>
+<status status="PASS" starttime="20181114 23:14:23.383" endtime="20181114 23:14:23.635"></status>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <doc>Verifies that current page contains ``text``.</doc>
 <arguments>
 <arg>Showing 1 - 7 of 7 items</arg>
 </arguments>
-<msg timestamp="20181113 21:33:01.466" level="INFO">Current page contains text 'Showing 1 - 7 of 7 items'.</msg>
-<status status="PASS" starttime="20181113 21:33:01.450" endtime="20181113 21:33:01.466"></status>
+<msg timestamp="20181114 23:14:23.655" level="INFO">Current page contains text 'Showing 1 - 7 of 7 items'.</msg>
+<status status="PASS" starttime="20181114 23:14:23.635" endtime="20181114 23:14:23.655"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:00.205" endtime="20181113 21:33:01.466"></status>
+<status status="PASS" starttime="20181114 23:14:22.311" endtime="20181114 23:14:23.656"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:00.205" endtime="20181113 21:33:01.466"></status>
+<status status="PASS" starttime="20181114 23:14:22.310" endtime="20181114 23:14:23.656"></status>
 </kw>
 <kw name="${sort_by} = Reference: Highest first" type="foritem">
 <kw name="Sorting All Options">
@@ -929,17 +929,17 @@ Index 6: $30.50 != $27.00</msg>
 <arg>${Sort_by_dropdown}</arg>
 <arg>${sort_by}</arg>
 </arguments>
-<msg timestamp="20181113 21:33:01.468" level="INFO">Selecting options from selection list 'id=selectProductSort' by label Reference: Highest first.</msg>
-<status status="PASS" starttime="20181113 21:33:01.467" endtime="20181113 21:33:01.574"></status>
+<msg timestamp="20181114 23:14:23.658" level="INFO">Selecting options from selection list 'id=selectProductSort' by label Reference: Highest first.</msg>
+<status status="PASS" starttime="20181114 23:14:23.658" endtime="20181114 23:14:23.764"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` appears on current page.</doc>
 <arguments>
 <arg>${Loader_not_visible}</arg>
 </arguments>
-<status status="PASS" starttime="20181113 21:33:01.574" endtime="20181113 21:33:02.852"></status>
+<status status="PASS" starttime="20181114 23:14:23.765" endtime="20181114 23:14:24.655"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:01.467" endtime="20181113 21:33:02.852"></status>
+<status status="PASS" starttime="20181114 23:14:23.657" endtime="20181114 23:14:24.655"></status>
 </kw>
 <kw name="Compare Values" library="Products_Keywords">
 <arguments>
@@ -953,8 +953,8 @@ Index 6: $30.50 != $27.00</msg>
 <assign>
 <var>${price}</var>
 </assign>
-<msg timestamp="20181113 21:33:02.887" level="INFO">${price} = $16.51</msg>
-<status status="PASS" starttime="20181113 21:33:02.853" endtime="20181113 21:33:02.887"></status>
+<msg timestamp="20181114 23:14:24.689" level="INFO">${price} = $16.51</msg>
+<status status="PASS" starttime="20181114 23:14:24.655" endtime="20181114 23:14:24.689"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -964,8 +964,8 @@ Index 6: $30.50 != $27.00</msg>
 <assign>
 <var>${price2}</var>
 </assign>
-<msg timestamp="20181113 21:33:02.919" level="INFO">${price2} = $27.00</msg>
-<status status="PASS" starttime="20181113 21:33:02.887" endtime="20181113 21:33:02.919"></status>
+<msg timestamp="20181114 23:14:24.723" level="INFO">${price2} = $27.00</msg>
+<status status="PASS" starttime="20181114 23:14:24.690" endtime="20181114 23:14:24.723"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -975,8 +975,8 @@ Index 6: $30.50 != $27.00</msg>
 <assign>
 <var>${price3}</var>
 </assign>
-<msg timestamp="20181113 21:33:02.948" level="INFO">${price3} = $26.00</msg>
-<status status="PASS" starttime="20181113 21:33:02.919" endtime="20181113 21:33:02.948"></status>
+<msg timestamp="20181114 23:14:24.755" level="INFO">${price3} = $26.00</msg>
+<status status="PASS" starttime="20181114 23:14:24.723" endtime="20181114 23:14:24.755"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -986,8 +986,8 @@ Index 6: $30.50 != $27.00</msg>
 <assign>
 <var>${price4}</var>
 </assign>
-<msg timestamp="20181113 21:33:02.980" level="INFO">${price4} = $50.99</msg>
-<status status="PASS" starttime="20181113 21:33:02.948" endtime="20181113 21:33:02.980"></status>
+<msg timestamp="20181114 23:14:24.789" level="INFO">${price4} = $50.99</msg>
+<status status="PASS" starttime="20181114 23:14:24.755" endtime="20181114 23:14:24.790"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -997,8 +997,8 @@ Index 6: $30.50 != $27.00</msg>
 <assign>
 <var>${price5}</var>
 </assign>
-<msg timestamp="20181113 21:33:03.012" level="INFO">${price5} = $28.98</msg>
-<status status="PASS" starttime="20181113 21:33:02.981" endtime="20181113 21:33:03.012"></status>
+<msg timestamp="20181114 23:14:24.822" level="INFO">${price5} = $28.98</msg>
+<status status="PASS" starttime="20181114 23:14:24.790" endtime="20181114 23:14:24.822"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -1008,8 +1008,8 @@ Index 6: $30.50 != $27.00</msg>
 <assign>
 <var>${price6}</var>
 </assign>
-<msg timestamp="20181113 21:33:03.048" level="INFO">${price6} = $30.50</msg>
-<status status="PASS" starttime="20181113 21:33:03.012" endtime="20181113 21:33:03.048"></status>
+<msg timestamp="20181114 23:14:24.860" level="INFO">${price6} = $30.50</msg>
+<status status="PASS" starttime="20181114 23:14:24.822" endtime="20181114 23:14:24.860"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -1019,8 +1019,8 @@ Index 6: $30.50 != $27.00</msg>
 <assign>
 <var>${price7}</var>
 </assign>
-<msg timestamp="20181113 21:33:03.081" level="INFO">${price7} = $16.40</msg>
-<status status="PASS" starttime="20181113 21:33:03.048" endtime="20181113 21:33:03.081"></status>
+<msg timestamp="20181114 23:14:24.899" level="INFO">${price7} = $16.40</msg>
+<status status="PASS" starttime="20181114 23:14:24.861" endtime="20181114 23:14:24.899"></status>
 </kw>
 <kw name="Create List" library="BuiltIn">
 <doc>Returns a list containing given items.</doc>
@@ -1036,8 +1036,8 @@ Index 6: $30.50 != $27.00</msg>
 <assign>
 <var>@{list}</var>
 </assign>
-<msg timestamp="20181113 21:33:03.081" level="INFO">@{list} = [ $16.51 | $27.00 | $26.00 | $50.99 | $28.98 | $30.50 | $16.40 ]</msg>
-<status status="PASS" starttime="20181113 21:33:03.081" endtime="20181113 21:33:03.081"></status>
+<msg timestamp="20181114 23:14:24.900" level="INFO">@{list} = [ $16.51 | $27.00 | $26.00 | $50.99 | $28.98 | $30.50 | $16.40 ]</msg>
+<status status="PASS" starttime="20181114 23:14:24.899" endtime="20181114 23:14:24.900"></status>
 </kw>
 <kw name="Lists Should Be Equal" library="Collections">
 <doc>Fails if given lists are unequal.</doc>
@@ -1045,36 +1045,36 @@ Index 6: $30.50 != $27.00</msg>
 <arg>${list}</arg>
 <arg>${correct_prices['${sort_by}']}</arg>
 </arguments>
-<msg timestamp="20181113 21:33:03.082" level="FAIL">Lists are different:
+<msg timestamp="20181114 23:14:24.901" level="FAIL">Lists are different:
 Index 0: $16.51 != $16.40
 Index 1: $27.00 != $30.50
 Index 2: $26.00 != $28.98
 Index 4: $28.98 != $26.00
 Index 5: $30.50 != $27.00
 Index 6: $16.40 != $16.51</msg>
-<status status="FAIL" starttime="20181113 21:33:03.082" endtime="20181113 21:33:03.082"></status>
+<status status="FAIL" starttime="20181114 23:14:24.900" endtime="20181114 23:14:24.901"></status>
 </kw>
-<status status="FAIL" starttime="20181113 21:33:02.852" endtime="20181113 21:33:03.082"></status>
+<status status="FAIL" starttime="20181114 23:14:24.655" endtime="20181114 23:14:24.901"></status>
 </kw>
-<status status="FAIL" starttime="20181113 21:33:01.467" endtime="20181113 21:33:03.082"></status>
+<status status="FAIL" starttime="20181114 23:14:23.656" endtime="20181114 23:14:24.901"></status>
 </kw>
-<status status="FAIL" starttime="20181113 21:33:01.467" endtime="20181113 21:33:03.082"></status>
+<status status="FAIL" starttime="20181114 23:14:23.656" endtime="20181114 23:14:24.901"></status>
 </kw>
-<status status="FAIL" starttime="20181113 21:32:53.010" endtime="20181113 21:33:03.083"></status>
+<status status="FAIL" starttime="20181114 23:14:13.822" endtime="20181114 23:14:24.902"></status>
 </kw>
 <kw name="Capture Screenshot And Close Browser" library="Products_Keywords" type="teardown">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181113 21:33:03.454" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-23.png"&gt;&lt;img src="selenium-screenshot-23.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20181113 21:33:03.084" endtime="20181113 21:33:03.454"></status>
+<msg timestamp="20181114 23:14:25.283" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-33.png"&gt;&lt;img src="selenium-screenshot-33.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20181114 23:14:24.903" endtime="20181114 23:14:25.283"></status>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20181113 21:33:03.455" endtime="20181113 21:33:05.559"></status>
+<status status="PASS" starttime="20181114 23:14:25.283" endtime="20181114 23:14:27.400"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:03.083" endtime="20181113 21:33:05.559"></status>
+<status status="PASS" starttime="20181114 23:14:24.903" endtime="20181114 23:14:27.400"></status>
 </kw>
-<status status="FAIL" starttime="20181113 21:32:40.518" endtime="20181113 21:33:05.560" critical="yes">Several failures occurred:
+<status status="FAIL" starttime="20181114 23:13:39.947" endtime="20181114 23:14:27.401" critical="yes">Several failures occurred:
 
 1) Lists are different:
 Index 0: $16.40 != $50.99
@@ -1100,7 +1100,7 @@ Index 4: $28.98 != $26.00
 Index 5: $30.50 != $27.00
 Index 6: $16.40 != $16.51</status>
 </test>
-<test id="s1-t2" name="Correct Number Of Products Is Shown After Filtering">
+<test id="s1-t2" name="Sort By Product Name">
 <kw name="Open Products" library="Products_Keywords" type="setup">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the given ``url``.</doc>
@@ -1108,29 +1108,863 @@ Index 6: $16.40 != $16.51</status>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20181113 21:33:05.565" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/index.php'.</msg>
-<status status="PASS" starttime="20181113 21:33:05.564" endtime="20181113 21:33:13.622"></status>
+<msg timestamp="20181114 23:14:27.405" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/index.php'.</msg>
+<status status="PASS" starttime="20181114 23:14:27.405" endtime="20181114 23:14:37.179"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20181113 21:33:13.622" endtime="20181113 21:33:14.745"></status>
+<status status="PASS" starttime="20181114 23:14:37.180" endtime="20181114 23:14:38.306"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${Button_woman}</arg>
 </arguments>
-<msg timestamp="20181113 21:33:14.745" level="INFO">Clicking element 'class=sf-with-ul'.</msg>
-<status status="PASS" starttime="20181113 21:33:14.745" endtime="20181113 21:33:16.186"></status>
+<msg timestamp="20181114 23:14:38.307" level="INFO">Clicking element 'class=sf-with-ul'.</msg>
+<status status="PASS" starttime="20181114 23:14:38.306" endtime="20181114 23:14:39.942"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` appears on current page.</doc>
 <arguments>
 <arg>${Sort_by_dropdown}</arg>
 </arguments>
-<status status="PASS" starttime="20181113 21:33:16.187" endtime="20181113 21:33:16.209"></status>
+<status status="PASS" starttime="20181114 23:14:39.942" endtime="20181114 23:14:39.959"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:05.564" endtime="20181113 21:33:16.209"></status>
+<status status="PASS" starttime="20181114 23:14:27.405" endtime="20181114 23:14:39.959"></status>
+</kw>
+<kw name="${sort_by} IN [ @{sort_by_name} ]" type="for">
+<kw name="${sort_by} = Product Name: A to Z" type="foritem">
+<kw name="Sort By Name Option">
+<arguments>
+<arg>${sort_by}</arg>
+</arguments>
+<kw name="Choose Option For Sorting" library="Products_Keywords">
+<arguments>
+<arg>${sort_by}</arg>
+</arguments>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${Sort_by_dropdown}</arg>
+<arg>${sort_by}</arg>
+</arguments>
+<msg timestamp="20181114 23:14:39.961" level="INFO">Selecting options from selection list 'id=selectProductSort' by label Product Name: A to Z.</msg>
+<status status="PASS" starttime="20181114 23:14:39.961" endtime="20181114 23:14:40.068"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${Loader_not_visible}</arg>
+</arguments>
+<status status="PASS" starttime="20181114 23:14:40.068" endtime="20181114 23:14:41.161"></status>
+</kw>
+<status status="PASS" starttime="20181114 23:14:39.961" endtime="20181114 23:14:41.161"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${Product_name}</arg>
+</arguments>
+<assign>
+<var>${name}</var>
+</assign>
+<msg timestamp="20181114 23:14:41.203" level="INFO">${name} = Blouse</msg>
+<status status="PASS" starttime="20181114 23:14:41.161" endtime="20181114 23:14:41.203"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${Product_name_2}</arg>
+</arguments>
+<assign>
+<var>${name2}</var>
+</assign>
+<msg timestamp="20181114 23:14:41.239" level="INFO">${name2} = Faded Short Sleeve T-shirts</msg>
+<status status="PASS" starttime="20181114 23:14:41.203" endtime="20181114 23:14:41.239"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${Product_name_3}</arg>
+</arguments>
+<assign>
+<var>${name3}</var>
+</assign>
+<msg timestamp="20181114 23:14:41.274" level="INFO">${name3} = Printed Chiffon Dress</msg>
+<status status="PASS" starttime="20181114 23:14:41.239" endtime="20181114 23:14:41.274"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${Product_name_4}</arg>
+</arguments>
+<assign>
+<var>${name4}</var>
+</assign>
+<msg timestamp="20181114 23:14:41.312" level="INFO">${name4} = Printed Dress</msg>
+<status status="PASS" starttime="20181114 23:14:41.274" endtime="20181114 23:14:41.312"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${Product_name_5}</arg>
+</arguments>
+<assign>
+<var>${name5}</var>
+</assign>
+<msg timestamp="20181114 23:14:41.351" level="INFO">${name5} = Printed Dress</msg>
+<status status="PASS" starttime="20181114 23:14:41.313" endtime="20181114 23:14:41.351"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${Product_name_6}</arg>
+</arguments>
+<assign>
+<var>${name6}</var>
+</assign>
+<msg timestamp="20181114 23:14:41.390" level="INFO">${name6} = Printed Summer Dress</msg>
+<status status="PASS" starttime="20181114 23:14:41.351" endtime="20181114 23:14:41.390"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${Product_name_7}</arg>
+</arguments>
+<assign>
+<var>${name7}</var>
+</assign>
+<msg timestamp="20181114 23:14:41.430" level="INFO">${name7} = Printed Summer Dress</msg>
+<status status="PASS" starttime="20181114 23:14:41.391" endtime="20181114 23:14:41.430"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>${name2}</arg>
+<arg>${name3}</arg>
+<arg>${name4}</arg>
+<arg>${name5}</arg>
+<arg>${name6}</arg>
+<arg>${name7}</arg>
+</arguments>
+<assign>
+<var>@{original}</var>
+</assign>
+<msg timestamp="20181114 23:14:41.431" level="INFO">@{original} = [ Blouse | Faded Short Sleeve T-shirts | Printed Chiffon Dress | Printed Dress | Printed Dress | Printed Summer Dress | Printed Summer Dress ]</msg>
+<status status="PASS" starttime="20181114 23:14:41.431" endtime="20181114 23:14:41.431"></status>
+</kw>
+<kw name="Copy List" library="Collections">
+<doc>Returns a copy of the given list.</doc>
+<arguments>
+<arg>${original}</arg>
+</arguments>
+<assign>
+<var>@{unsorted}</var>
+</assign>
+<msg timestamp="20181114 23:14:41.432" level="INFO">@{unsorted} = [ Blouse | Faded Short Sleeve T-shirts | Printed Chiffon Dress | Printed Dress | Printed Dress | Printed Summer Dress | Printed Summer Dress ]</msg>
+<status status="PASS" starttime="20181114 23:14:41.431" endtime="20181114 23:14:41.432"></status>
+</kw>
+<kw name="Sort List" library="Collections">
+<doc>Sorts the given list in place.</doc>
+<arguments>
+<arg>${original}</arg>
+</arguments>
+<status status="PASS" starttime="20181114 23:14:41.432" endtime="20181114 23:14:41.432"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${sort_by}'=='Product Name: Z to A'</arg>
+<arg>Reverse List</arg>
+<arg>${original}</arg>
+</arguments>
+<status status="PASS" starttime="20181114 23:14:41.432" endtime="20181114 23:14:41.433"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${original}</arg>
+</arguments>
+<status status="PASS" starttime="20181114 23:14:41.433" endtime="20181114 23:14:41.433"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${unsorted}</arg>
+</arguments>
+<status status="PASS" starttime="20181114 23:14:41.433" endtime="20181114 23:14:41.434"></status>
+</kw>
+<kw name="Lists Should Be Equal" library="Collections">
+<doc>Fails if given lists are unequal.</doc>
+<arguments>
+<arg>${original}</arg>
+<arg>${unsorted}</arg>
+</arguments>
+<status status="PASS" starttime="20181114 23:14:41.434" endtime="20181114 23:14:41.434"></status>
+</kw>
+<status status="PASS" starttime="20181114 23:14:39.960" endtime="20181114 23:14:41.434"></status>
+</kw>
+<status status="PASS" starttime="20181114 23:14:39.960" endtime="20181114 23:14:41.434"></status>
+</kw>
+<kw name="${sort_by} = Product Name: Z to A" type="foritem">
+<kw name="Sort By Name Option">
+<arguments>
+<arg>${sort_by}</arg>
+</arguments>
+<kw name="Choose Option For Sorting" library="Products_Keywords">
+<arguments>
+<arg>${sort_by}</arg>
+</arguments>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${Sort_by_dropdown}</arg>
+<arg>${sort_by}</arg>
+</arguments>
+<msg timestamp="20181114 23:14:41.435" level="INFO">Selecting options from selection list 'id=selectProductSort' by label Product Name: Z to A.</msg>
+<status status="PASS" starttime="20181114 23:14:41.435" endtime="20181114 23:14:41.537"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${Loader_not_visible}</arg>
+</arguments>
+<status status="PASS" starttime="20181114 23:14:41.538" endtime="20181114 23:14:42.608"></status>
+</kw>
+<status status="PASS" starttime="20181114 23:14:41.435" endtime="20181114 23:14:42.608"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${Product_name}</arg>
+</arguments>
+<assign>
+<var>${name}</var>
+</assign>
+<msg timestamp="20181114 23:14:42.638" level="INFO">${name} = Blouse</msg>
+<status status="PASS" starttime="20181114 23:14:42.608" endtime="20181114 23:14:42.638"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${Product_name_2}</arg>
+</arguments>
+<assign>
+<var>${name2}</var>
+</assign>
+<msg timestamp="20181114 23:14:42.670" level="INFO">${name2} = Faded Short Sleeve T-shirts</msg>
+<status status="PASS" starttime="20181114 23:14:42.638" endtime="20181114 23:14:42.670"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${Product_name_3}</arg>
+</arguments>
+<assign>
+<var>${name3}</var>
+</assign>
+<msg timestamp="20181114 23:14:42.703" level="INFO">${name3} = Printed Chiffon Dress</msg>
+<status status="PASS" starttime="20181114 23:14:42.671" endtime="20181114 23:14:42.703"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${Product_name_4}</arg>
+</arguments>
+<assign>
+<var>${name4}</var>
+</assign>
+<msg timestamp="20181114 23:14:42.734" level="INFO">${name4} = Printed Dress</msg>
+<status status="PASS" starttime="20181114 23:14:42.703" endtime="20181114 23:14:42.734"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${Product_name_5}</arg>
+</arguments>
+<assign>
+<var>${name5}</var>
+</assign>
+<msg timestamp="20181114 23:14:42.765" level="INFO">${name5} = Printed Dress</msg>
+<status status="PASS" starttime="20181114 23:14:42.734" endtime="20181114 23:14:42.765"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${Product_name_6}</arg>
+</arguments>
+<assign>
+<var>${name6}</var>
+</assign>
+<msg timestamp="20181114 23:14:42.796" level="INFO">${name6} = Printed Summer Dress</msg>
+<status status="PASS" starttime="20181114 23:14:42.765" endtime="20181114 23:14:42.797"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${Product_name_7}</arg>
+</arguments>
+<assign>
+<var>${name7}</var>
+</assign>
+<msg timestamp="20181114 23:14:42.827" level="INFO">${name7} = Printed Summer Dress</msg>
+<status status="PASS" starttime="20181114 23:14:42.797" endtime="20181114 23:14:42.827"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>${name2}</arg>
+<arg>${name3}</arg>
+<arg>${name4}</arg>
+<arg>${name5}</arg>
+<arg>${name6}</arg>
+<arg>${name7}</arg>
+</arguments>
+<assign>
+<var>@{original}</var>
+</assign>
+<msg timestamp="20181114 23:14:42.828" level="INFO">@{original} = [ Blouse | Faded Short Sleeve T-shirts | Printed Chiffon Dress | Printed Dress | Printed Dress | Printed Summer Dress | Printed Summer Dress ]</msg>
+<status status="PASS" starttime="20181114 23:14:42.827" endtime="20181114 23:14:42.828"></status>
+</kw>
+<kw name="Copy List" library="Collections">
+<doc>Returns a copy of the given list.</doc>
+<arguments>
+<arg>${original}</arg>
+</arguments>
+<assign>
+<var>@{unsorted}</var>
+</assign>
+<msg timestamp="20181114 23:14:42.828" level="INFO">@{unsorted} = [ Blouse | Faded Short Sleeve T-shirts | Printed Chiffon Dress | Printed Dress | Printed Dress | Printed Summer Dress | Printed Summer Dress ]</msg>
+<status status="PASS" starttime="20181114 23:14:42.828" endtime="20181114 23:14:42.828"></status>
+</kw>
+<kw name="Sort List" library="Collections">
+<doc>Sorts the given list in place.</doc>
+<arguments>
+<arg>${original}</arg>
+</arguments>
+<status status="PASS" starttime="20181114 23:14:42.828" endtime="20181114 23:14:42.828"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${sort_by}'=='Product Name: Z to A'</arg>
+<arg>Reverse List</arg>
+<arg>${original}</arg>
+</arguments>
+<kw name="Reverse List" library="Collections">
+<doc>Reverses the given list in place.</doc>
+<arguments>
+<arg>${original}</arg>
+</arguments>
+<status status="PASS" starttime="20181114 23:14:42.829" endtime="20181114 23:14:42.829"></status>
+</kw>
+<status status="PASS" starttime="20181114 23:14:42.829" endtime="20181114 23:14:42.829"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${original}</arg>
+</arguments>
+<status status="PASS" starttime="20181114 23:14:42.829" endtime="20181114 23:14:42.830"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${unsorted}</arg>
+</arguments>
+<status status="PASS" starttime="20181114 23:14:42.830" endtime="20181114 23:14:42.830"></status>
+</kw>
+<kw name="Lists Should Be Equal" library="Collections">
+<doc>Fails if given lists are unequal.</doc>
+<arguments>
+<arg>${original}</arg>
+<arg>${unsorted}</arg>
+</arguments>
+<msg timestamp="20181114 23:14:42.831" level="FAIL">Lists are different:
+Index 0: Printed Summer Dress != Blouse
+Index 1: Printed Summer Dress != Faded Short Sleeve T-shirts
+Index 2: Printed Dress != Printed Chiffon Dress
+Index 4: Printed Chiffon Dress != Printed Dress
+Index 5: Faded Short Sleeve T-shirts != Printed Summer Dress
+Index 6: Blouse != Printed Summer Dress</msg>
+<status status="FAIL" starttime="20181114 23:14:42.831" endtime="20181114 23:14:42.831"></status>
+</kw>
+<status status="FAIL" starttime="20181114 23:14:41.434" endtime="20181114 23:14:42.831"></status>
+</kw>
+<status status="FAIL" starttime="20181114 23:14:41.434" endtime="20181114 23:14:42.831"></status>
+</kw>
+<status status="FAIL" starttime="20181114 23:14:39.960" endtime="20181114 23:14:42.831"></status>
+</kw>
+<kw name="Capture Screenshot And Close Browser" library="Products_Keywords" type="teardown">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181114 23:14:43.227" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-34.png"&gt;&lt;img src="selenium-screenshot-34.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20181114 23:14:42.832" endtime="20181114 23:14:43.227"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20181114 23:14:43.227" endtime="20181114 23:14:46.364"></status>
+</kw>
+<status status="PASS" starttime="20181114 23:14:42.832" endtime="20181114 23:14:46.364"></status>
+</kw>
+<status status="FAIL" starttime="20181114 23:14:27.404" endtime="20181114 23:14:46.365" critical="yes">Lists are different:
+Index 0: Printed Summer Dress != Blouse
+Index 1: Printed Summer Dress != Faded Short Sleeve T-shirts
+Index 2: Printed Dress != Printed Chiffon Dress
+Index 4: Printed Chiffon Dress != Printed Dress
+Index 5: Faded Short Sleeve T-shirts != Printed Summer Dress
+Index 6: Blouse != Printed Summer Dress</status>
+</test>
+<test id="s1-t3" name="Sort By Price">
+<kw name="Open Products" library="Products_Keywords" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20181114 23:14:46.369" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/index.php'.</msg>
+<status status="PASS" starttime="20181114 23:14:46.369" endtime="20181114 23:14:53.491"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20181114 23:14:53.491" endtime="20181114 23:14:54.616"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${Button_woman}</arg>
+</arguments>
+<msg timestamp="20181114 23:14:54.617" level="INFO">Clicking element 'class=sf-with-ul'.</msg>
+<status status="PASS" starttime="20181114 23:14:54.617" endtime="20181114 23:14:56.130"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${Sort_by_dropdown}</arg>
+</arguments>
+<status status="PASS" starttime="20181114 23:14:56.131" endtime="20181114 23:14:56.150"></status>
+</kw>
+<status status="PASS" starttime="20181114 23:14:46.369" endtime="20181114 23:14:56.150"></status>
+</kw>
+<kw name="${sort_by} IN [ @{sort_by_price} ]" type="for">
+<kw name="${sort_by} = Price: Lowest first" type="foritem">
+<kw name="Sort By Price Option">
+<arguments>
+<arg>${sort_by}</arg>
+</arguments>
+<kw name="Choose Option For Sorting" library="Products_Keywords">
+<arguments>
+<arg>${sort_by}</arg>
+</arguments>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${Sort_by_dropdown}</arg>
+<arg>${sort_by}</arg>
+</arguments>
+<msg timestamp="20181114 23:14:56.153" level="INFO">Selecting options from selection list 'id=selectProductSort' by label Price: Lowest first.</msg>
+<status status="PASS" starttime="20181114 23:14:56.152" endtime="20181114 23:14:56.273"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${Loader_not_visible}</arg>
+</arguments>
+<status status="PASS" starttime="20181114 23:14:56.273" endtime="20181114 23:14:57.349"></status>
+</kw>
+<status status="PASS" starttime="20181114 23:14:56.152" endtime="20181114 23:14:57.349"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${Product_price}</arg>
+</arguments>
+<assign>
+<var>${price}</var>
+</assign>
+<msg timestamp="20181114 23:14:57.398" level="INFO">${price} = $16.40</msg>
+<status status="PASS" starttime="20181114 23:14:57.349" endtime="20181114 23:14:57.398"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${Product_price_2}</arg>
+</arguments>
+<assign>
+<var>${price2}</var>
+</assign>
+<msg timestamp="20181114 23:14:57.441" level="INFO">${price2} = $16.51</msg>
+<status status="PASS" starttime="20181114 23:14:57.398" endtime="20181114 23:14:57.441"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${Product_price_3}</arg>
+</arguments>
+<assign>
+<var>${price3}</var>
+</assign>
+<msg timestamp="20181114 23:14:57.487" level="INFO">${price3} = $26.00</msg>
+<status status="PASS" starttime="20181114 23:14:57.441" endtime="20181114 23:14:57.487"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${Product_price_4}</arg>
+</arguments>
+<assign>
+<var>${price4}</var>
+</assign>
+<msg timestamp="20181114 23:14:57.532" level="INFO">${price4} = $27.00</msg>
+<status status="PASS" starttime="20181114 23:14:57.487" endtime="20181114 23:14:57.532"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${Product_price_5}</arg>
+</arguments>
+<assign>
+<var>${price5}</var>
+</assign>
+<msg timestamp="20181114 23:14:57.578" level="INFO">${price5} = $28.98</msg>
+<status status="PASS" starttime="20181114 23:14:57.532" endtime="20181114 23:14:57.578"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${Product_price_6}</arg>
+</arguments>
+<assign>
+<var>${price6}</var>
+</assign>
+<msg timestamp="20181114 23:14:57.623" level="INFO">${price6} = $30.50</msg>
+<status status="PASS" starttime="20181114 23:14:57.578" endtime="20181114 23:14:57.623"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${Product_price_7}</arg>
+</arguments>
+<assign>
+<var>${price7}</var>
+</assign>
+<msg timestamp="20181114 23:14:57.669" level="INFO">${price7} = $50.99</msg>
+<status status="PASS" starttime="20181114 23:14:57.623" endtime="20181114 23:14:57.669"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>${price}</arg>
+<arg>${price2}</arg>
+<arg>${price3}</arg>
+<arg>${price4}</arg>
+<arg>${price5}</arg>
+<arg>${price6}</arg>
+<arg>${price7}</arg>
+</arguments>
+<assign>
+<var>@{original}</var>
+</assign>
+<msg timestamp="20181114 23:14:57.670" level="INFO">@{original} = [ $16.40 | $16.51 | $26.00 | $27.00 | $28.98 | $30.50 | $50.99 ]</msg>
+<status status="PASS" starttime="20181114 23:14:57.669" endtime="20181114 23:14:57.670"></status>
+</kw>
+<kw name="Copy List" library="Collections">
+<doc>Returns a copy of the given list.</doc>
+<arguments>
+<arg>${original}</arg>
+</arguments>
+<assign>
+<var>@{unsorted}</var>
+</assign>
+<msg timestamp="20181114 23:14:57.670" level="INFO">@{unsorted} = [ $16.40 | $16.51 | $26.00 | $27.00 | $28.98 | $30.50 | $50.99 ]</msg>
+<status status="PASS" starttime="20181114 23:14:57.670" endtime="20181114 23:14:57.670"></status>
+</kw>
+<kw name="Sort List" library="Collections">
+<doc>Sorts the given list in place.</doc>
+<arguments>
+<arg>${original}</arg>
+</arguments>
+<status status="PASS" starttime="20181114 23:14:57.670" endtime="20181114 23:14:57.670"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${sort_by}'=='Price: Highest first'</arg>
+<arg>Reverse List</arg>
+<arg>${original}</arg>
+</arguments>
+<status status="PASS" starttime="20181114 23:14:57.670" endtime="20181114 23:14:57.671"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${original}</arg>
+</arguments>
+<status status="PASS" starttime="20181114 23:14:57.671" endtime="20181114 23:14:57.671"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${unsorted}</arg>
+</arguments>
+<status status="PASS" starttime="20181114 23:14:57.671" endtime="20181114 23:14:57.673"></status>
+</kw>
+<kw name="Lists Should Be Equal" library="Collections">
+<doc>Fails if given lists are unequal.</doc>
+<arguments>
+<arg>${original}</arg>
+<arg>${unsorted}</arg>
+</arguments>
+<status status="PASS" starttime="20181114 23:14:57.673" endtime="20181114 23:14:57.673"></status>
+</kw>
+<status status="PASS" starttime="20181114 23:14:56.151" endtime="20181114 23:14:57.673"></status>
+</kw>
+<status status="PASS" starttime="20181114 23:14:56.151" endtime="20181114 23:14:57.674"></status>
+</kw>
+<kw name="${sort_by} = Price: Highest first" type="foritem">
+<kw name="Sort By Price Option">
+<arguments>
+<arg>${sort_by}</arg>
+</arguments>
+<kw name="Choose Option For Sorting" library="Products_Keywords">
+<arguments>
+<arg>${sort_by}</arg>
+</arguments>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${Sort_by_dropdown}</arg>
+<arg>${sort_by}</arg>
+</arguments>
+<msg timestamp="20181114 23:14:57.676" level="INFO">Selecting options from selection list 'id=selectProductSort' by label Price: Highest first.</msg>
+<status status="PASS" starttime="20181114 23:14:57.675" endtime="20181114 23:14:57.790"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${Loader_not_visible}</arg>
+</arguments>
+<status status="PASS" starttime="20181114 23:14:57.790" endtime="20181114 23:14:58.861"></status>
+</kw>
+<status status="PASS" starttime="20181114 23:14:57.675" endtime="20181114 23:14:58.861"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${Product_price}</arg>
+</arguments>
+<assign>
+<var>${price}</var>
+</assign>
+<msg timestamp="20181114 23:14:58.897" level="INFO">${price} = $16.40</msg>
+<status status="PASS" starttime="20181114 23:14:58.861" endtime="20181114 23:14:58.897"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${Product_price_2}</arg>
+</arguments>
+<assign>
+<var>${price2}</var>
+</assign>
+<msg timestamp="20181114 23:14:58.931" level="INFO">${price2} = $16.51</msg>
+<status status="PASS" starttime="20181114 23:14:58.897" endtime="20181114 23:14:58.931"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${Product_price_3}</arg>
+</arguments>
+<assign>
+<var>${price3}</var>
+</assign>
+<msg timestamp="20181114 23:14:58.966" level="INFO">${price3} = $26.00</msg>
+<status status="PASS" starttime="20181114 23:14:58.931" endtime="20181114 23:14:58.966"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${Product_price_4}</arg>
+</arguments>
+<assign>
+<var>${price4}</var>
+</assign>
+<msg timestamp="20181114 23:14:59.001" level="INFO">${price4} = $27.00</msg>
+<status status="PASS" starttime="20181114 23:14:58.966" endtime="20181114 23:14:59.001"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${Product_price_5}</arg>
+</arguments>
+<assign>
+<var>${price5}</var>
+</assign>
+<msg timestamp="20181114 23:14:59.035" level="INFO">${price5} = $28.98</msg>
+<status status="PASS" starttime="20181114 23:14:59.001" endtime="20181114 23:14:59.035"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${Product_price_6}</arg>
+</arguments>
+<assign>
+<var>${price6}</var>
+</assign>
+<msg timestamp="20181114 23:14:59.070" level="INFO">${price6} = $30.50</msg>
+<status status="PASS" starttime="20181114 23:14:59.035" endtime="20181114 23:14:59.070"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${Product_price_7}</arg>
+</arguments>
+<assign>
+<var>${price7}</var>
+</assign>
+<msg timestamp="20181114 23:14:59.104" level="INFO">${price7} = $50.99</msg>
+<status status="PASS" starttime="20181114 23:14:59.070" endtime="20181114 23:14:59.104"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>${price}</arg>
+<arg>${price2}</arg>
+<arg>${price3}</arg>
+<arg>${price4}</arg>
+<arg>${price5}</arg>
+<arg>${price6}</arg>
+<arg>${price7}</arg>
+</arguments>
+<assign>
+<var>@{original}</var>
+</assign>
+<msg timestamp="20181114 23:14:59.104" level="INFO">@{original} = [ $16.40 | $16.51 | $26.00 | $27.00 | $28.98 | $30.50 | $50.99 ]</msg>
+<status status="PASS" starttime="20181114 23:14:59.104" endtime="20181114 23:14:59.104"></status>
+</kw>
+<kw name="Copy List" library="Collections">
+<doc>Returns a copy of the given list.</doc>
+<arguments>
+<arg>${original}</arg>
+</arguments>
+<assign>
+<var>@{unsorted}</var>
+</assign>
+<msg timestamp="20181114 23:14:59.105" level="INFO">@{unsorted} = [ $16.40 | $16.51 | $26.00 | $27.00 | $28.98 | $30.50 | $50.99 ]</msg>
+<status status="PASS" starttime="20181114 23:14:59.105" endtime="20181114 23:14:59.105"></status>
+</kw>
+<kw name="Sort List" library="Collections">
+<doc>Sorts the given list in place.</doc>
+<arguments>
+<arg>${original}</arg>
+</arguments>
+<status status="PASS" starttime="20181114 23:14:59.105" endtime="20181114 23:14:59.106"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${sort_by}'=='Price: Highest first'</arg>
+<arg>Reverse List</arg>
+<arg>${original}</arg>
+</arguments>
+<kw name="Reverse List" library="Collections">
+<doc>Reverses the given list in place.</doc>
+<arguments>
+<arg>${original}</arg>
+</arguments>
+<status status="PASS" starttime="20181114 23:14:59.106" endtime="20181114 23:14:59.106"></status>
+</kw>
+<status status="PASS" starttime="20181114 23:14:59.106" endtime="20181114 23:14:59.106"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${original}</arg>
+</arguments>
+<status status="PASS" starttime="20181114 23:14:59.106" endtime="20181114 23:14:59.107"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${unsorted}</arg>
+</arguments>
+<status status="PASS" starttime="20181114 23:14:59.107" endtime="20181114 23:14:59.108"></status>
+</kw>
+<kw name="Lists Should Be Equal" library="Collections">
+<doc>Fails if given lists are unequal.</doc>
+<arguments>
+<arg>${original}</arg>
+<arg>${unsorted}</arg>
+</arguments>
+<msg timestamp="20181114 23:14:59.108" level="FAIL">Lists are different:
+Index 0: $50.99 != $16.40
+Index 1: $30.50 != $16.51
+Index 2: $28.98 != $26.00
+Index 4: $26.00 != $28.98
+Index 5: $16.51 != $30.50
+Index 6: $16.40 != $50.99</msg>
+<status status="FAIL" starttime="20181114 23:14:59.108" endtime="20181114 23:14:59.108"></status>
+</kw>
+<status status="FAIL" starttime="20181114 23:14:57.674" endtime="20181114 23:14:59.108"></status>
+</kw>
+<status status="FAIL" starttime="20181114 23:14:57.674" endtime="20181114 23:14:59.108"></status>
+</kw>
+<status status="FAIL" starttime="20181114 23:14:56.151" endtime="20181114 23:14:59.108"></status>
+</kw>
+<kw name="Capture Screenshot And Close Browser" library="Products_Keywords" type="teardown">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181114 23:14:59.483" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-35.png"&gt;&lt;img src="selenium-screenshot-35.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20181114 23:14:59.110" endtime="20181114 23:14:59.483"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20181114 23:14:59.483" endtime="20181114 23:15:01.624"></status>
+</kw>
+<status status="PASS" starttime="20181114 23:14:59.109" endtime="20181114 23:15:01.624"></status>
+</kw>
+<status status="FAIL" starttime="20181114 23:14:46.368" endtime="20181114 23:15:01.625" critical="yes">Lists are different:
+Index 0: $50.99 != $16.40
+Index 1: $30.50 != $16.51
+Index 2: $28.98 != $26.00
+Index 4: $26.00 != $28.98
+Index 5: $16.51 != $30.50
+Index 6: $16.40 != $50.99</status>
+</test>
+<test id="s1-t4" name="Correct Number Of Products Is Shown After Filtering">
+<kw name="Open Products" library="Products_Keywords" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20181114 23:15:01.628" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/index.php'.</msg>
+<status status="PASS" starttime="20181114 23:15:01.628" endtime="20181114 23:15:10.066"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20181114 23:15:10.066" endtime="20181114 23:15:11.191"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${Button_woman}</arg>
+</arguments>
+<msg timestamp="20181114 23:15:11.192" level="INFO">Clicking element 'class=sf-with-ul'.</msg>
+<status status="PASS" starttime="20181114 23:15:11.192" endtime="20181114 23:15:12.851"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${Sort_by_dropdown}</arg>
+</arguments>
+<status status="PASS" starttime="20181114 23:15:12.851" endtime="20181114 23:15:12.877"></status>
+</kw>
+<status status="PASS" starttime="20181114 23:15:01.628" endtime="20181114 23:15:12.877"></status>
 </kw>
 <kw name="${filter} IN [ @{show_${number_of_products}_products} ]" type="for">
 <kw name="${filter} = color_orange" type="foritem">
@@ -1147,17 +1981,17 @@ Index 6: $16.40 != $16.51</status>
 <arguments>
 <arg>${filters['${filter_by}']}</arg>
 </arguments>
-<msg timestamp="20181113 21:33:16.211" level="INFO">Clicking element '//input[contains(@name, 'layered_id_attribute_group_13')]'.</msg>
-<status status="PASS" starttime="20181113 21:33:16.211" endtime="20181113 21:33:16.308"></status>
+<msg timestamp="20181114 23:15:12.879" level="INFO">Clicking element '//input[contains(@name, 'layered_id_attribute_group_13')]'.</msg>
+<status status="PASS" starttime="20181114 23:15:12.879" endtime="20181114 23:15:12.981"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` appears on current page.</doc>
 <arguments>
 <arg>${Loader_not_visible}</arg>
 </arguments>
-<status status="PASS" starttime="20181113 21:33:16.308" endtime="20181113 21:33:17.169"></status>
+<status status="PASS" starttime="20181114 23:15:12.981" endtime="20181114 23:15:14.107"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:16.211" endtime="20181113 21:33:17.169"></status>
+<status status="PASS" starttime="20181114 23:15:12.878" endtime="20181114 23:15:14.108"></status>
 </kw>
 <kw name="Number Of Products" library="Products_Keywords">
 <arguments>
@@ -1168,15 +2002,15 @@ Index 6: $16.40 != $16.51</status>
 <arguments>
 <arg>Showing 1 - ${number_of_products} of ${number_of_products} items</arg>
 </arguments>
-<status status="PASS" starttime="20181113 21:33:17.169" endtime="20181113 21:33:17.192"></status>
+<status status="PASS" starttime="20181114 23:15:14.108" endtime="20181114 23:15:14.134"></status>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <doc>Verifies that current page contains ``text``.</doc>
 <arguments>
 <arg>Showing 1 - ${number_of_products} of ${number_of_products} items</arg>
 </arguments>
-<msg timestamp="20181113 21:33:17.206" level="INFO">Current page contains text 'Showing 1 - 3 of 3 items'.</msg>
-<status status="PASS" starttime="20181113 21:33:17.192" endtime="20181113 21:33:17.206"></status>
+<msg timestamp="20181114 23:15:14.150" level="INFO">Current page contains text 'Showing 1 - 3 of 3 items'.</msg>
+<status status="PASS" starttime="20181114 23:15:14.134" endtime="20181114 23:15:14.150"></status>
 </kw>
 <kw name="Locator Should Match X Times" library="SeleniumLibrary">
 <doc>Deprecated, use `Page Should Contain Element` with ``limit`` argument instead.</doc>
@@ -1184,10 +2018,10 @@ Index 6: $16.40 != $16.51</status>
 <arg>${Product}</arg>
 <arg>${number_of_products}</arg>
 </arguments>
-<msg timestamp="20181113 21:33:17.227" level="INFO">Current page contains 3 elements matching '//*[contains(@class, 'product-container')]'.</msg>
-<status status="PASS" starttime="20181113 21:33:17.206" endtime="20181113 21:33:17.227"></status>
+<msg timestamp="20181114 23:15:14.171" level="INFO">Current page contains 3 elements matching '//*[contains(@class, 'product-container')]'.</msg>
+<status status="PASS" starttime="20181114 23:15:14.150" endtime="20181114 23:15:14.171"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:17.169" endtime="20181113 21:33:17.227"></status>
+<status status="PASS" starttime="20181114 23:15:14.108" endtime="20181114 23:15:14.171"></status>
 </kw>
 <kw name="Clear Filtering" library="Products_Keywords">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -1195,17 +2029,17 @@ Index 6: $16.40 != $16.51</status>
 <arguments>
 <arg>${Remove_filter}</arg>
 </arguments>
-<msg timestamp="20181113 21:33:17.228" level="INFO">Clicking element '//*[contains(@class, 'icon-remove')]'.</msg>
-<status status="PASS" starttime="20181113 21:33:17.228" endtime="20181113 21:33:17.319"></status>
+<msg timestamp="20181114 23:15:14.173" level="INFO">Clicking element '//*[contains(@class, 'icon-remove')]'.</msg>
+<status status="PASS" starttime="20181114 23:15:14.171" endtime="20181114 23:15:14.267"></status>
 </kw>
 <kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` disappears from current page.</doc>
 <arguments>
 <arg>${Remove_filter}</arg>
 </arguments>
-<status status="PASS" starttime="20181113 21:33:17.319" endtime="20181113 21:33:18.427"></status>
+<status status="PASS" starttime="20181114 23:15:14.267" endtime="20181114 23:15:15.340"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:17.227" endtime="20181113 21:33:18.427"></status>
+<status status="PASS" starttime="20181114 23:15:14.171" endtime="20181114 23:15:15.341"></status>
 </kw>
 <kw name="All Products Are Shown" library="Products_Keywords">
 <kw name="Page Should Contain" library="SeleniumLibrary">
@@ -1213,8 +2047,8 @@ Index 6: $16.40 != $16.51</status>
 <arguments>
 <arg>Showing 1 - 7 of 7 item</arg>
 </arguments>
-<msg timestamp="20181113 21:33:18.456" level="INFO">Current page contains text 'Showing 1 - 7 of 7 item'.</msg>
-<status status="PASS" starttime="20181113 21:33:18.427" endtime="20181113 21:33:18.456"></status>
+<msg timestamp="20181114 23:15:15.367" level="INFO">Current page contains text 'Showing 1 - 7 of 7 item'.</msg>
+<status status="PASS" starttime="20181114 23:15:15.341" endtime="20181114 23:15:15.367"></status>
 </kw>
 <kw name="Locator Should Match X Times" library="SeleniumLibrary">
 <doc>Deprecated, use `Page Should Contain Element` with ``limit`` argument instead.</doc>
@@ -1222,14 +2056,14 @@ Index 6: $16.40 != $16.51</status>
 <arg>${Product}</arg>
 <arg>7</arg>
 </arguments>
-<msg timestamp="20181113 21:33:18.468" level="INFO">Current page contains 7 elements matching '//*[contains(@class, 'product-container')]'.</msg>
-<status status="PASS" starttime="20181113 21:33:18.457" endtime="20181113 21:33:18.468"></status>
+<msg timestamp="20181114 23:15:15.377" level="INFO">Current page contains 7 elements matching '//*[contains(@class, 'product-container')]'.</msg>
+<status status="PASS" starttime="20181114 23:15:15.367" endtime="20181114 23:15:15.378"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:18.427" endtime="20181113 21:33:18.468"></status>
+<status status="PASS" starttime="20181114 23:15:15.341" endtime="20181114 23:15:15.378"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:16.210" endtime="20181113 21:33:18.468"></status>
+<status status="PASS" starttime="20181114 23:15:12.878" endtime="20181114 23:15:15.378"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:16.210" endtime="20181113 21:33:18.468"></status>
+<status status="PASS" starttime="20181114 23:15:12.878" endtime="20181114 23:15:15.378"></status>
 </kw>
 <kw name="${filter} = compositions_cotton" type="foritem">
 <kw name="Apply Filters For Products">
@@ -1245,17 +2079,17 @@ Index 6: $16.40 != $16.51</status>
 <arguments>
 <arg>${filters['${filter_by}']}</arg>
 </arguments>
-<msg timestamp="20181113 21:33:18.469" level="INFO">Clicking element '//input[contains(@name, 'layered_id_feature_5')]'.</msg>
-<status status="PASS" starttime="20181113 21:33:18.469" endtime="20181113 21:33:18.561"></status>
+<msg timestamp="20181114 23:15:15.379" level="INFO">Clicking element '//input[contains(@name, 'layered_id_feature_5')]'.</msg>
+<status status="PASS" starttime="20181114 23:15:15.379" endtime="20181114 23:15:15.483"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` appears on current page.</doc>
 <arguments>
 <arg>${Loader_not_visible}</arg>
 </arguments>
-<status status="PASS" starttime="20181113 21:33:18.561" endtime="20181113 21:33:19.413"></status>
+<status status="PASS" starttime="20181114 23:15:15.483" endtime="20181114 23:15:16.554"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:18.469" endtime="20181113 21:33:19.413"></status>
+<status status="PASS" starttime="20181114 23:15:15.378" endtime="20181114 23:15:16.554"></status>
 </kw>
 <kw name="Number Of Products" library="Products_Keywords">
 <arguments>
@@ -1266,15 +2100,15 @@ Index 6: $16.40 != $16.51</status>
 <arguments>
 <arg>Showing 1 - ${number_of_products} of ${number_of_products} items</arg>
 </arguments>
-<status status="PASS" starttime="20181113 21:33:19.414" endtime="20181113 21:33:19.426"></status>
+<status status="PASS" starttime="20181114 23:15:16.555" endtime="20181114 23:15:16.567"></status>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <doc>Verifies that current page contains ``text``.</doc>
 <arguments>
 <arg>Showing 1 - ${number_of_products} of ${number_of_products} items</arg>
 </arguments>
-<msg timestamp="20181113 21:33:19.441" level="INFO">Current page contains text 'Showing 1 - 3 of 3 items'.</msg>
-<status status="PASS" starttime="20181113 21:33:19.426" endtime="20181113 21:33:19.441"></status>
+<msg timestamp="20181114 23:15:16.584" level="INFO">Current page contains text 'Showing 1 - 3 of 3 items'.</msg>
+<status status="PASS" starttime="20181114 23:15:16.567" endtime="20181114 23:15:16.584"></status>
 </kw>
 <kw name="Locator Should Match X Times" library="SeleniumLibrary">
 <doc>Deprecated, use `Page Should Contain Element` with ``limit`` argument instead.</doc>
@@ -1282,10 +2116,10 @@ Index 6: $16.40 != $16.51</status>
 <arg>${Product}</arg>
 <arg>${number_of_products}</arg>
 </arguments>
-<msg timestamp="20181113 21:33:19.453" level="INFO">Current page contains 3 elements matching '//*[contains(@class, 'product-container')]'.</msg>
-<status status="PASS" starttime="20181113 21:33:19.441" endtime="20181113 21:33:19.453"></status>
+<msg timestamp="20181114 23:15:16.595" level="INFO">Current page contains 3 elements matching '//*[contains(@class, 'product-container')]'.</msg>
+<status status="PASS" starttime="20181114 23:15:16.584" endtime="20181114 23:15:16.595"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:19.413" endtime="20181113 21:33:19.453"></status>
+<status status="PASS" starttime="20181114 23:15:16.555" endtime="20181114 23:15:16.595"></status>
 </kw>
 <kw name="Clear Filtering" library="Products_Keywords">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -1293,17 +2127,17 @@ Index 6: $16.40 != $16.51</status>
 <arguments>
 <arg>${Remove_filter}</arg>
 </arguments>
-<msg timestamp="20181113 21:33:19.453" level="INFO">Clicking element '//*[contains(@class, 'icon-remove')]'.</msg>
-<status status="PASS" starttime="20181113 21:33:19.453" endtime="20181113 21:33:19.542"></status>
+<msg timestamp="20181114 23:15:16.596" level="INFO">Clicking element '//*[contains(@class, 'icon-remove')]'.</msg>
+<status status="PASS" starttime="20181114 23:15:16.596" endtime="20181114 23:15:16.680"></status>
 </kw>
 <kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` disappears from current page.</doc>
 <arguments>
 <arg>${Remove_filter}</arg>
 </arguments>
-<status status="PASS" starttime="20181113 21:33:19.542" endtime="20181113 21:33:20.612"></status>
+<status status="PASS" starttime="20181114 23:15:16.680" endtime="20181114 23:15:17.833"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:19.453" endtime="20181113 21:33:20.613"></status>
+<status status="PASS" starttime="20181114 23:15:16.595" endtime="20181114 23:15:17.833"></status>
 </kw>
 <kw name="All Products Are Shown" library="Products_Keywords">
 <kw name="Page Should Contain" library="SeleniumLibrary">
@@ -1311,8 +2145,8 @@ Index 6: $16.40 != $16.51</status>
 <arguments>
 <arg>Showing 1 - 7 of 7 item</arg>
 </arguments>
-<msg timestamp="20181113 21:33:20.633" level="INFO">Current page contains text 'Showing 1 - 7 of 7 item'.</msg>
-<status status="PASS" starttime="20181113 21:33:20.613" endtime="20181113 21:33:20.633"></status>
+<msg timestamp="20181114 23:15:17.863" level="INFO">Current page contains text 'Showing 1 - 7 of 7 item'.</msg>
+<status status="PASS" starttime="20181114 23:15:17.834" endtime="20181114 23:15:17.863"></status>
 </kw>
 <kw name="Locator Should Match X Times" library="SeleniumLibrary">
 <doc>Deprecated, use `Page Should Contain Element` with ``limit`` argument instead.</doc>
@@ -1320,14 +2154,14 @@ Index 6: $16.40 != $16.51</status>
 <arg>${Product}</arg>
 <arg>7</arg>
 </arguments>
-<msg timestamp="20181113 21:33:20.642" level="INFO">Current page contains 7 elements matching '//*[contains(@class, 'product-container')]'.</msg>
-<status status="PASS" starttime="20181113 21:33:20.633" endtime="20181113 21:33:20.643"></status>
+<msg timestamp="20181114 23:15:17.873" level="INFO">Current page contains 7 elements matching '//*[contains(@class, 'product-container')]'.</msg>
+<status status="PASS" starttime="20181114 23:15:17.863" endtime="20181114 23:15:17.874"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:20.613" endtime="20181113 21:33:20.643"></status>
+<status status="PASS" starttime="20181114 23:15:17.834" endtime="20181114 23:15:17.874"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:18.468" endtime="20181113 21:33:20.643"></status>
+<status status="PASS" starttime="20181114 23:15:15.378" endtime="20181114 23:15:17.874"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:18.468" endtime="20181113 21:33:20.643"></status>
+<status status="PASS" starttime="20181114 23:15:15.378" endtime="20181114 23:15:17.874"></status>
 </kw>
 <kw name="${filter} = color_yellow" type="foritem">
 <kw name="Apply Filters For Products">
@@ -1343,17 +2177,17 @@ Index 6: $16.40 != $16.51</status>
 <arguments>
 <arg>${filters['${filter_by}']}</arg>
 </arguments>
-<msg timestamp="20181113 21:33:20.644" level="INFO">Clicking element '//input[contains(@name, 'layered_id_attribute_group_16')]'.</msg>
-<status status="PASS" starttime="20181113 21:33:20.644" endtime="20181113 21:33:20.730"></status>
+<msg timestamp="20181114 23:15:17.875" level="INFO">Clicking element '//input[contains(@name, 'layered_id_attribute_group_16')]'.</msg>
+<status status="PASS" starttime="20181114 23:15:17.875" endtime="20181114 23:15:17.964"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` appears on current page.</doc>
 <arguments>
 <arg>${Loader_not_visible}</arg>
 </arguments>
-<status status="PASS" starttime="20181113 21:33:20.731" endtime="20181113 21:33:21.588"></status>
+<status status="PASS" starttime="20181114 23:15:17.964" endtime="20181114 23:15:18.822"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:20.643" endtime="20181113 21:33:21.588"></status>
+<status status="PASS" starttime="20181114 23:15:17.874" endtime="20181114 23:15:18.822"></status>
 </kw>
 <kw name="Number Of Products" library="Products_Keywords">
 <arguments>
@@ -1364,15 +2198,15 @@ Index 6: $16.40 != $16.51</status>
 <arguments>
 <arg>Showing 1 - ${number_of_products} of ${number_of_products} items</arg>
 </arguments>
-<status status="PASS" starttime="20181113 21:33:21.588" endtime="20181113 21:33:21.601"></status>
+<status status="PASS" starttime="20181114 23:15:18.822" endtime="20181114 23:15:18.833"></status>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <doc>Verifies that current page contains ``text``.</doc>
 <arguments>
 <arg>Showing 1 - ${number_of_products} of ${number_of_products} items</arg>
 </arguments>
-<msg timestamp="20181113 21:33:21.616" level="INFO">Current page contains text 'Showing 1 - 3 of 3 items'.</msg>
-<status status="PASS" starttime="20181113 21:33:21.601" endtime="20181113 21:33:21.616"></status>
+<msg timestamp="20181114 23:15:18.847" level="INFO">Current page contains text 'Showing 1 - 3 of 3 items'.</msg>
+<status status="PASS" starttime="20181114 23:15:18.833" endtime="20181114 23:15:18.847"></status>
 </kw>
 <kw name="Locator Should Match X Times" library="SeleniumLibrary">
 <doc>Deprecated, use `Page Should Contain Element` with ``limit`` argument instead.</doc>
@@ -1380,10 +2214,10 @@ Index 6: $16.40 != $16.51</status>
 <arg>${Product}</arg>
 <arg>${number_of_products}</arg>
 </arguments>
-<msg timestamp="20181113 21:33:21.628" level="INFO">Current page contains 3 elements matching '//*[contains(@class, 'product-container')]'.</msg>
-<status status="PASS" starttime="20181113 21:33:21.616" endtime="20181113 21:33:21.628"></status>
+<msg timestamp="20181114 23:15:18.859" level="INFO">Current page contains 3 elements matching '//*[contains(@class, 'product-container')]'.</msg>
+<status status="PASS" starttime="20181114 23:15:18.847" endtime="20181114 23:15:18.859"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:21.588" endtime="20181113 21:33:21.628"></status>
+<status status="PASS" starttime="20181114 23:15:18.822" endtime="20181114 23:15:18.859"></status>
 </kw>
 <kw name="Clear Filtering" library="Products_Keywords">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -1391,17 +2225,17 @@ Index 6: $16.40 != $16.51</status>
 <arguments>
 <arg>${Remove_filter}</arg>
 </arguments>
-<msg timestamp="20181113 21:33:21.628" level="INFO">Clicking element '//*[contains(@class, 'icon-remove')]'.</msg>
-<status status="PASS" starttime="20181113 21:33:21.628" endtime="20181113 21:33:21.709"></status>
+<msg timestamp="20181114 23:15:18.860" level="INFO">Clicking element '//*[contains(@class, 'icon-remove')]'.</msg>
+<status status="PASS" starttime="20181114 23:15:18.860" endtime="20181114 23:15:18.945"></status>
 </kw>
 <kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` disappears from current page.</doc>
 <arguments>
 <arg>${Remove_filter}</arg>
 </arguments>
-<status status="PASS" starttime="20181113 21:33:21.709" endtime="20181113 21:33:22.775"></status>
+<status status="PASS" starttime="20181114 23:15:18.945" endtime="20181114 23:15:19.882"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:21.628" endtime="20181113 21:33:22.775"></status>
+<status status="PASS" starttime="20181114 23:15:18.859" endtime="20181114 23:15:19.883"></status>
 </kw>
 <kw name="All Products Are Shown" library="Products_Keywords">
 <kw name="Page Should Contain" library="SeleniumLibrary">
@@ -1409,8 +2243,8 @@ Index 6: $16.40 != $16.51</status>
 <arguments>
 <arg>Showing 1 - 7 of 7 item</arg>
 </arguments>
-<msg timestamp="20181113 21:33:22.788" level="INFO">Current page contains text 'Showing 1 - 7 of 7 item'.</msg>
-<status status="PASS" starttime="20181113 21:33:22.775" endtime="20181113 21:33:22.788"></status>
+<msg timestamp="20181114 23:15:19.900" level="INFO">Current page contains text 'Showing 1 - 7 of 7 item'.</msg>
+<status status="PASS" starttime="20181114 23:15:19.883" endtime="20181114 23:15:19.901"></status>
 </kw>
 <kw name="Locator Should Match X Times" library="SeleniumLibrary">
 <doc>Deprecated, use `Page Should Contain Element` with ``limit`` argument instead.</doc>
@@ -1418,14 +2252,14 @@ Index 6: $16.40 != $16.51</status>
 <arg>${Product}</arg>
 <arg>7</arg>
 </arguments>
-<msg timestamp="20181113 21:33:22.797" level="INFO">Current page contains 7 elements matching '//*[contains(@class, 'product-container')]'.</msg>
-<status status="PASS" starttime="20181113 21:33:22.788" endtime="20181113 21:33:22.798"></status>
+<msg timestamp="20181114 23:15:19.911" level="INFO">Current page contains 7 elements matching '//*[contains(@class, 'product-container')]'.</msg>
+<status status="PASS" starttime="20181114 23:15:19.901" endtime="20181114 23:15:19.911"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:22.775" endtime="20181113 21:33:22.798"></status>
+<status status="PASS" starttime="20181114 23:15:19.883" endtime="20181114 23:15:19.911"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:20.643" endtime="20181113 21:33:22.798"></status>
+<status status="PASS" starttime="20181114 23:15:17.874" endtime="20181114 23:15:19.912"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:20.643" endtime="20181113 21:33:22.798"></status>
+<status status="PASS" starttime="20181114 23:15:17.874" endtime="20181114 23:15:19.912"></status>
 </kw>
 <kw name="${filter} = styles_casual" type="foritem">
 <kw name="Apply Filters For Products">
@@ -1441,17 +2275,17 @@ Index 6: $16.40 != $16.51</status>
 <arguments>
 <arg>${filters['${filter_by}']}</arg>
 </arguments>
-<msg timestamp="20181113 21:33:22.799" level="INFO">Clicking element '//input[contains(@name, 'layered_id_feature_11')]'.</msg>
-<status status="PASS" starttime="20181113 21:33:22.799" endtime="20181113 21:33:22.894"></status>
+<msg timestamp="20181114 23:15:19.913" level="INFO">Clicking element '//input[contains(@name, 'layered_id_feature_11')]'.</msg>
+<status status="PASS" starttime="20181114 23:15:19.912" endtime="20181114 23:15:20.015"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` appears on current page.</doc>
 <arguments>
 <arg>${Loader_not_visible}</arg>
 </arguments>
-<status status="PASS" starttime="20181113 21:33:22.894" endtime="20181113 21:33:23.598"></status>
+<status status="PASS" starttime="20181114 23:15:20.015" endtime="20181114 23:15:21.116"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:22.798" endtime="20181113 21:33:23.599"></status>
+<status status="PASS" starttime="20181114 23:15:19.912" endtime="20181114 23:15:21.117"></status>
 </kw>
 <kw name="Number Of Products" library="Products_Keywords">
 <arguments>
@@ -1462,15 +2296,15 @@ Index 6: $16.40 != $16.51</status>
 <arguments>
 <arg>Showing 1 - ${number_of_products} of ${number_of_products} items</arg>
 </arguments>
-<status status="PASS" starttime="20181113 21:33:23.599" endtime="20181113 21:33:23.610"></status>
+<status status="PASS" starttime="20181114 23:15:21.118" endtime="20181114 23:15:21.131"></status>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <doc>Verifies that current page contains ``text``.</doc>
 <arguments>
 <arg>Showing 1 - ${number_of_products} of ${number_of_products} items</arg>
 </arguments>
-<msg timestamp="20181113 21:33:23.627" level="INFO">Current page contains text 'Showing 1 - 3 of 3 items'.</msg>
-<status status="PASS" starttime="20181113 21:33:23.610" endtime="20181113 21:33:23.627"></status>
+<msg timestamp="20181114 23:15:21.147" level="INFO">Current page contains text 'Showing 1 - 3 of 3 items'.</msg>
+<status status="PASS" starttime="20181114 23:15:21.131" endtime="20181114 23:15:21.147"></status>
 </kw>
 <kw name="Locator Should Match X Times" library="SeleniumLibrary">
 <doc>Deprecated, use `Page Should Contain Element` with ``limit`` argument instead.</doc>
@@ -1478,10 +2312,10 @@ Index 6: $16.40 != $16.51</status>
 <arg>${Product}</arg>
 <arg>${number_of_products}</arg>
 </arguments>
-<msg timestamp="20181113 21:33:23.638" level="INFO">Current page contains 3 elements matching '//*[contains(@class, 'product-container')]'.</msg>
-<status status="PASS" starttime="20181113 21:33:23.627" endtime="20181113 21:33:23.638"></status>
+<msg timestamp="20181114 23:15:21.158" level="INFO">Current page contains 3 elements matching '//*[contains(@class, 'product-container')]'.</msg>
+<status status="PASS" starttime="20181114 23:15:21.147" endtime="20181114 23:15:21.159"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:23.599" endtime="20181113 21:33:23.638"></status>
+<status status="PASS" starttime="20181114 23:15:21.117" endtime="20181114 23:15:21.159"></status>
 </kw>
 <kw name="Clear Filtering" library="Products_Keywords">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -1489,17 +2323,17 @@ Index 6: $16.40 != $16.51</status>
 <arguments>
 <arg>${Remove_filter}</arg>
 </arguments>
-<msg timestamp="20181113 21:33:23.639" level="INFO">Clicking element '//*[contains(@class, 'icon-remove')]'.</msg>
-<status status="PASS" starttime="20181113 21:33:23.639" endtime="20181113 21:33:23.734"></status>
+<msg timestamp="20181114 23:15:21.159" level="INFO">Clicking element '//*[contains(@class, 'icon-remove')]'.</msg>
+<status status="PASS" starttime="20181114 23:15:21.159" endtime="20181114 23:15:21.246"></status>
 </kw>
 <kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` disappears from current page.</doc>
 <arguments>
 <arg>${Remove_filter}</arg>
 </arguments>
-<status status="PASS" starttime="20181113 21:33:23.734" endtime="20181113 21:33:24.659"></status>
+<status status="PASS" starttime="20181114 23:15:21.246" endtime="20181114 23:15:22.313"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:23.638" endtime="20181113 21:33:24.659"></status>
+<status status="PASS" starttime="20181114 23:15:21.159" endtime="20181114 23:15:22.313"></status>
 </kw>
 <kw name="All Products Are Shown" library="Products_Keywords">
 <kw name="Page Should Contain" library="SeleniumLibrary">
@@ -1507,8 +2341,8 @@ Index 6: $16.40 != $16.51</status>
 <arguments>
 <arg>Showing 1 - 7 of 7 item</arg>
 </arguments>
-<msg timestamp="20181113 21:33:24.684" level="INFO">Current page contains text 'Showing 1 - 7 of 7 item'.</msg>
-<status status="PASS" starttime="20181113 21:33:24.660" endtime="20181113 21:33:24.685"></status>
+<msg timestamp="20181114 23:15:22.336" level="INFO">Current page contains text 'Showing 1 - 7 of 7 item'.</msg>
+<status status="PASS" starttime="20181114 23:15:22.314" endtime="20181114 23:15:22.337"></status>
 </kw>
 <kw name="Locator Should Match X Times" library="SeleniumLibrary">
 <doc>Deprecated, use `Page Should Contain Element` with ``limit`` argument instead.</doc>
@@ -1516,14 +2350,14 @@ Index 6: $16.40 != $16.51</status>
 <arg>${Product}</arg>
 <arg>7</arg>
 </arguments>
-<msg timestamp="20181113 21:33:24.694" level="INFO">Current page contains 7 elements matching '//*[contains(@class, 'product-container')]'.</msg>
-<status status="PASS" starttime="20181113 21:33:24.685" endtime="20181113 21:33:24.695"></status>
+<msg timestamp="20181114 23:15:22.347" level="INFO">Current page contains 7 elements matching '//*[contains(@class, 'product-container')]'.</msg>
+<status status="PASS" starttime="20181114 23:15:22.337" endtime="20181114 23:15:22.347"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:24.659" endtime="20181113 21:33:24.695"></status>
+<status status="PASS" starttime="20181114 23:15:22.313" endtime="20181114 23:15:22.347"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:22.798" endtime="20181113 21:33:24.695"></status>
+<status status="PASS" starttime="20181114 23:15:19.912" endtime="20181114 23:15:22.347"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:22.798" endtime="20181113 21:33:24.695"></status>
+<status status="PASS" starttime="20181114 23:15:19.912" endtime="20181114 23:15:22.347"></status>
 </kw>
 <kw name="${filter} = styles_girly" type="foritem">
 <kw name="Apply Filters For Products">
@@ -1539,17 +2373,17 @@ Index 6: $16.40 != $16.51</status>
 <arguments>
 <arg>${filters['${filter_by}']}</arg>
 </arguments>
-<msg timestamp="20181113 21:33:24.696" level="INFO">Clicking element '//input[contains(@name, 'layered_id_feature_13')]'.</msg>
-<status status="PASS" starttime="20181113 21:33:24.696" endtime="20181113 21:33:24.790"></status>
+<msg timestamp="20181114 23:15:22.349" level="INFO">Clicking element '//input[contains(@name, 'layered_id_feature_13')]'.</msg>
+<status status="PASS" starttime="20181114 23:15:22.348" endtime="20181114 23:15:22.441"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` appears on current page.</doc>
 <arguments>
 <arg>${Loader_not_visible}</arg>
 </arguments>
-<status status="PASS" starttime="20181113 21:33:24.790" endtime="20181113 21:33:25.643"></status>
+<status status="PASS" starttime="20181114 23:15:22.441" endtime="20181114 23:15:23.506"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:24.696" endtime="20181113 21:33:25.643"></status>
+<status status="PASS" starttime="20181114 23:15:22.348" endtime="20181114 23:15:23.506"></status>
 </kw>
 <kw name="Number Of Products" library="Products_Keywords">
 <arguments>
@@ -1560,15 +2394,15 @@ Index 6: $16.40 != $16.51</status>
 <arguments>
 <arg>Showing 1 - ${number_of_products} of ${number_of_products} items</arg>
 </arguments>
-<status status="PASS" starttime="20181113 21:33:25.644" endtime="20181113 21:33:25.658"></status>
+<status status="PASS" starttime="20181114 23:15:23.507" endtime="20181114 23:15:23.520"></status>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <doc>Verifies that current page contains ``text``.</doc>
 <arguments>
 <arg>Showing 1 - ${number_of_products} of ${number_of_products} items</arg>
 </arguments>
-<msg timestamp="20181113 21:33:25.674" level="INFO">Current page contains text 'Showing 1 - 3 of 3 items'.</msg>
-<status status="PASS" starttime="20181113 21:33:25.659" endtime="20181113 21:33:25.674"></status>
+<msg timestamp="20181114 23:15:23.538" level="INFO">Current page contains text 'Showing 1 - 3 of 3 items'.</msg>
+<status status="PASS" starttime="20181114 23:15:23.521" endtime="20181114 23:15:23.538"></status>
 </kw>
 <kw name="Locator Should Match X Times" library="SeleniumLibrary">
 <doc>Deprecated, use `Page Should Contain Element` with ``limit`` argument instead.</doc>
@@ -1576,10 +2410,10 @@ Index 6: $16.40 != $16.51</status>
 <arg>${Product}</arg>
 <arg>${number_of_products}</arg>
 </arguments>
-<msg timestamp="20181113 21:33:25.685" level="INFO">Current page contains 3 elements matching '//*[contains(@class, 'product-container')]'.</msg>
-<status status="PASS" starttime="20181113 21:33:25.674" endtime="20181113 21:33:25.685"></status>
+<msg timestamp="20181114 23:15:23.548" level="INFO">Current page contains 3 elements matching '//*[contains(@class, 'product-container')]'.</msg>
+<status status="PASS" starttime="20181114 23:15:23.538" endtime="20181114 23:15:23.548"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:25.643" endtime="20181113 21:33:25.685"></status>
+<status status="PASS" starttime="20181114 23:15:23.506" endtime="20181114 23:15:23.548"></status>
 </kw>
 <kw name="Clear Filtering" library="Products_Keywords">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -1587,17 +2421,17 @@ Index 6: $16.40 != $16.51</status>
 <arguments>
 <arg>${Remove_filter}</arg>
 </arguments>
-<msg timestamp="20181113 21:33:25.686" level="INFO">Clicking element '//*[contains(@class, 'icon-remove')]'.</msg>
-<status status="PASS" starttime="20181113 21:33:25.685" endtime="20181113 21:33:25.760"></status>
+<msg timestamp="20181114 23:15:23.549" level="INFO">Clicking element '//*[contains(@class, 'icon-remove')]'.</msg>
+<status status="PASS" starttime="20181114 23:15:23.549" endtime="20181114 23:15:23.632"></status>
 </kw>
 <kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` disappears from current page.</doc>
 <arguments>
 <arg>${Remove_filter}</arg>
 </arguments>
-<status status="PASS" starttime="20181113 21:33:25.760" endtime="20181113 21:33:26.826"></status>
+<status status="PASS" starttime="20181114 23:15:23.632" endtime="20181114 23:15:24.548"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:25.685" endtime="20181113 21:33:26.827"></status>
+<status status="PASS" starttime="20181114 23:15:23.548" endtime="20181114 23:15:24.549"></status>
 </kw>
 <kw name="All Products Are Shown" library="Products_Keywords">
 <kw name="Page Should Contain" library="SeleniumLibrary">
@@ -1605,8 +2439,8 @@ Index 6: $16.40 != $16.51</status>
 <arguments>
 <arg>Showing 1 - 7 of 7 item</arg>
 </arguments>
-<msg timestamp="20181113 21:33:26.842" level="INFO">Current page contains text 'Showing 1 - 7 of 7 item'.</msg>
-<status status="PASS" starttime="20181113 21:33:26.827" endtime="20181113 21:33:26.842"></status>
+<msg timestamp="20181114 23:15:24.569" level="INFO">Current page contains text 'Showing 1 - 7 of 7 item'.</msg>
+<status status="PASS" starttime="20181114 23:15:24.550" endtime="20181114 23:15:24.569"></status>
 </kw>
 <kw name="Locator Should Match X Times" library="SeleniumLibrary">
 <doc>Deprecated, use `Page Should Contain Element` with ``limit`` argument instead.</doc>
@@ -1614,42 +2448,42 @@ Index 6: $16.40 != $16.51</status>
 <arg>${Product}</arg>
 <arg>7</arg>
 </arguments>
-<msg timestamp="20181113 21:33:26.853" level="INFO">Current page contains 7 elements matching '//*[contains(@class, 'product-container')]'.</msg>
-<status status="PASS" starttime="20181113 21:33:26.842" endtime="20181113 21:33:26.853"></status>
+<msg timestamp="20181114 23:15:24.579" level="INFO">Current page contains 7 elements matching '//*[contains(@class, 'product-container')]'.</msg>
+<status status="PASS" starttime="20181114 23:15:24.569" endtime="20181114 23:15:24.580"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:26.827" endtime="20181113 21:33:26.853"></status>
+<status status="PASS" starttime="20181114 23:15:24.549" endtime="20181114 23:15:24.580"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:24.695" endtime="20181113 21:33:26.853"></status>
+<status status="PASS" starttime="20181114 23:15:22.348" endtime="20181114 23:15:24.580"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:24.695" endtime="20181113 21:33:26.854"></status>
+<status status="PASS" starttime="20181114 23:15:22.348" endtime="20181114 23:15:24.580"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:16.210" endtime="20181113 21:33:26.854"></status>
+<status status="PASS" starttime="20181114 23:15:12.878" endtime="20181114 23:15:24.580"></status>
 </kw>
 <kw name="Capture Screenshot And Close Browser" library="Products_Keywords" type="teardown">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181113 21:33:27.295" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-24.png"&gt;&lt;img src="selenium-screenshot-24.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20181113 21:33:26.855" endtime="20181113 21:33:27.295"></status>
+<msg timestamp="20181114 23:15:25.026" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-36.png"&gt;&lt;img src="selenium-screenshot-36.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20181114 23:15:24.581" endtime="20181114 23:15:25.026"></status>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20181113 21:33:27.296" endtime="20181113 21:33:29.406"></status>
+<status status="PASS" starttime="20181114 23:15:25.026" endtime="20181114 23:15:27.142"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:26.854" endtime="20181113 21:33:29.406"></status>
+<status status="PASS" starttime="20181114 23:15:24.581" endtime="20181114 23:15:27.142"></status>
 </kw>
-<status status="PASS" starttime="20181113 21:33:05.563" endtime="20181113 21:33:29.407" critical="yes"></status>
+<status status="PASS" starttime="20181114 23:15:01.627" endtime="20181114 23:15:27.143" critical="yes"></status>
 </test>
-<status status="FAIL" starttime="20181113 21:32:40.258" endtime="20181113 21:33:29.409"></status>
+<status status="FAIL" starttime="20181114 23:13:39.668" endtime="20181114 23:15:27.146"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="1">Critical Tests</stat>
-<stat pass="1" fail="1">All Tests</stat>
+<stat pass="1" fail="3">Critical Tests</stat>
+<stat pass="1" fail="3">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="1" id="s1" name="Homework">Homework</stat>
+<stat pass="1" fail="3" id="s1" name="Homework">Homework</stat>
 </suite>
 </statistics>
 <errors>
